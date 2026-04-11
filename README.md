@@ -1,10 +1,8 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?color=8A2BE2&size=26&center=true&vCenter=true&width=600&lines=aglvetik;Developer;Python+%7C+TypeScript+%7C+JavaScript+%7C+C%23&duration=4000&pause=1500" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1200&color=8A2BE2&center=true&vCenter=true&width=700&lines=aglvet;Fullstack+Developer;Python+%7C+TypeScript+%7C+JavaScript+%7C+C%23" />
 </p>
 
 ---
-
-## 💻 Languages
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-0d0d0d?style=for-the-badge&logo=python">
@@ -18,9 +16,29 @@
 ## 📊 Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=aglvetik&show_icons=true&theme=transparent&hide_border=true&rank_icon=github" />
+  <img src="https://github-readme-stats.vercel.app/api?username=aglvet&show_icons=true&theme=radical&hide_border=true&cache_seconds=1800" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aglvetik&layout=compact&theme=transparent&hide_border=true" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aglvet&theme=radical&hide_border=true" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aglvet&layout=compact&theme=radical&hide_border=true" />
+</p>
+
+---
+
+## 🧠 Activity
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=aglvet&theme=radical" />
+</p>
+
+---
+
+## 🐍 Contribution Snake
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/aglvet/aglvet/output/github-contribution-grid-snake.svg" />
 </p>
