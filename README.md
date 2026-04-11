@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?color=8A2BE2&size=26&center=true&vCenter=true&width=600&lines=aglvet;Developer;Python+%7C+TypeScript+%7C+JavaScript+%7C+C%23&duration=4000&pause=1500" />
+  <img src="https://readme-typing-svg.herokuapp.com/?color=8A2BE2&size=26&center=true&vCenter=true&width=600&lines=aglvetik;Developer;Python+%7C+TypeScript+%7C+JavaScript+%7C+C%23&duration=4000&pause=1500" />
 </p>
 
 ---
@@ -18,9 +18,9 @@
 ## 📊 Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=aglvet&show_icons=true&theme=transparent&hide_border=true&rank_icon=github" />
+  <img src="https://github-readme-stats.vercel.app/api?username=aglvetik&show_icons=true&theme=transparent&hide_border=true&rank_icon=github" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aglvet&layout=compact&theme=transparent&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aglvetik&layout=compact&theme=transparent&hide_border=true" />
 </p>
