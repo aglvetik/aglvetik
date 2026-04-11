@@ -8,8 +8,6 @@
 ---
 
 ## 🧠 about_me.exe
-
-```txt
 > role: senior dev
 > main: python / js / ts
 > side: c# / go
