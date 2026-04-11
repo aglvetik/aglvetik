@@ -1,26 +1,26 @@
-<!-- HEADER -->
-<h1 align="center">⚡ Welcome to my chaos ⚡</h1>
-
 <p align="center">
-  <img src="https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" width="400"/>
+  <img src="https://i.pinimg.com/originals/27/75/b9/2775b9cd325774f5efb97d02e3fe8658.gif" width="80"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=9D00FF&center=true&vCenter=true&width=400&lines=aglvetik;python+%2F+ts+%2F+js;systems+%26+automation" />
+  <img src="https://i.pinimg.com/originals/27/75/b9/2775b9cd325774f5efb97d02e3fe8658.gif" width="80"/>
 </p>
 
 ---
 
-## 🧠 about_me.exe
-> role: senior dev
-> main: python / js / ts
-> side: c# / go
-> learning: c / c++ / java / rust
-> status: building something dangerous...
-💜 tech stack
-<p align="center"> <img src="https://skillicons.dev/icons?i=python,js,ts,cs,go,cpp,java,rust" /> </p>
-🌌 vibe
-<p align="center"> <img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" width="300"/> <img src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif" width="300"/> </p>
-⚡ github stats
-<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=YOUR_NAME&show_icons=true&theme=radical"/> <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_NAME&theme=radical"/> </p>
-🧬 currently
-> writing bots
-> breaking systems
-> rebuilding them better
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=YOUR_NAME&color=ff69b4"/> </p> ```
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=aglvetik&theme=tokyo-night&hide_border=true"/>
+</p>
+
+---
+
+## projects
+
+- https://github.com/aglvetik/SquadJS-TypeScript  
+- https://github.com/aglvetik/discord-personal-relay  
+- https://github.com/aglvetik/discord-message-cleaner  
+- https://github.com/aglvetik/telegram-automation  
+
+---
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,js,ts,cs,go,cpp,java,rust" />
+</p>
