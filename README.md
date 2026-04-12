@@ -1,18 +1,22 @@
-<h1 align="center">Hi, I'm Aggy</h1>
+```md
+<h2 align="center">Coding in progress</h2>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=BB86FC&center=true&vCenter=true&multiline=true&repeat=true&width=1100&height=220&lines=%24+starting+development+session...;%24+loading+python+environment...;%24+compiling+rust+backend...;%24+launching+go+microservice...;%24+testing+typescript+logic...;%24+querying+production+database...;%24+all+systems+operational_" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=23&pause=900&color=A970FF&center=true&vCenter=true&multiline=true&repeat=true&width=1200&height=230&lines=%24+initialize+workspace...;%24+python+bot.py;%24+cargo+run+--release;%24+go+run+main.go;%24+npm+run+build;%24+SELECT+*+FROM+active_nodes;%24+deployment+completed_" alt="Typing SVG" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=900&color=FF79C6&center=true&vCenter=true&repeat=true&width=1000&lines=Python+%E2%80%A2+Rust+%E2%80%A2+Go+%E2%80%A2+TypeScript+%E2%80%A2+SQL;Backend+logic;Automation+systems;Bots+and+infrastructure;Clean+architecture;Always+building..." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&pause=1000&color=FF79C6&center=true&vCenter=true&repeat=true&width=900&lines=Python+%7C+Rust+%7C+Go+%7C+TypeScript+%7C+SQL;Designing+logic...;Building+systems...;Automating+everything...;Improving+every+layer..." alt="Typing SVG" />
 </p>
 
-```ts
-const system = {
-  status: "online",
-  stack: ["Python", "Rust", "Go", "TypeScript", "SQL"],
-  focus: ["automation", "architecture", "backend", "stability"]
-};
+```python
+class SystemBuilder:
+    def __init__(self):
+        self.languages = ["Python", "Rust", "Go", "TypeScript", "SQL"]
+        self.mode = "production"
 
-console.log("Building something real...");
+    def build(self):
+        return "Stable architecture. Clean logic. Real automation."
+
+builder = SystemBuilder()
+print(builder.build())
