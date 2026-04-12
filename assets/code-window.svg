@@ -4,14 +4,14 @@
     <linearGradient id="top" x1="0" y1="0" x2="1680" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#151922"/><stop offset="1" stop-color="#0f141c"/></linearGradient>
     <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#000" flood-opacity=".45"/></filter>
     <style>
-      .t{font:700 32px &quot;Segoe UI&quot;,Inter,Arial,sans-serif;fill:#f8efe9}
-      .b{font:700 20px &quot;Segoe UI&quot;,Inter,Arial,sans-serif;fill:#96a0ae;letter-spacing:.8px}
+      .t{font:700 36px &quot;Segoe UI&quot;,Inter,Arial,sans-serif;fill:#f8efe9;text-rendering:geometricPrecision}
+      .b{font:700 24px &quot;Segoe UI&quot;,Inter,Arial,sans-serif;fill:#96a0ae;letter-spacing:.8px;text-rendering:geometricPrecision}
       .a{fill:#ffe7de}
-      .l{font:700 34px &quot;Segoe UI&quot;,Inter,Arial,sans-serif;fill:#87efff;letter-spacing:1.4px}
-      .n{font:18px &quot;JetBrains Mono&quot;,Consolas,monospace;fill:#5f6977}
-      .c{font:21px &quot;JetBrains Mono&quot;,&quot;Fira Code&quot;,Consolas,monospace;fill:#f8f3ef}
-      .p{font:700 20px &quot;Segoe UI&quot;,Inter,Arial,sans-serif;fill:#ffd98f;letter-spacing:1px}
-      .sig{font:600 17px &quot;JetBrains Mono&quot;,Consolas,monospace;fill:#5c6880;letter-spacing:1.4px;opacity:.72}
+      .l{font:700 40px &quot;Segoe UI&quot;,Inter,Arial,sans-serif;fill:#87efff;letter-spacing:1.4px;text-rendering:geometricPrecision}
+      .n{font:20px &quot;Cascadia Mono&quot;,&quot;Cascadia Code&quot;,&quot;JetBrains Mono&quot;,Consolas,monospace;fill:#5f6977;text-rendering:geometricPrecision}
+      .c{font:600 26px &quot;Cascadia Mono&quot;,&quot;Cascadia Code&quot;,&quot;JetBrains Mono&quot;,&quot;Fira Code&quot;,Consolas,monospace;fill:#f8f3ef;text-rendering:geometricPrecision}
+      .p{font:700 24px &quot;Segoe UI&quot;,Inter,Arial,sans-serif;fill:#ffd98f;letter-spacing:1px;text-rendering:geometricPrecision}
+      .sig{font:600 22px &quot;Cascadia Mono&quot;,&quot;JetBrains Mono&quot;,Consolas,monospace;fill:#5c6880;letter-spacing:1.4px;opacity:.78;text-rendering:geometricPrecision}
       .k{fill:#ffb7c8}.f{fill:#ffd9a8}.s{fill:#f5e5a6}.m{fill:#d7c5ff}.y{fill:#b9e6ff}.cm{fill:#728092}.o{fill:#f8f3ef}
       .tabs,.panel,.pv{opacity:0}
       .t1,.p1,.v1{animation:s1 20s infinite}.t2,.p2,.v2{animation:s2 20s infinite}.t3,.p3,.v3{animation:s3 20s infinite}.t4,.p4,.v4{animation:s4 20s infinite}
