@@ -1,451 +1,279 @@
-<svg width="1400" height="820" viewBox="0 0 1400 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="820" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0b0e14"/>
-      <stop offset="1" stop-color="#111722"/>
+    <linearGradient id="frame" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b0d12"/>
+      <stop offset="1" stop-color="#121722"/>
     </linearGradient>
 
-    <linearGradient id="topbar" x1="0" y1="0" x2="1400" y2="0" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#141a24"/>
-      <stop offset="1" stop-color="#10151d"/>
-    </linearGradient>
-
-    <linearGradient id="sidebar" x1="0" y1="0" x2="0" y2="820" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0f141d"/>
-      <stop offset="1" stop-color="#0b1017"/>
+    <linearGradient id="bar" x1="0" y1="0" x2="1600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171b24"/>
+      <stop offset="1" stop-color="#11161f"/>
     </linearGradient>
 
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000000" flood-opacity="0.42"/>
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#000000" flood-opacity="0.45"/>
     </filter>
 
     <style>
-      .ui-title {
-        font: 700 26px 'Segoe UI', Inter, Arial, sans-serif;
-        fill: #f8efe9;
+      .title {
+        font: 700 28px 'Segoe UI', Inter, Arial, sans-serif;
+        fill: #f7ece7;
       }
 
-      .tab-text {
-        font: 700 18px 'Segoe UI', Inter, Arial, sans-serif;
-        fill: #ffe7dd;
+      .lang {
+        font: 700 20px 'Segoe UI', Inter, Arial, sans-serif;
+        fill: #ffdcd2;
         letter-spacing: 1px;
-      }
-
-      .sidebar-icon {
-        fill: #7d8594;
-      }
-
-      .sidebar-icon.active {
-        fill: #ffd9cb;
       }
 
       .line-no {
         font: 18px 'JetBrains Mono', Consolas, monospace;
-        fill: #6f7887;
+        fill: #666f7c;
       }
 
       .code {
-        font: 21px 'JetBrains Mono', 'Fira Code', Consolas, monospace;
-        fill: #f7f0eb;
+        font: 23px 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+        fill: #f7f1ed;
       }
 
-      .kw { fill: #ffb7c5; }
-      .fn { fill: #ffd9a8; }
-      .str { fill: #f7e6a8; }
-      .num { fill: #d7c4ff; }
-      .type { fill: #b7e3ff; }
-      .cm { fill: #7c8797; }
-      .op { fill: #f7f0eb; }
-      .var { fill: #f6d2c7; }
+      .kw  { fill: #ffb7c8; }
+      .fn  { fill: #ffd9a8; }
+      .str { fill: #f7e7a8; }
+      .num { fill: #d9c5ff; }
+      .typ { fill: #b7e6ff; }
+      .cm  { fill: #788394; }
+      .op  { fill: #f7f1ed; }
 
-      .panel {
-        opacity: 0;
-      }
+      .panel { opacity: 0; }
 
-      .p1 { animation: show1 24s infinite; }
-      .p2 { animation: show2 24s infinite; }
-      .p3 { animation: show3 24s infinite; }
-      .p4 { animation: show4 24s infinite; }
-      .p5 { animation: show5 24s infinite; }
-      .p6 { animation: show6 24s infinite; }
+      .p1 { animation: panel1 20s infinite; }
+      .p2 { animation: panel2 20s infinite; }
+      .p3 { animation: panel3 20s infinite; }
+      .p4 { animation: panel4 20s infinite; }
+      .p5 { animation: panel5 20s infinite; }
 
-      @keyframes show1 {
-        0%, 15.9% { opacity: 1; }
-        16%, 100% { opacity: 0; }
+      @keyframes panel1 {
+        0%, 19.8% { opacity: 1; }
+        20%, 100% { opacity: 0; }
       }
-      @keyframes show2 {
-        0%, 16% { opacity: 0; }
-        16.1%, 31.9% { opacity: 1; }
-        32%, 100% { opacity: 0; }
+      @keyframes panel2 {
+        0%, 20% { opacity: 0; }
+        20.2%, 39.8% { opacity: 1; }
+        40%, 100% { opacity: 0; }
       }
-      @keyframes show3 {
-        0%, 32% { opacity: 0; }
-        32.1%, 47.9% { opacity: 1; }
-        48%, 100% { opacity: 0; }
+      @keyframes panel3 {
+        0%, 40% { opacity: 0; }
+        40.2%, 59.8% { opacity: 1; }
+        60%, 100% { opacity: 0; }
       }
-      @keyframes show4 {
-        0%, 48% { opacity: 0; }
-        48.1%, 63.9% { opacity: 1; }
-        64%, 100% { opacity: 0; }
-      }
-      @keyframes show5 {
-        0%, 64% { opacity: 0; }
-        64.1%, 79.9% { opacity: 1; }
+      @keyframes panel4 {
+        0%, 60% { opacity: 0; }
+        60.2%, 79.8% { opacity: 1; }
         80%, 100% { opacity: 0; }
       }
-      @keyframes show6 {
+      @keyframes panel5 {
         0%, 80% { opacity: 0; }
-        80.1%, 95.9% { opacity: 1; }
-        96%, 100% { opacity: 0; }
+        80.2%, 99.8% { opacity: 1; }
+        100% { opacity: 0; }
       }
 
-      .cursor1 { animation: blink 1s step-end infinite, show1 24s infinite; }
-      .cursor2 { animation: blink 1s step-end infinite, show2 24s infinite; }
-      .cursor3 { animation: blink 1s step-end infinite, show3 24s infinite; }
-      .cursor4 { animation: blink 1s step-end infinite, show4 24s infinite; }
-      .cursor5 { animation: blink 1s step-end infinite, show5 24s infinite; }
-      .cursor6 { animation: blink 1s step-end infinite, show6 24s infinite; }
+      .cursor {
+        animation: blink 0.85s step-end infinite;
+      }
 
       @keyframes blink {
         50% { opacity: 0; }
       }
 
-      .line {
-        opacity: 0;
+      .typing rect {
+        width: 0;
       }
 
-      .p1 .l1  { animation: line1 24s infinite; }
-      .p1 .l2  { animation: line2 24s infinite; }
-      .p1 .l3  { animation: line3 24s infinite; }
-      .p1 .l4  { animation: line4 24s infinite; }
-      .p1 .l5  { animation: line5 24s infinite; }
-      .p1 .l6  { animation: line6 24s infinite; }
-      .p1 .l7  { animation: line7 24s infinite; }
-      .p1 .l8  { animation: line8 24s infinite; }
-      .p1 .l9  { animation: line9 24s infinite; }
-      .p1 .l10 { animation: line10 24s infinite; }
-      .p1 .l11 { animation: line11 24s infinite; }
-      .p1 .l12 { animation: line12 24s infinite; }
+      .p1 .typing rect { animation: type1 20s infinite; }
+      .p2 .typing rect { animation: type2 20s infinite; }
+      .p3 .typing rect { animation: type3 20s infinite; }
+      .p4 .typing rect { animation: type4 20s infinite; }
+      .p5 .typing rect { animation: type5 20s infinite; }
 
-      .p2 .l1  { animation: line1b 24s infinite; }
-      .p2 .l2  { animation: line2b 24s infinite; }
-      .p2 .l3  { animation: line3b 24s infinite; }
-      .p2 .l4  { animation: line4b 24s infinite; }
-      .p2 .l5  { animation: line5b 24s infinite; }
-      .p2 .l6  { animation: line6b 24s infinite; }
-      .p2 .l7  { animation: line7b 24s infinite; }
-      .p2 .l8  { animation: line8b 24s infinite; }
-      .p2 .l9  { animation: line9b 24s infinite; }
-      .p2 .l10 { animation: line10b 24s infinite; }
-      .p2 .l11 { animation: line11b 24s infinite; }
-      .p2 .l12 { animation: line12b 24s infinite; }
-
-      .p3 .l1  { animation: line1c 24s infinite; }
-      .p3 .l2  { animation: line2c 24s infinite; }
-      .p3 .l3  { animation: line3c 24s infinite; }
-      .p3 .l4  { animation: line4c 24s infinite; }
-      .p3 .l5  { animation: line5c 24s infinite; }
-      .p3 .l6  { animation: line6c 24s infinite; }
-      .p3 .l7  { animation: line7c 24s infinite; }
-      .p3 .l8  { animation: line8c 24s infinite; }
-      .p3 .l9  { animation: line9c 24s infinite; }
-      .p3 .l10 { animation: line10c 24s infinite; }
-      .p3 .l11 { animation: line11c 24s infinite; }
-      .p3 .l12 { animation: line12c 24s infinite; }
-
-      .p4 .l1  { animation: line1d 24s infinite; }
-      .p4 .l2  { animation: line2d 24s infinite; }
-      .p4 .l3  { animation: line3d 24s infinite; }
-      .p4 .l4  { animation: line4d 24s infinite; }
-      .p4 .l5  { animation: line5d 24s infinite; }
-      .p4 .l6  { animation: line6d 24s infinite; }
-      .p4 .l7  { animation: line7d 24s infinite; }
-      .p4 .l8  { animation: line8d 24s infinite; }
-      .p4 .l9  { animation: line9d 24s infinite; }
-      .p4 .l10 { animation: line10d 24s infinite; }
-      .p4 .l11 { animation: line11d 24s infinite; }
-      .p4 .l12 { animation: line12d 24s infinite; }
-
-      .p5 .l1  { animation: line1e 24s infinite; }
-      .p5 .l2  { animation: line2e 24s infinite; }
-      .p5 .l3  { animation: line3e 24s infinite; }
-      .p5 .l4  { animation: line4e 24s infinite; }
-      .p5 .l5  { animation: line5e 24s infinite; }
-      .p5 .l6  { animation: line6e 24s infinite; }
-      .p5 .l7  { animation: line7e 24s infinite; }
-      .p5 .l8  { animation: line8e 24s infinite; }
-      .p5 .l9  { animation: line9e 24s infinite; }
-      .p5 .l10 { animation: line10e 24s infinite; }
-      .p5 .l11 { animation: line11e 24s infinite; }
-      .p5 .l12 { animation: line12e 24s infinite; }
-
-      .p6 .l1  { animation: line1f 24s infinite; }
-      .p6 .l2  { animation: line2f 24s infinite; }
-      .p6 .l3  { animation: line3f 24s infinite; }
-      .p6 .l4  { animation: line4f 24s infinite; }
-      .p6 .l5  { animation: line5f 24s infinite; }
-      .p6 .l6  { animation: line6f 24s infinite; }
-      .p6 .l7  { animation: line7f 24s infinite; }
-      .p6 .l8  { animation: line8f 24s infinite; }
-      .p6 .l9  { animation: line9f 24s infinite; }
-      .p6 .l10 { animation: line10f 24s infinite; }
-      .p6 .l11 { animation: line11f 24s infinite; }
-      .p6 .l12 { animation: line12f 24s infinite; }
-
-      @keyframes line1   { 0%,0.4%{opacity:0} 0.5%,15.9%{opacity:1} 16%,100%{opacity:0} }
-      @keyframes line2   { 0%,1.2%{opacity:0} 1.3%,15.9%{opacity:1} 16%,100%{opacity:0} }
-      @keyframes line3   { 0%,2.0%{opacity:0} 2.1%,15.9%{opacity:1} 16%,100%{opacity:0} }
-      @keyframes line4   { 0%,2.8%{opacity:0} 2.9%,15.9%{opacity:1} 16%,100%{opacity:0} }
-      @keyframes line5   { 0%,3.6%{opacity:0} 3.7%,15.9%{opacity:1} 16%,100%{opacity:0} }
-      @keyframes line6   { 0%,4.4%{opacity:0} 4.5%,15.9%{opacity:1} 16%,100%{opacity:0} }
-      @keyframes line7   { 0%,5.2%{opacity:0} 5.3%,15.9%{opacity:1} 16%,100%{opacity:0} }
-      @keyframes line8   { 0%,6.0%{opacity:0} 6.1%,15.9%{opacity:1} 16%,100%{opacity:0} }
-      @keyframes line9   { 0%,6.8%{opacity:0} 6.9%,15.9%{opacity:1} 16%,100%{opacity:0} }
-      @keyframes line10  { 0%,7.6%{opacity:0} 7.7%,15.9%{opacity:1} 16%,100%{opacity:0} }
-      @keyframes line11  { 0%,8.4%{opacity:0} 8.5%,15.9%{opacity:1} 16%,100%{opacity:0} }
-      @keyframes line12  { 0%,9.2%{opacity:0} 9.3%,15.9%{opacity:1} 16%,100%{opacity:0} }
-
-      @keyframes line1b  { 0%,16.5%{opacity:0} 16.6%,31.9%{opacity:1} 32%,100%{opacity:0} }
-      @keyframes line2b  { 0%,17.3%{opacity:0} 17.4%,31.9%{opacity:1} 32%,100%{opacity:0} }
-      @keyframes line3b  { 0%,18.1%{opacity:0} 18.2%,31.9%{opacity:1} 32%,100%{opacity:0} }
-      @keyframes line4b  { 0%,18.9%{opacity:0} 19.0%,31.9%{opacity:1} 32%,100%{opacity:0} }
-      @keyframes line5b  { 0%,19.7%{opacity:0} 19.8%,31.9%{opacity:1} 32%,100%{opacity:0} }
-      @keyframes line6b  { 0%,20.5%{opacity:0} 20.6%,31.9%{opacity:1} 32%,100%{opacity:0} }
-      @keyframes line7b  { 0%,21.3%{opacity:0} 21.4%,31.9%{opacity:1} 32%,100%{opacity:0} }
-      @keyframes line8b  { 0%,22.1%{opacity:0} 22.2%,31.9%{opacity:1} 32%,100%{opacity:0} }
-      @keyframes line9b  { 0%,22.9%{opacity:0} 23.0%,31.9%{opacity:1} 32%,100%{opacity:0} }
-      @keyframes line10b { 0%,23.7%{opacity:0} 23.8%,31.9%{opacity:1} 32%,100%{opacity:0} }
-      @keyframes line11b { 0%,24.5%{opacity:0} 24.6%,31.9%{opacity:1} 32%,100%{opacity:0} }
-      @keyframes line12b { 0%,25.3%{opacity:0} 25.4%,31.9%{opacity:1} 32%,100%{opacity:0} }
-
-      @keyframes line1c  { 0%,32.5%{opacity:0} 32.6%,47.9%{opacity:1} 48%,100%{opacity:0} }
-      @keyframes line2c  { 0%,33.3%{opacity:0} 33.4%,47.9%{opacity:1} 48%,100%{opacity:0} }
-      @keyframes line3c  { 0%,34.1%{opacity:0} 34.2%,47.9%{opacity:1} 48%,100%{opacity:0} }
-      @keyframes line4c  { 0%,34.9%{opacity:0} 35.0%,47.9%{opacity:1} 48%,100%{opacity:0} }
-      @keyframes line5c  { 0%,35.7%{opacity:0} 35.8%,47.9%{opacity:1} 48%,100%{opacity:0} }
-      @keyframes line6c  { 0%,36.5%{opacity:0} 36.6%,47.9%{opacity:1} 48%,100%{opacity:0} }
-      @keyframes line7c  { 0%,37.3%{opacity:0} 37.4%,47.9%{opacity:1} 48%,100%{opacity:0} }
-      @keyframes line8c  { 0%,38.1%{opacity:0} 38.2%,47.9%{opacity:1} 48%,100%{opacity:0} }
-      @keyframes line9c  { 0%,38.9%{opacity:0} 39.0%,47.9%{opacity:1} 48%,100%{opacity:0} }
-      @keyframes line10c { 0%,39.7%{opacity:0} 39.8%,47.9%{opacity:1} 48%,100%{opacity:0} }
-      @keyframes line11c { 0%,40.5%{opacity:0} 40.6%,47.9%{opacity:1} 48%,100%{opacity:0} }
-      @keyframes line12c { 0%,41.3%{opacity:0} 41.4%,47.9%{opacity:1} 48%,100%{opacity:0} }
-
-      @keyframes line1d  { 0%,48.5%{opacity:0} 48.6%,63.9%{opacity:1} 64%,100%{opacity:0} }
-      @keyframes line2d  { 0%,49.3%{opacity:0} 49.4%,63.9%{opacity:1} 64%,100%{opacity:0} }
-      @keyframes line3d  { 0%,50.1%{opacity:0} 50.2%,63.9%{opacity:1} 64%,100%{opacity:0} }
-      @keyframes line4d  { 0%,50.9%{opacity:0} 51.0%,63.9%{opacity:1} 64%,100%{opacity:0} }
-      @keyframes line5d  { 0%,51.7%{opacity:0} 51.8%,63.9%{opacity:1} 64%,100%{opacity:0} }
-      @keyframes line6d  { 0%,52.5%{opacity:0} 52.6%,63.9%{opacity:1} 64%,100%{opacity:0} }
-      @keyframes line7d  { 0%,53.3%{opacity:0} 53.4%,63.9%{opacity:1} 64%,100%{opacity:0} }
-      @keyframes line8d  { 0%,54.1%{opacity:0} 54.2%,63.9%{opacity:1} 64%,100%{opacity:0} }
-      @keyframes line9d  { 0%,54.9%{opacity:0} 55.0%,63.9%{opacity:1} 64%,100%{opacity:0} }
-      @keyframes line10d { 0%,55.7%{opacity:0} 55.8%,63.9%{opacity:1} 64%,100%{opacity:0} }
-      @keyframes line11d { 0%,56.5%{opacity:0} 56.6%,63.9%{opacity:1} 64%,100%{opacity:0} }
-      @keyframes line12d { 0%,57.3%{opacity:0} 57.4%,63.9%{opacity:1} 64%,100%{opacity:0} }
-
-      @keyframes line1e  { 0%,64.5%{opacity:0} 64.6%,79.9%{opacity:1} 80%,100%{opacity:0} }
-      @keyframes line2e  { 0%,65.3%{opacity:0} 65.4%,79.9%{opacity:1} 80%,100%{opacity:0} }
-      @keyframes line3e  { 0%,66.1%{opacity:0} 66.2%,79.9%{opacity:1} 80%,100%{opacity:0} }
-      @keyframes line4e  { 0%,66.9%{opacity:0} 67.0%,79.9%{opacity:1} 80%,100%{opacity:0} }
-      @keyframes line5e  { 0%,67.7%{opacity:0} 67.8%,79.9%{opacity:1} 80%,100%{opacity:0} }
-      @keyframes line6e  { 0%,68.5%{opacity:0} 68.6%,79.9%{opacity:1} 80%,100%{opacity:0} }
-      @keyframes line7e  { 0%,69.3%{opacity:0} 69.4%,79.9%{opacity:1} 80%,100%{opacity:0} }
-      @keyframes line8e  { 0%,70.1%{opacity:0} 70.2%,79.9%{opacity:1} 80%,100%{opacity:0} }
-      @keyframes line9e  { 0%,70.9%{opacity:0} 71.0%,79.9%{opacity:1} 80%,100%{opacity:0} }
-      @keyframes line10e { 0%,71.7%{opacity:0} 71.8%,79.9%{opacity:1} 80%,100%{opacity:0} }
-      @keyframes line11e { 0%,72.5%{opacity:0} 72.6%,79.9%{opacity:1} 80%,100%{opacity:0} }
-      @keyframes line12e { 0%,73.3%{opacity:0} 73.4%,79.9%{opacity:1} 80%,100%{opacity:0} }
-
-      @keyframes line1f  { 0%,80.5%{opacity:0} 80.6%,95.9%{opacity:1} 96%,100%{opacity:0} }
-      @keyframes line2f  { 0%,81.3%{opacity:0} 81.4%,95.9%{opacity:1} 96%,100%{opacity:0} }
-      @keyframes line3f  { 0%,82.1%{opacity:0} 82.2%,95.9%{opacity:1} 96%,100%{opacity:0} }
-      @keyframes line4f  { 0%,82.9%{opacity:0} 83.0%,95.9%{opacity:1} 96%,100%{opacity:0} }
-      @keyframes line5f  { 0%,83.7%{opacity:0} 83.8%,95.9%{opacity:1} 96%,100%{opacity:0} }
-      @keyframes line6f  { 0%,84.5%{opacity:0} 84.6%,95.9%{opacity:1} 96%,100%{opacity:0} }
-      @keyframes line7f  { 0%,85.3%{opacity:0} 85.4%,95.9%{opacity:1} 96%,100%{opacity:0} }
-      @keyframes line8f  { 0%,86.1%{opacity:0} 86.2%,95.9%{opacity:1} 96%,100%{opacity:0} }
-      @keyframes line9f  { 0%,86.9%{opacity:0} 87.0%,95.9%{opacity:1} 96%,100%{opacity:0} }
-      @keyframes line10f { 0%,87.7%{opacity:0} 87.8%,95.9%{opacity:1} 96%,100%{opacity:0} }
-      @keyframes line11f { 0%,88.5%{opacity:0} 88.6%,95.9%{opacity:1} 96%,100%{opacity:0} }
-      @keyframes line12f { 0%,89.3%{opacity:0} 89.4%,95.9%{opacity:1} 96%,100%{opacity:0} }
+      @keyframes type1 {
+        0%   { width: 0; }
+        14%  { width: 760px; }
+        19.8% { width: 760px; }
+        20%,100% { width: 0; }
+      }
+      @keyframes type2 {
+        0%,20% { width: 0; }
+        34%    { width: 760px; }
+        39.8%  { width: 760px; }
+        40%,100% { width: 0; }
+      }
+      @keyframes type3 {
+        0%,40% { width: 0; }
+        54%    { width: 760px; }
+        59.8%  { width: 760px; }
+        60%,100% { width: 0; }
+      }
+      @keyframes type4 {
+        0%,60% { width: 0; }
+        74%    { width: 760px; }
+        79.8%  { width: 760px; }
+        80%,100% { width: 0; }
+      }
+      @keyframes type5 {
+        0%,80% { width: 0; }
+        94%    { width: 760px; }
+        99.8%  { width: 760px; }
+        100%   { width: 0; }
+      }
     </style>
+
+    <clipPath id="clip1" class="typing">
+      <rect x="320" y="188" width="0" height="470"/>
+    </clipPath>
+    <clipPath id="clip2" class="typing">
+      <rect x="320" y="188" width="0" height="470"/>
+    </clipPath>
+    <clipPath id="clip3" class="typing">
+      <rect x="320" y="188" width="0" height="470"/>
+    </clipPath>
+    <clipPath id="clip4" class="typing">
+      <rect x="320" y="188" width="0" height="470"/>
+    </clipPath>
+    <clipPath id="clip5" class="typing">
+      <rect x="320" y="188" width="0" height="470"/>
+    </clipPath>
   </defs>
 
-  <rect x="28" y="24" width="1344" height="772" rx="24" fill="url(#bg)" filter="url(#shadow)"/>
-  <rect x="28" y="24" width="1344" height="66" rx="24" fill="url(#topbar)"/>
-  <rect x="28" y="66" width="1344" height="24" fill="url(#topbar)"/>
+  <!-- outer -->
+  <rect x="28" y="28" width="1544" height="844" rx="28" fill="url(#frame)" filter="url(#shadow)"/>
 
-  <circle cx="68" cy="57" r="7.5" fill="#FFB8C2"/>
-  <circle cx="92" cy="57" r="7.5" fill="#FFE0A6"/>
-  <circle cx="116" cy="57" r="7.5" fill="#D4F5CB"/>
+  <!-- top bar -->
+  <rect x="28" y="28" width="1544" height="78" rx="28" fill="url(#bar)"/>
+  <rect x="28" y="78" width="1544" height="28" fill="url(#bar)"/>
 
-  <text x="700" y="63" text-anchor="middle" class="ui-title">workspace</text>
+  <circle cx="72" cy="67" r="8" fill="#ffb8c4"/>
+  <circle cx="98" cy="67" r="8" fill="#ffe0a6"/>
+  <circle cx="124" cy="67" r="8" fill="#d8f4cb"/>
 
-  <rect x="28" y="90" width="74" height="706" fill="url(#sidebar)"/>
-  <rect x="102" y="90" width="210" height="706" fill="#0d1219"/>
-  <line x1="312" y1="90" x2="312" y2="796" stroke="#1a2130"/>
+  <text x="800" y="75" text-anchor="middle" class="title">workspace</text>
 
-  <rect x="46" y="122" width="38" height="38" rx="10" fill="#151b24"/>
-  <rect x="46" y="176" width="38" height="38" rx="10" fill="#151b24"/>
-  <rect x="46" y="230" width="38" height="38" rx="10" fill="#151b24"/>
-  <rect x="46" y="284" width="38" height="38" rx="10" fill="#151b24"/>
-  <rect x="46" y="338" width="38" height="38" rx="10" fill="#151b24"/>
+  <!-- editor -->
+  <rect x="64" y="138" width="1472" height="690" rx="22" fill="#000000"/>
+  <rect x="64" y="138" width="1472" height="56" rx="22" fill="#0a0a0a"/>
+  <rect x="64" y="172" width="1472" height="22" fill="#0a0a0a"/>
 
-  <circle cx="65" cy="141" r="7" class="sidebar-icon active"/>
-  <rect x="59" y="188" width="12" height="12" rx="3" class="sidebar-icon"/>
-  <path d="M58 243h14v3H58zm0 6h14v3H58z" class="sidebar-icon"/>
-  <path d="M58 297h14v3H58zm0 6h10v3H58z" class="sidebar-icon"/>
-  <circle cx="65" cy="357" r="7" class="sidebar-icon"/>
+  <text x="1480" y="174" text-anchor="end" class="lang">PYTHON · TYPESCRIPT · GO · SQL · BASH</text>
 
-  <text x="128" y="134" class="tab-text">main.py</text>
-  <text x="128" y="172" class="tab-text" fill="#9aa4b2" style="fill:#9aa4b2;">worker.ts</text>
-  <text x="128" y="210" class="tab-text" fill="#9aa4b2" style="fill:#9aa4b2;">api.go</text>
-  <text x="128" y="248" class="tab-text" fill="#9aa4b2" style="fill:#9aa4b2;">core.rs</text>
-  <text x="128" y="286" class="tab-text" fill="#9aa4b2" style="fill:#9aa4b2;">schema.sql</text>
-  <text x="128" y="324" class="tab-text" fill="#9aa4b2" style="fill:#9aa4b2;">deploy.sh</text>
-
-  <rect x="334" y="110" width="1014" height="660" rx="16" fill="#0c1118"/>
-  <rect x="334" y="110" width="1014" height="48" rx="16" fill="#121923"/>
-  <rect x="334" y="142" width="1014" height="16" fill="#121923"/>
-
-  <text x="1288" y="141" text-anchor="end" class="tab-text">PYTHON · TYPESCRIPT · GO · RUST · SQL · BASH</text>
-
-  <rect x="334" y="158" width="84" height="612" fill="#0a0f16"/>
-  <line x1="418" y1="158" x2="418" y2="770" stroke="#1a2130"/>
+  <!-- left code gutter -->
+  <rect x="64" y="194" width="110" height="634" fill="#050505"/>
+  <line x1="174" y1="194" x2="174" y2="828" stroke="#161616"/>
 
   <g>
-    <text x="376" y="206" text-anchor="middle" class="line-no">1</text>
-    <text x="376" y="252" text-anchor="middle" class="line-no">2</text>
-    <text x="376" y="298" text-anchor="middle" class="line-no">3</text>
-    <text x="376" y="344" text-anchor="middle" class="line-no">4</text>
-    <text x="376" y="390" text-anchor="middle" class="line-no">5</text>
-    <text x="376" y="436" text-anchor="middle" class="line-no">6</text>
-    <text x="376" y="482" text-anchor="middle" class="line-no">7</text>
-    <text x="376" y="528" text-anchor="middle" class="line-no">8</text>
-    <text x="376" y="574" text-anchor="middle" class="line-no">9</text>
-    <text x="376" y="620" text-anchor="middle" class="line-no">10</text>
-    <text x="376" y="666" text-anchor="middle" class="line-no">11</text>
-    <text x="376" y="712" text-anchor="middle" class="line-no">12</text>
+    <text x="119" y="238" text-anchor="middle" class="line-no">1</text>
+    <text x="119" y="286" text-anchor="middle" class="line-no">2</text>
+    <text x="119" y="334" text-anchor="middle" class="line-no">3</text>
+    <text x="119" y="382" text-anchor="middle" class="line-no">4</text>
+    <text x="119" y="430" text-anchor="middle" class="line-no">5</text>
+    <text x="119" y="478" text-anchor="middle" class="line-no">6</text>
+    <text x="119" y="526" text-anchor="middle" class="line-no">7</text>
+    <text x="119" y="574" text-anchor="middle" class="line-no">8</text>
+    <text x="119" y="622" text-anchor="middle" class="line-no">9</text>
+    <text x="119" y="670" text-anchor="middle" class="line-no">10</text>
   </g>
 
-  <!-- Python -->
+  <!-- right gif zone -->
+  <rect x="1120" y="216" width="360" height="532" rx="18" fill="#050505" stroke="#111111"/>
+  <rect x="1144" y="242" width="140" height="220" rx="14" fill="#000000"/>
+  <rect x="1316" y="242" width="140" height="220" rx="14" fill="#000000"/>
+  <rect x="1144" y="502" width="312" height="212" rx="14" fill="#040404"/>
+
+  <!-- local gifs -->
+  <image href="dancer.gif" x="1148" y="246" width="132" height="212" preserveAspectRatio="xMidYMid slice"/>
+  <image href="dancer.gif" x="1320" y="246" width="132" height="212" preserveAspectRatio="xMidYMid slice"/>
+
+  <text x="1166" y="536" class="code" style="font-size:20px; fill:#ffdcd2;">now loading visual noise...</text>
+  <text x="1166" y="572" class="code" style="font-size:20px;"><tspan class="op">status = { </tspan><tspan class="str">"vibe"</tspan><tspan class="op">: </tspan><tspan class="str">"online"</tspan><tspan class="op"> }</tspan></text>
+  <text x="1166" y="608" class="code" style="font-size:20px;"><tspan class="fn">render</tspan><tspan class="op">(</tspan><tspan class="str">"motion"</tspan><tspan class="op">, fps=</tspan><tspan class="num">60</tspan><tspan class="op">)</tspan></text>
+  <text x="1166" y="644" class="code" style="font-size:20px;"><tspan class="cm"># black background required</tspan></text>
+
+  <!-- panels -->
   <g class="panel p1">
-    <text x="1288" y="205" text-anchor="end" class="tab-text">PYTHON</text>
-
-    <text x="448" y="206" class="code line l1"><tspan class="kw">async def</tspan><tspan class="op"> </tspan><tspan class="fn">build_pipeline</tspan><tspan class="op">(</tspan><tspan class="var">workers</tspan><tspan class="op">):</tspan></text>
-    <text x="448" y="252" class="code line l2"><tspan class="op">    queue = await </tspan><tspan class="fn">load_queue</tspan><tspan class="op">()</tspan></text>
-    <text x="448" y="298" class="code line l3"><tspan class="op">    active = [w </tspan><tspan class="kw">for</tspan><tspan class="op"> w </tspan><tspan class="kw">in</tspan><tspan class="op"> workers </tspan><tspan class="kw">if</tspan><tspan class="op"> w.online]</tspan></text>
-    <text x="448" y="344" class="code line l4"><tspan class="op">    results = await </tspan><tspan class="fn">gather</tspan><tspan class="op">(*[w.run(queue) </tspan><tspan class="kw">for</tspan><tspan class="op"> w </tspan><tspan class="kw">in</tspan><tspan class="op"> active])</tspan></text>
-    <text x="448" y="390" class="code line l5"><tspan class="op">    metrics = {</tspan><tspan class="str">"processed"</tspan><tspan class="op">: </tspan><tspan class="fn">sum</tspan><tspan class="op">(results)}</tspan></text>
-    <text x="448" y="436" class="code line l6"><tspan class="op">    metrics[</tspan><tspan class="str">"workers"</tspan><tspan class="op">] = </tspan><tspan class="fn">len</tspan><tspan class="op">(active)</tspan></text>
-    <text x="448" y="482" class="code line l7"><tspan class="op">    await </tspan><tspan class="fn">save_metrics</tspan><tspan class="op">(metrics)</tspan></text>
-    <text x="448" y="528" class="code line l8"><tspan class="op">    await </tspan><tspan class="fn">publish_event</tspan><tspan class="op">(</tspan><tspan class="str">"pipeline.completed"</tspan><tspan class="op">)</tspan></text>
-    <text x="448" y="574" class="code line l9"><tspan class="op">    </tspan><tspan class="kw">if</tspan><tspan class="op"> metrics[</tspan><tspan class="str">"processed"</tspan><tspan class="op">] == </tspan><tspan class="num">0</tspan><tspan class="op">:</tspan></text>
-    <text x="448" y="620" class="code line l10"><tspan class="op">        </tspan><tspan class="kw">raise</tspan><tspan class="op"> RuntimeError(</tspan><tspan class="str">"nothing was processed"</tspan><tspan class="op">)</tspan></text>
-    <text x="448" y="666" class="code line l11"><tspan class="op">    </tspan><tspan class="kw">return</tspan><tspan class="op"> metrics</tspan></text>
-    <text x="448" y="712" class="code line l12"><tspan class="cm"># analytics and job distribution are synchronized</tspan></text>
-
-    <rect x="1050" y="184" width="12" height="28" fill="#ffe8e1" class="cursor1"/>
+    <text x="1068" y="238" text-anchor="end" class="lang">PYTHON</text>
+    <g clip-path="url(#clip1)">
+      <text x="200" y="238" class="code"><tspan class="kw">async def</tspan><tspan class="op"> </tspan><tspan class="fn">orchestrate</tspan><tspan class="op">(workers, queue):</tspan></text>
+      <text x="200" y="286" class="code"><tspan class="op">    active = [w </tspan><tspan class="kw">for</tspan><tspan class="op"> w </tspan><tspan class="kw">in</tspan><tspan class="op"> workers </tspan><tspan class="kw">if</tspan><tspan class="op"> w.online]</tspan></text>
+      <text x="200" y="334" class="code"><tspan class="op">    batches = await </tspan><tspan class="fn">split_queue</tspan><tspan class="op">(queue, size=</tspan><tspan class="num">50</tspan><tspan class="op">)</tspan></text>
+      <text x="200" y="382" class="code"><tspan class="op">    result = await </tspan><tspan class="fn">gather</tspan><tspan class="op">(*[w.run(b) </tspan><tspan class="kw">for</tspan><tspan class="op"> w, b </tspan><tspan class="kw">in</tspan><tspan class="op"> zip(active, batches)])</tspan></text>
+      <text x="200" y="430" class="code"><tspan class="op">    stats = {</tspan><tspan class="str">"processed"</tspan><tspan class="op">: </tspan><tspan class="fn">sum</tspan><tspan class="op">(result), </tspan><tspan class="str">"workers"</tspan><tspan class="op">: </tspan><tspan class="fn">len</tspan><tspan class="op">(active)}</tspan></text>
+      <text x="200" y="478" class="code"><tspan class="op">    await </tspan><tspan class="fn">save_metrics</tspan><tspan class="op">(stats)</tspan></text>
+      <text x="200" y="526" class="code"><tspan class="op">    await </tspan><tspan class="fn">publish_event</tspan><tspan class="op">(</tspan><tspan class="str">"pipeline.synced"</tspan><tspan class="op">, stats)</tspan></text>
+      <text x="200" y="574" class="code"><tspan class="op">    </tspan><tspan class="kw">return</tspan><tspan class="op"> stats</tspan></text>
+      <text x="200" y="622" class="code"><tspan class="cm"># analytics, queue, and workers are synchronized</tspan></text>
+    </g>
+    <rect x="955" y="214" width="12" height="28" fill="#ffe8e1" class="cursor"/>
   </g>
 
-  <!-- TypeScript -->
   <g class="panel p2">
-    <text x="1288" y="205" text-anchor="end" class="tab-text">TYPESCRIPT</text>
-
-    <text x="448" y="206" class="code line l1"><tspan class="kw">type</tspan><tspan class="op"> JobStatus = </tspan><tspan class="str">"queued"</tspan><tspan class="op"> | </tspan><tspan class="str">"running"</tspan><tspan class="op"> | </tspan><tspan class="str">"done"</tspan></text>
-    <text x="448" y="252" class="code line l2"><tspan class="kw">interface</tspan><tspan class="type"> Job</tspan><tspan class="op"> { id: </tspan><tspan class="type">number</tspan><tspan class="op">; name: </tspan><tspan class="type">string</tspan><tspan class="op">; status: JobStatus }</tspan></text>
-    <text x="448" y="298" class="code line l3"><tspan class="kw">const</tspan><tspan class="op"> queue: Job[] = </tspan><tspan class="fn">loadJobs</tspan><tspan class="op">()</tspan></text>
-    <text x="448" y="344" class="code line l4"><tspan class="kw">const</tspan><tspan class="op"> next = queue.find(job =&gt; job.status === </tspan><tspan class="str">"queued"</tspan><tspan class="op">)</tspan></text>
-    <text x="448" y="390" class="code line l5"><tspan class="kw">if</tspan><tspan class="op"> (!next) </tspan><tspan class="kw">throw</tspan><tspan class="op"> </tspan><tspan class="kw">new</tspan><tspan class="type"> Error</tspan><tspan class="op">(</tspan><tspan class="str">"queue is empty"</tspan><tspan class="op">)</tspan></text>
-    <text x="448" y="436" class="code line l6"><tspan class="op">next.status = </tspan><tspan class="str">"running"</tspan></text>
-    <text x="448" y="482" class="code line l7"><tspan class="kw">const</tspan><tspan class="op"> startedAt = </tspan><tspan class="kw">new</tspan><tspan class="type"> Date</tspan><tspan class="op">().toISOString()</tspan></text>
-    <text x="448" y="528" class="code line l8"><tspan class="kw">await</tspan><tspan class="op"> </tspan><tspan class="fn">persistJobState</tspan><tspan class="op">(next.id, next.status, startedAt)</tspan></text>
-    <text x="448" y="574" class="code line l9"><tspan class="kw">const</tspan><tspan class="op"> summary = queue.filter(job =&gt; job.status !== </tspan><tspan class="str">"done"</tspan><tspan class="op">)</tspan></text>
-    <text x="448" y="620" class="code line l10"><tspan class="fn">console.log</tspan><tspan class="op">(</tspan><tspan class="str">"active jobs"</tspan><tspan class="op">, summary.length)</tspan></text>
-    <text x="448" y="666" class="code line l11"><tspan class="kw">await</tspan><tspan class="op"> </tspan><tspan class="fn">notifyDashboard</tspan><tspan class="op">(summary)</tspan></text>
-    <text x="448" y="712" class="code line l12"><tspan class="cm">// queue state stored and broadcasted</tspan></text>
-
-    <rect x="1120" y="184" width="12" height="28" fill="#ffe8e1" class="cursor2"/>
+    <text x="1068" y="238" text-anchor="end" class="lang">TYPESCRIPT</text>
+    <g clip-path="url(#clip2)">
+      <text x="200" y="238" class="code"><tspan class="kw">type</tspan><tspan class="op"> Job = { id: </tspan><tspan class="typ">number</tspan><tspan class="op">; name: </tspan><tspan class="typ">string</tspan><tspan class="op">; status: </tspan><tspan class="str">"queued"</tspan><tspan class="op"> | </tspan><tspan class="str">"done"</tspan><tspan class="op"> }</tspan></text>
+      <text x="200" y="286" class="code"><tspan class="kw">const</tspan><tspan class="op"> queue: Job[] = </tspan><tspan class="fn">loadJobs</tspan><tspan class="op">()</tspan></text>
+      <text x="200" y="334" class="code"><tspan class="kw">const</tspan><tspan class="op"> next = queue.find(job =&gt; job.status === </tspan><tspan class="str">"queued"</tspan><tspan class="op">)</tspan></text>
+      <text x="200" y="382" class="code"><tspan class="kw">if</tspan><tspan class="op"> (!next) </tspan><tspan class="kw">throw</tspan><tspan class="op"> </tspan><tspan class="kw">new</tspan><tspan class="typ"> Error</tspan><tspan class="op">(</tspan><tspan class="str">"queue is empty"</tspan><tspan class="op">)</tspan></text>
+      <text x="200" y="430" class="code"><tspan class="op">next.status = </tspan><tspan class="str">"done"</tspan></text>
+      <text x="200" y="478" class="code"><tspan class="kw">await</tspan><tspan class="op"> </tspan><tspan class="fn">persistJobState</tspan><tspan class="op">(next.id, next.status)</tspan></text>
+      <text x="200" y="526" class="code"><tspan class="kw">const</tspan><tspan class="op"> pending = queue.filter(job =&gt; job.status !== </tspan><tspan class="str">"done"</tspan><tspan class="op">)</tspan></text>
+      <text x="200" y="574" class="code"><tspan class="fn">console.log</tspan><tspan class="op">(</tspan><tspan class="str">"pending jobs"</tspan><tspan class="op">, pending.length)</tspan></text>
+      <text x="200" y="622" class="code"><tspan class="cm">// queue persisted and broadcasted to dashboard</tspan></text>
+    </g>
+    <rect x="980" y="214" width="12" height="28" fill="#ffe8e1" class="cursor"/>
   </g>
 
-  <!-- Go -->
   <g class="panel p3">
-    <text x="1288" y="205" text-anchor="end" class="tab-text">GO</text>
-
-    <text x="448" y="206" class="code line l1"><tspan class="kw">package</tspan><tspan class="op"> main</tspan></text>
-    <text x="448" y="252" class="code line l2"><tspan class="kw">import</tspan><tspan class="op"> (</tspan><tspan class="str">"encoding/json"</tspan><tspan class="op"> </tspan><tspan class="str">"net/http"</tspan><tspan class="op">)</tspan></text>
-    <text x="448" y="298" class="code line l3"><tspan class="kw">type</tspan><tspan class="op"> Health struct { Status string `json:"status"`; Uptime int `json:"uptime"` }</tspan></text>
-    <text x="448" y="344" class="code line l4"><tspan class="kw">func</tspan><tspan class="op"> </tspan><tspan class="fn">health</tspan><tspan class="op">(w http.ResponseWriter, r *http.Request) {</tspan></text>
-    <text x="448" y="390" class="code line l5"><tspan class="op">    payload := Health{Status: </tspan><tspan class="str">"ok"</tspan><tspan class="op">, Uptime: </tspan><tspan class="num">86400</tspan><tspan class="op">}</tspan></text>
-    <text x="448" y="436" class="code line l6"><tspan class="op">    w.Header().Set(</tspan><tspan class="str">"Content-Type"</tspan><tspan class="op">, </tspan><tspan class="str">"application/json"</tspan><tspan class="op">)</tspan></text>
-    <text x="448" y="482" class="code line l7"><tspan class="op">    json.NewEncoder(w).Encode(payload)</tspan></text>
-    <text x="448" y="528" class="code line l8"><tspan class="op">}</tspan></text>
-    <text x="448" y="574" class="code line l9"><tspan class="kw">func</tspan><tspan class="op"> </tspan><tspan class="fn">main</tspan><tspan class="op">() {</tspan></text>
-    <text x="448" y="620" class="code line l10"><tspan class="op">    http.HandleFunc(</tspan><tspan class="str">"/health"</tspan><tspan class="op">, health)</tspan></text>
-    <text x="448" y="666" class="code line l11"><tspan class="op">    http.ListenAndServe(</tspan><tspan class="str">":8080"</tspan><tspan class="op">, nil)</tspan></text>
-    <text x="448" y="712" class="code line l12"><tspan class="cm">// service is listening for monitoring probes</tspan></text>
-
-    <rect x="1160" y="184" width="12" height="28" fill="#ffe8e1" class="cursor3"/>
+    <text x="1068" y="238" text-anchor="end" class="lang">GO</text>
+    <g clip-path="url(#clip3)">
+      <text x="200" y="238" class="code"><tspan class="kw">package</tspan><tspan class="op"> main</tspan></text>
+      <text x="200" y="286" class="code"><tspan class="kw">import</tspan><tspan class="op"> (</tspan><tspan class="str">"encoding/json"</tspan><tspan class="op"> </tspan><tspan class="str">"net/http"</tspan><tspan class="op">)</tspan></text>
+      <text x="200" y="334" class="code"><tspan class="kw">type</tspan><tspan class="op"> Health struct { Status string; Uptime int }</tspan></text>
+      <text x="200" y="382" class="code"><tspan class="kw">func</tspan><tspan class="op"> </tspan><tspan class="fn">health</tspan><tspan class="op">(w http.ResponseWriter, r *http.Request) {</tspan></text>
+      <text x="200" y="430" class="code"><tspan class="op">    payload := Health{Status: </tspan><tspan class="str">"ok"</tspan><tspan class="op">, Uptime: </tspan><tspan class="num">86400</tspan><tspan class="op">}</tspan></text>
+      <text x="200" y="478" class="code"><tspan class="op">    w.Header().Set(</tspan><tspan class="str">"Content-Type"</tspan><tspan class="op">, </tspan><tspan class="str">"application/json"</tspan><tspan class="op">)</tspan></text>
+      <text x="200" y="526" class="code"><tspan class="op">    json.NewEncoder(w).Encode(payload)</tspan></text>
+      <text x="200" y="574" class="code"><tspan class="op">}</tspan></text>
+      <text x="200" y="622" class="code"><tspan class="cm">// service is healthy and ready for probes</tspan></text>
+    </g>
+    <rect x="890" y="214" width="12" height="28" fill="#ffe8e1" class="cursor"/>
   </g>
 
-  <!-- Rust -->
   <g class="panel p4">
-    <text x="1288" y="205" text-anchor="end" class="tab-text">RUST</text>
-
-    <text x="448" y="206" class="code line l1"><tspan class="kw">struct</tspan><tspan class="op"> Node { id: </tspan><tspan class="type">u64</tspan><tspan class="op">, online: </tspan><tspan class="type">bool</tspan><tspan class="op">, latency: </tspan><tspan class="type">u32</tspan><tspan class="op"> }</tspan></text>
-    <text x="448" y="252" class="code line l2"><tspan class="kw">fn</tspan><tspan class="op"> </tspan><tspan class="fn">collect_online</tspan><tspan class="op">(nodes: &amp;Vec&lt;Node&gt;) -&gt; Vec&lt;&amp;Node&gt; {</tspan></text>
-    <text x="448" y="298" class="code line l3"><tspan class="op">    nodes.iter().filter(|node| node.online).collect()</tspan></text>
-    <text x="448" y="344" class="code line l4"><tspan class="op">}</tspan></text>
-    <text x="448" y="390" class="code line l5"><tspan class="kw">fn</tspan><tspan class="op"> </tspan><tspan class="fn">average_latency</tspan><tspan class="op">(nodes: &amp;Vec&lt;&amp;Node&gt;) -&gt; </tspan><tspan class="type">u32</tspan><tspan class="op"> {</tspan></text>
-    <text x="448" y="436" class="code line l6"><tspan class="op">    nodes.iter().map(|n| n.latency).sum::&lt;</tspan><tspan class="type">u32</tspan><tspan class="op">&gt;() / nodes.len() as </tspan><tspan class="type">u32</tspan></text>
-    <text x="448" y="482" class="code line l7"><tspan class="op">}</tspan></text>
-    <text x="448" y="528" class="code line l8"><tspan class="kw">fn</tspan><tspan class="op"> </tspan><tspan class="fn">main</tspan><tspan class="op">() {</tspan></text>
-    <text x="448" y="574" class="code line l9"><tspan class="op">    let online = collect_online(&amp;nodes);</tspan></text>
-    <text x="448" y="620" class="code line l10"><tspan class="op">    println!(</tspan><tspan class="str">"avg latency: {}"</tspan><tspan class="op">, average_latency(&amp;online));</tspan></text>
-    <text x="448" y="666" class="code line l11"><tspan class="op">}</tspan></text>
-    <text x="448" y="712" class="code line l12"><tspan class="cm">// node metrics aggregated successfully</tspan></text>
-
-    <rect x="1186" y="184" width="12" height="28" fill="#ffe8e1" class="cursor4"/>
+    <text x="1068" y="238" text-anchor="end" class="lang">SQL</text>
+    <g clip-path="url(#clip4)">
+      <text x="200" y="238" class="code"><tspan class="kw">CREATE TABLE</tspan><tspan class="op"> jobs (</tspan></text>
+      <text x="200" y="286" class="code"><tspan class="op">    id SERIAL PRIMARY KEY,</tspan></text>
+      <text x="200" y="334" class="code"><tspan class="op">    name TEXT NOT NULL,</tspan></text>
+      <text x="200" y="382" class="code"><tspan class="op">    status TEXT NOT NULL,</tspan></text>
+      <text x="200" y="430" class="code"><tspan class="op">    started_at TIMESTAMP</tspan></text>
+      <text x="200" y="478" class="code"><tspan class="op">);</tspan></text>
+      <text x="200" y="526" class="code"><tspan class="kw">SELECT</tspan><tspan class="op"> name, status </tspan><tspan class="kw">FROM</tspan><tspan class="op"> jobs </tspan><tspan class="kw">WHERE</tspan><tspan class="op"> status != </tspan><tspan class="str">'done'</tspan><tspan class="op">;</tspan></text>
+      <text x="200" y="574" class="code"><tspan class="kw">ORDER BY</tspan><tspan class="op"> started_at DESC;</tspan></text>
+      <text x="200" y="622" class="code"><tspan class="cm">-- operational jobs listed for dashboard</tspan></text>
+    </g>
+    <rect x="760" y="214" width="12" height="28" fill="#ffe8e1" class="cursor"/>
   </g>
 
-  <!-- SQL -->
   <g class="panel p5">
-    <text x="1288" y="205" text-anchor="end" class="tab-text">SQL</text>
-
-    <text x="448" y="206" class="code line l1"><tspan class="kw">CREATE TABLE</tspan><tspan class="op"> jobs (</tspan></text>
-    <text x="448" y="252" class="code line l2"><tspan class="op">    id SERIAL PRIMARY KEY,</tspan></text>
-    <text x="448" y="298" class="code line l3"><tspan class="op">    name TEXT NOT NULL,</tspan></text>
-    <text x="448" y="344" class="code line l4"><tspan class="op">    status TEXT NOT NULL,</tspan></text>
-    <text x="448" y="390" class="code line l5"><tspan class="op">    started_at TIMESTAMP,</tspan></text>
-    <text x="448" y="436" class="code line l6"><tspan class="op">    finished_at TIMESTAMP</tspan></text>
-    <text x="448" y="482" class="code line l7"><tspan class="op">);</tspan></text>
-    <text x="448" y="528" class="code line l8"><tspan class="kw">SELECT</tspan><tspan class="op"> name, status, started_at </tspan></text>
-    <text x="448" y="574" class="code line l9"><tspan class="kw">FROM</tspan><tspan class="op"> jobs </tspan></text>
-    <text x="448" y="620" class="code line l10"><tspan class="kw">WHERE</tspan><tspan class="op"> status != </tspan><tspan class="str">'done'</tspan></text>
-    <text x="448" y="666" class="code line l11"><tspan class="kw">ORDER BY</tspan><tspan class="op"> started_at DESC;</tspan></text>
-    <text x="448" y="712" class="code line l12"><tspan class="cm">-- operational jobs listed for the dashboard</tspan></text>
-
-    <rect x="880" y="184" width="12" height="28" fill="#ffe8e1" class="cursor5"/>
-  </g>
-
-  <!-- Bash -->
-  <g class="panel p6">
-    <text x="1288" y="205" text-anchor="end" class="tab-text">BASH</text>
-
-    <text x="448" y="206" class="code line l1"><tspan class="op">#!/usr/bin/env bash</tspan></text>
-    <text x="448" y="252" class="code line l2"><tspan class="op">set -euo pipefail</tspan></text>
-    <text x="448" y="298" class="code line l3"><tspan class="op">echo </tspan><tspan class="str">"building frontend assets..."</tspan></text>
-    <text x="448" y="344" class="code line l4"><tspan class="op">npm run build</tspan></text>
-    <text x="448" y="390" class="code line l5"><tspan class="op">echo </tspan><tspan class="str">"compiling rust services..."</tspan></text>
-    <text x="448" y="436" class="code line l6"><tspan class="op">cargo build --release</tspan></text>
-    <text x="448" y="482" class="code line l7"><tspan class="op">echo </tspan><tspan class="str">"uploading release bundle..."</tspan></text>
-    <text x="448" y="528" class="code line l8"><tspan class="op">rsync -avz ./dist/ prod:/opt/app/</tspan></text>
-    <text x="448" y="574" class="code line l9"><tspan class="op">echo </tspan><tspan class="str">"restarting processes..."</tspan></text>
-    <text x="448" y="620" class="code line l10"><tspan class="op">pm2 restart gateway worker api</tspan></text>
-    <text x="448" y="666" class="code line l11"><tspan class="op">echo </tspan><tspan class="str">"deployment completed"</tspan></text>
-    <text x="448" y="712" class="code line l12"><tspan class="cm"># release is online and healthy</tspan></text>
-
-    <rect x="930" y="184" width="12" height="28" fill="#ffe8e1" class="cursor6"/>
+    <text x="1068" y="238" text-anchor="end" class="lang">BASH</text>
+    <g clip-path="url(#clip5)">
+      <text x="200" y="238" class="code"><tspan class="op">#!/usr/bin/env bash</tspan></text>
+      <text x="200" y="286" class="code"><tspan class="op">set -euo pipefail</tspan></text>
+      <text x="200" y="334" class="code"><tspan class="op">echo </tspan><tspan class="str">"building frontend assets..."</tspan></text>
+      <text x="200" y="382" class="code"><tspan class="op">npm run build</tspan></text>
+      <text x="200" y="430" class="code"><tspan class="op">echo </tspan><tspan class="str">"compiling services..."</tspan></text>
+      <text x="200" y="478" class="code"><tspan class="op">cargo build --release</tspan></text>
+      <text x="200" y="526" class="code"><tspan class="op">rsync -avz ./dist/ prod:/opt/app/</tspan></text>
+      <text x="200" y="574" class="code"><tspan class="op">pm2 restart gateway worker api</tspan></text>
+      <text x="200" y="622" class="code"><tspan class="cm"># release is online and healthy</tspan></text>
+    </g>
+    <rect x="835" y="214" width="12" height="28" fill="#ffe8e1" class="cursor"/>
   </g>
 </svg>
