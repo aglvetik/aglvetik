@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Sofia</h1>
+<h1 align="center">Hi, I'm Aggy</h1>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=BB86FC&center=true&vCenter=true&multiline=true&repeat=true&width=1100&height=220&lines=%24+starting+development+session...;%24+loading+python+environment...;%24+compiling+rust+backend...;%24+launching+go+microservice...;%24+testing+typescript+logic...;%24+querying+production+database...;%24+all+systems+operational_" alt="Typing SVG" />
