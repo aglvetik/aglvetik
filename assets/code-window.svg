@@ -7,11 +7,11 @@
       .t{font:700 36px &quot;Segoe UI&quot;,Inter,Arial,sans-serif;fill:#f8efe9;text-rendering:geometricPrecision}
       .b{font:700 24px &quot;Segoe UI&quot;,Inter,Arial,sans-serif;fill:#96a0ae;letter-spacing:.8px;text-rendering:geometricPrecision}
       .a{fill:#ffe7de}
-      .l{font:700 40px &quot;Segoe UI&quot;,Inter,Arial,sans-serif;fill:#87efff;letter-spacing:1.4px;text-rendering:geometricPrecision}
+      .l{font:700 38px &quot;Segoe UI&quot;,Inter,Arial,sans-serif;fill:#87efff;letter-spacing:1.4px;text-rendering:geometricPrecision}
       .n{font:20px &quot;Cascadia Mono&quot;,&quot;Cascadia Code&quot;,&quot;JetBrains Mono&quot;,Consolas,monospace;fill:#5f6977;text-rendering:geometricPrecision}
-      .c{font:600 26px &quot;Cascadia Mono&quot;,&quot;Cascadia Code&quot;,&quot;JetBrains Mono&quot;,&quot;Fira Code&quot;,Consolas,monospace;fill:#f8f3ef;text-rendering:geometricPrecision}
+      .c{font:600 23px &quot;Cascadia Mono&quot;,&quot;Cascadia Code&quot;,&quot;JetBrains Mono&quot;,&quot;Fira Code&quot;,Consolas,monospace;fill:#f8f3ef;text-rendering:geometricPrecision}
       .p{font:700 24px &quot;Segoe UI&quot;,Inter,Arial,sans-serif;fill:#ffd98f;letter-spacing:1px;text-rendering:geometricPrecision}
-      .sig{font:600 22px &quot;Cascadia Mono&quot;,&quot;JetBrains Mono&quot;,Consolas,monospace;fill:#5c6880;letter-spacing:1.4px;opacity:.78;text-rendering:geometricPrecision}
+      .sig{font:600 26px &quot;Cascadia Mono&quot;,&quot;JetBrains Mono&quot;,Consolas,monospace;fill:#5c6880;letter-spacing:1.4px;opacity:.82;text-rendering:geometricPrecision}
       .k{fill:#ffb7c8}.f{fill:#ffd9a8}.s{fill:#f5e5a6}.m{fill:#d7c5ff}.y{fill:#b9e6ff}.cm{fill:#728092}.o{fill:#f8f3ef}
       .tabs,.panel,.pv{opacity:0}
       .t1,.p1,.v1{animation:s1 20s infinite}.t2,.p2,.v2{animation:s2 20s infinite}.t3,.p3,.v3{animation:s3 20s infinite}.t4,.p4,.v4{animation:s4 20s infinite}
@@ -29,7 +29,7 @@
   <rect x="28" y="82" width="1624" height="28" fill="url(#top)"/>
   <circle cx="74" cy="70" r="8" fill="#ffb9c4"/><circle cx="101" cy="70" r="8" fill="#ffe0a6"/><circle cx="128" cy="70" r="8" fill="#d8f4cb"/>
   <text x="840" y="79" text-anchor="middle" class="t">workspace</text>
-  <text x="1560" y="79" text-anchor="end" class="sig">aglvetik</text>
+  <text x="1588" y="79" text-anchor="end" class="sig">aglvetik</text>
   <rect x="58" y="142" width="1564" height="750" rx="24" fill="#000"/>
   <rect x="58" y="142" width="1564" height="60" rx="24" fill="#080808"/>
   <rect x="58" y="178" width="1564" height="24" fill="#080808"/>
@@ -96,7 +96,7 @@
   <g class="pv v3"><g transform="translate(1342 500)"><circle cx="0" cy="0" r="8" fill="#ffd8cd"/><circle cx="0" cy="0" r="64" class="ring"/><circle cx="0" cy="0" r="92" class="ring"/><circle cx="0" cy="0" r="120" class="ring"/><g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3s" repeatCount="indefinite"/><circle cx="64" cy="0" r="10" class="dt"/></g><g><animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="4s" repeatCount="indefinite"/><circle cx="92" cy="0" r="9" class="dt"/></g><g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5s" repeatCount="indefinite"/><circle cx="120" cy="0" r="8" class="dt"/></g></g></g>
   <g class="pv v4"><rect x="1198" y="334" width="190" height="24" rx="12" fill="#111"/><rect x="1198" y="376" width="226" height="24" rx="12" fill="#111"/><rect x="1198" y="418" width="164" height="24" rx="12" fill="#111"/><rect x="1198" y="334" width="142" height="24" rx="12" fill="#ffb7c8" opacity=".9"/><rect x="1198" y="376" width="182" height="24" rx="12" fill="#ffd8cd" opacity=".9"/><rect x="1198" y="418" width="110" height="24" rx="12" fill="#f5e5a6" opacity=".9"/><rect x="1222" y="580" width="34" height="70" rx="8" class="bar"><animate attributeName="y" values="580;530;580" dur="1.4s" repeatCount="indefinite"/><animate attributeName="height" values="70;120;70" dur="1.4s" repeatCount="indefinite"/></rect><rect x="1276" y="560" width="34" height="90" rx="8" class="bar"><animate attributeName="y" values="560;500;560" dur="1.4s" begin="-.18s" repeatCount="indefinite"/><animate attributeName="height" values="90;150;90" dur="1.4s" begin="-.18s" repeatCount="indefinite"/></rect><rect x="1330" y="590" width="34" height="60" rx="8" class="bar"><animate attributeName="y" values="590;548;590" dur="1.4s" begin="-.32s" repeatCount="indefinite"/><animate attributeName="height" values="60;102;60" dur="1.4s" begin="-.32s" repeatCount="indefinite"/></rect><rect x="1384" y="566" width="34" height="84" rx="8" class="bar"><animate attributeName="y" values="566;510;566" dur="1.4s" begin="-.46s" repeatCount="indefinite"/><animate attributeName="height" values="84;140;84" dur="1.4s" begin="-.46s" repeatCount="indefinite"/></rect></g>
   <g class="panel p1">
-    <text x="1072" y="248" text-anchor="end" class="l">C#</text>
+    <text x="780" y="188" text-anchor="start" class="l">C#</text>
     <text x="176" y="248" class="c"><tspan class="k">public sealed class</tspan><tspan class="o"> </tspan><tspan class="y">SnakeGame</tspan><tspan class="o"> {</tspan></text>
     <rect x="176" y="224" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.006;0.016;1" dur="20s" repeatCount="indefinite"/>
@@ -164,7 +164,7 @@
     </rect>
   </g>
   <g class="panel p2">
-    <text x="1072" y="248" text-anchor="end" class="l">PYTHON</text>
+    <text x="780" y="188" text-anchor="start" class="l">PYTHON</text>
     <text x="176" y="248" class="c"><tspan class="k">async def</tspan><tspan class="o"> </tspan><tspan class="f">orchestrate</tspan><tspan class="o">(workers, queue):</tspan></text>
     <rect x="176" y="224" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.256;0.266;1" dur="20s" repeatCount="indefinite"/>
@@ -217,7 +217,7 @@
     </rect>
   </g>
   <g class="panel p3">
-    <text x="1072" y="248" text-anchor="end" class="l">TYPESCRIPT</text>
+    <text x="780" y="188" text-anchor="start" class="l">TYPESCRIPT</text>
     <text x="176" y="248" class="c"><tspan class="k">type</tspan><tspan class="o"> Particle = { x: </tspan><tspan class="y">number</tspan><tspan class="o">; y: </tspan><tspan class="y">number</tspan><tspan class="o">; r: </tspan><tspan class="y">number</tspan><tspan class="o">; orbit: </tspan><tspan class="y">number</tspan><tspan class="o"> }</tspan></text>
     <rect x="176" y="224" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.506;0.516;1" dur="20s" repeatCount="indefinite"/>
@@ -275,7 +275,7 @@
     </rect>
   </g>
   <g class="panel p4">
-    <text x="1072" y="248" text-anchor="end" class="l">GO</text>
+    <text x="780" y="188" text-anchor="start" class="l">GO</text>
     <text x="176" y="248" class="c"><tspan class="k">package</tspan><tspan class="o"> main</tspan></text>
     <rect x="176" y="224" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.756;0.766;1" dur="20s" repeatCount="indefinite"/>
