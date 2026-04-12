@@ -1,7 +1,16 @@
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=900&color=BB86FC&center=true&vCenter=true&multiline=true&repeat=true&width=1000&height=220&lines=%24+initialize+project...;%24+loading+modules...;%24+python+train_model.py;%24+cargo+build+--release;%24+go+run+server.go;%24+npm+run+deploy;%24+SELECT+*+FROM+system_status;%24+system+online_" alt="Typing SVG" />
-</p>
+<h3 align="center">Terminal</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=FF79C6&center=true&vCenter=true&width=1000&lines=Python+%7C+Rust+%7C+Go+%7C+TypeScript+%7C+SQL;Building+systems...;Optimizing+logic...;Deploying+ideas...;Turning+chaos+into+code..." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Source+Code+Pro&size=22&pause=700&color=A970FF&center=true&vCenter=true&repeat=true&width=1100&lines=%3E+booting+developer+environment;%3E+import+core+modules;%3E+running+asynchronous+tasks;%3E+building+discord+automation;%3E+syncing+database+state;%3E+validating+permissions;%3E+compiling+production+logic;%3E+ready." alt="Typing SVG" />
 </p>
+
+```python
+class Builder:
+    def __init__(self):
+        self.stack = ["Python", "TypeScript", "SQL", "Go"]
+
+    def create(self):
+        return "Clean architecture. Stable logic. Real systems."
+
+app = Builder()
+print(app.create())
