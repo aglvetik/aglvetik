@@ -22,12 +22,12 @@
 
       .tab {
         font: 700 18px 'Segoe UI', Inter, Arial, sans-serif;
-        fill: #a4adba;
+        fill: #96a0ae;
         letter-spacing: 0.8px;
       }
 
       .tab-active {
-        fill: #ffe1d7;
+        fill: #ffe7de;
       }
 
       .lang {
@@ -48,7 +48,7 @@
 
       .preview-label {
         font: 700 18px 'Segoe UI', Inter, Arial, sans-serif;
-        fill: #ffd8cd;
+        fill: #ffd98f;
         letter-spacing: 1px;
       }
 
@@ -63,10 +63,10 @@
       .panel { opacity: 0; }
       .tabset { opacity: 0; }
 
-      .p1, .tabs1 { animation: panel1 20s infinite; }
-      .p2, .tabs2 { animation: panel2 20s infinite; }
-      .p3, .tabs3 { animation: panel3 20s infinite; }
-      .p4, .tabs4 { animation: panel4 20s infinite; }
+      .p1, .tabs1, .cs-preview { animation: panel1 20s infinite; }
+      .p2, .tabs2, .python-preview { animation: panel2 20s infinite; }
+      .p3, .tabs3, .ts-preview { animation: panel3 20s infinite; }
+      .p4, .tabs4, .go-preview { animation: panel4 20s infinite; }
 
       @keyframes panel1 {
         0%, 24.5% { opacity: 1; }
@@ -87,80 +87,6 @@
         75.5%, 99.5% { opacity: 1; }
         100% { opacity: 0; }
       }
-
-      .line { opacity: 0; }
-
-      .p1 .l1 { animation: p1l1 20s infinite; }
-      .p1 .l2 { animation: p1l2 20s infinite; }
-      .p1 .l3 { animation: p1l3 20s infinite; }
-      .p1 .l4 { animation: p1l4 20s infinite; }
-      .p1 .l5 { animation: p1l5 20s infinite; }
-      .p1 .l6 { animation: p1l6 20s infinite; }
-      .p1 .l7 { animation: p1l7 20s infinite; }
-      .p1 .l8 { animation: p1l8 20s infinite; }
-
-      .p2 .l1 { animation: p2l1 20s infinite; }
-      .p2 .l2 { animation: p2l2 20s infinite; }
-      .p2 .l3 { animation: p2l3 20s infinite; }
-      .p2 .l4 { animation: p2l4 20s infinite; }
-      .p2 .l5 { animation: p2l5 20s infinite; }
-      .p2 .l6 { animation: p2l6 20s infinite; }
-      .p2 .l7 { animation: p2l7 20s infinite; }
-      .p2 .l8 { animation: p2l8 20s infinite; }
-
-      .p3 .l1 { animation: p3l1 20s infinite; }
-      .p3 .l2 { animation: p3l2 20s infinite; }
-      .p3 .l3 { animation: p3l3 20s infinite; }
-      .p3 .l4 { animation: p3l4 20s infinite; }
-      .p3 .l5 { animation: p3l5 20s infinite; }
-      .p3 .l6 { animation: p3l6 20s infinite; }
-      .p3 .l7 { animation: p3l7 20s infinite; }
-      .p3 .l8 { animation: p3l8 20s infinite; }
-
-      .p4 .l1 { animation: p4l1 20s infinite; }
-      .p4 .l2 { animation: p4l2 20s infinite; }
-      .p4 .l3 { animation: p4l3 20s infinite; }
-      .p4 .l4 { animation: p4l4 20s infinite; }
-      .p4 .l5 { animation: p4l5 20s infinite; }
-      .p4 .l6 { animation: p4l6 20s infinite; }
-      .p4 .l7 { animation: p4l7 20s infinite; }
-      .p4 .l8 { animation: p4l8 20s infinite; }
-
-      @keyframes p1l1 { 0%,1.0%{opacity:0} 1.1%,24.5%{opacity:1} 25%,100%{opacity:0} }
-      @keyframes p1l2 { 0%,3.0%{opacity:0} 3.1%,24.5%{opacity:1} 25%,100%{opacity:0} }
-      @keyframes p1l3 { 0%,5.0%{opacity:0} 5.1%,24.5%{opacity:1} 25%,100%{opacity:0} }
-      @keyframes p1l4 { 0%,7.0%{opacity:0} 7.1%,24.5%{opacity:1} 25%,100%{opacity:0} }
-      @keyframes p1l5 { 0%,9.0%{opacity:0} 9.1%,24.5%{opacity:1} 25%,100%{opacity:0} }
-      @keyframes p1l6 { 0%,11.0%{opacity:0} 11.1%,24.5%{opacity:1} 25%,100%{opacity:0} }
-      @keyframes p1l7 { 0%,13.0%{opacity:0} 13.1%,24.5%{opacity:1} 25%,100%{opacity:0} }
-      @keyframes p1l8 { 0%,15.0%{opacity:0} 15.1%,24.5%{opacity:1} 25%,100%{opacity:0} }
-
-      @keyframes p2l1 { 0%,26.0%{opacity:0} 26.1%,49.5%{opacity:1} 50%,100%{opacity:0} }
-      @keyframes p2l2 { 0%,28.0%{opacity:0} 28.1%,49.5%{opacity:1} 50%,100%{opacity:0} }
-      @keyframes p2l3 { 0%,30.0%{opacity:0} 30.1%,49.5%{opacity:1} 50%,100%{opacity:0} }
-      @keyframes p2l4 { 0%,32.0%{opacity:0} 32.1%,49.5%{opacity:1} 50%,100%{opacity:0} }
-      @keyframes p2l5 { 0%,34.0%{opacity:0} 34.1%,49.5%{opacity:1} 50%,100%{opacity:0} }
-      @keyframes p2l6 { 0%,36.0%{opacity:0} 36.1%,49.5%{opacity:1} 50%,100%{opacity:0} }
-      @keyframes p2l7 { 0%,38.0%{opacity:0} 38.1%,49.5%{opacity:1} 50%,100%{opacity:0} }
-      @keyframes p2l8 { 0%,40.0%{opacity:0} 40.1%,49.5%{opacity:1} 50%,100%{opacity:0} }
-
-      @keyframes p3l1 { 0%,51.0%{opacity:0} 51.1%,74.5%{opacity:1} 75%,100%{opacity:0} }
-      @keyframes p3l2 { 0%,53.0%{opacity:0} 53.1%,74.5%{opacity:1} 75%,100%{opacity:0} }
-      @keyframes p3l3 { 0%,55.0%{opacity:0} 55.1%,74.5%{opacity:1} 75%,100%{opacity:0} }
-      @keyframes p3l4 { 0%,57.0%{opacity:0} 57.1%,74.5%{opacity:1} 75%,100%{opacity:0} }
-      @keyframes p3l5 { 0%,59.0%{opacity:0} 59.1%,74.5%{opacity:1} 75%,100%{opacity:0} }
-      @keyframes p3l6 { 0%,61.0%{opacity:0} 61.1%,74.5%{opacity:1} 75%,100%{opacity:0} }
-      @keyframes p3l7 { 0%,63.0%{opacity:0} 63.1%,74.5%{opacity:1} 75%,100%{opacity:0} }
-      @keyframes p3l8 { 0%,65.0%{opacity:0} 65.1%,74.5%{opacity:1} 75%,100%{opacity:0} }
-
-      @keyframes p4l1 { 0%,76.0%{opacity:0} 76.1%,99.5%{opacity:1} 100%{opacity:0} }
-      @keyframes p4l2 { 0%,78.0%{opacity:0} 78.1%,99.5%{opacity:1} 100%{opacity:0} }
-      @keyframes p4l3 { 0%,80.0%{opacity:0} 80.1%,99.5%{opacity:1} 100%{opacity:0} }
-      @keyframes p4l4 { 0%,82.0%{opacity:0} 82.1%,99.5%{opacity:1} 100%{opacity:0} }
-      @keyframes p4l5 { 0%,84.0%{opacity:0} 84.1%,99.5%{opacity:1} 100%{opacity:0} }
-      @keyframes p4l6 { 0%,86.0%{opacity:0} 86.1%,99.5%{opacity:1} 100%{opacity:0} }
-      @keyframes p4l7 { 0%,88.0%{opacity:0} 88.1%,99.5%{opacity:1} 100%{opacity:0} }
-      @keyframes p4l8 { 0%,90.0%{opacity:0} 90.1%,99.5%{opacity:1} 100%{opacity:0} }
 
       .preview-box {
         fill: #040404;
@@ -200,11 +126,6 @@
         opacity: 0;
       }
 
-      .python-preview { animation: panel1 20s infinite; }
-      .ts-preview     { animation: panel2 20s infinite; }
-      .go-preview     { animation: panel3 20s infinite; }
-      .cs-preview     { animation: panel4 20s infinite; }
-
       .pulse1 { animation: pulse1 1.2s infinite; transform-origin: center; }
       .pulse2 { animation: pulse2 1.2s infinite; transform-origin: center; }
       .pulse3 { animation: pulse3 1.2s infinite; transform-origin: center; }
@@ -222,91 +143,193 @@
         50% { opacity: 1; transform: scale(1); }
       }
 
-      .move-l {
-        animation: moveL 2.4s linear infinite;
+      .move-a {
+        animation: moveA 2.4s linear infinite;
       }
-      .move-r {
-        animation: moveR 2.4s linear infinite;
-      }
-
-      @keyframes moveL {
-        0%   { transform: translate(0px, 0px); opacity: 0; }
-        10%  { opacity: 1; }
-        50%  { transform: translate(90px, -30px); opacity: 1; }
-        100% { transform: translate(180px, 0px); opacity: 0; }
-      }
-      @keyframes moveR {
-        0%   { transform: translate(0px, 0px); opacity: 0; }
-        10%  { opacity: 1; }
-        50%  { transform: translate(90px, 30px); opacity: 1; }
-        100% { transform: translate(180px, 0px); opacity: 0; }
+      .move-b {
+        animation: moveB 2.4s linear infinite;
       }
 
-      .orbit1 { animation: orbit1 3s linear infinite; transform-origin: 1325px 505px; }
-      .orbit2 { animation: orbit2 4s linear infinite; transform-origin: 1325px 505px; }
-      .orbit3 { animation: orbit3 5s linear infinite; transform-origin: 1325px 505px; }
+      @keyframes moveA {
+        0%   { transform: translate(0px, 0px); opacity: 0; }
+        10%  { opacity: 1; }
+        50%  { transform: translate(110px, -34px); opacity: 1; }
+        100% { transform: translate(220px, 0px); opacity: 0; }
+      }
+      @keyframes moveB {
+        0%   { transform: translate(0px, 0px); opacity: 0; }
+        10%  { opacity: 1; }
+        50%  { transform: translate(110px, 34px); opacity: 1; }
+        100% { transform: translate(220px, 0px); opacity: 0; }
+      }
+
+      .orbit1 { animation: orbit1 3s linear infinite; transform-origin: 1342px 500px; }
+      .orbit2 { animation: orbit2 4s linear infinite; transform-origin: 1342px 500px; }
+      .orbit3 { animation: orbit3 5s linear infinite; transform-origin: 1342px 500px; }
 
       @keyframes orbit1 {
-        from { transform: rotate(0deg) translateX(70px) rotate(0deg); }
-        to   { transform: rotate(360deg) translateX(70px) rotate(-360deg); }
+        from { transform: rotate(0deg) translateX(64px) rotate(0deg); }
+        to   { transform: rotate(360deg) translateX(64px) rotate(-360deg); }
       }
       @keyframes orbit2 {
-        from { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
-        to   { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+        from { transform: rotate(360deg) translateX(92px) rotate(-360deg); }
+        to   { transform: rotate(0deg) translateX(92px) rotate(0deg); }
       }
       @keyframes orbit3 {
-        from { transform: rotate(0deg) translateX(130px) rotate(0deg); }
-        to   { transform: rotate(360deg) translateX(130px) rotate(-360deg); }
+        from { transform: rotate(0deg) translateX(120px) rotate(0deg); }
+        to   { transform: rotate(360deg) translateX(120px) rotate(-360deg); }
       }
 
-      .go-bar1 { animation: gobar1 1.4s ease-in-out infinite; }
-      .go-bar2 { animation: gobar2 1.4s ease-in-out infinite; }
-      .go-bar3 { animation: gobar3 1.4s ease-in-out infinite; }
-      .go-bar4 { animation: gobar4 1.4s ease-in-out infinite; }
+      .go-bar1 { animation: gobar1 1.4s ease-in-out infinite; transform-origin: center bottom; }
+      .go-bar2 { animation: gobar2 1.4s ease-in-out infinite; transform-origin: center bottom; }
+      .go-bar3 { animation: gobar3 1.4s ease-in-out infinite; transform-origin: center bottom; }
+      .go-bar4 { animation: gobar4 1.4s ease-in-out infinite; transform-origin: center bottom; }
 
-      @keyframes gobar1 { 0%,100% { height: 40px; y: 630px; } 50% { height: 120px; y: 550px; } }
-      @keyframes gobar2 { 0%,100% { height: 70px; y: 600px; } 50% { height: 150px; y: 520px; } }
-      @keyframes gobar3 { 0%,100% { height: 55px; y: 615px; } 50% { height: 95px; y: 575px; } }
-      @keyframes gobar4 { 0%,100% { height: 90px; y: 580px; } 50% { height: 140px; y: 530px; } }
-
-      .snake1 { animation: snake1 2.4s steps(1) infinite; }
-      .snake2 { animation: snake2 2.4s steps(1) infinite; }
-      .snake3 { animation: snake3 2.4s steps(1) infinite; }
-      .snake4 { animation: snake4 2.4s steps(1) infinite; }
-
-      @keyframes snake1 {
-        0%,24%   { x: 1210px; y: 480px; }
-        25%,49%  { x: 1245px; y: 480px; }
-        50%,74%  { x: 1280px; y: 480px; }
-        75%,100% { x: 1315px; y: 480px; }
+      @keyframes gobar1 {
+        0%,100% { transform: scaleY(0.42); }
+        50% { transform: scaleY(1); }
       }
-      @keyframes snake2 {
-        0%,24%   { x: 1175px; y: 480px; }
-        25%,49%  { x: 1210px; y: 480px; }
-        50%,74%  { x: 1245px; y: 480px; }
-        75%,100% { x: 1280px; y: 480px; }
+      @keyframes gobar2 {
+        0%,100% { transform: scaleY(0.58); }
+        50% { transform: scaleY(1.12); }
       }
-      @keyframes snake3 {
-        0%,24%   { x: 1140px; y: 480px; }
-        25%,49%  { x: 1175px; y: 480px; }
-        50%,74%  { x: 1210px; y: 480px; }
-        75%,100% { x: 1245px; y: 480px; }
+      @keyframes gobar3 {
+        0%,100% { transform: scaleY(0.46); }
+        50% { transform: scaleY(0.86); }
       }
-      @keyframes snake4 {
-        0%,24%   { x: 1105px; y: 480px; }
-        25%,49%  { x: 1140px; y: 480px; }
-        50%,74%  { x: 1175px; y: 480px; }
-        75%,100% { x: 1210px; y: 480px; }
+      @keyframes gobar4 {
+        0%,100% { transform: scaleY(0.70); }
+        50% { transform: scaleY(1.08); }
       }
 
-      .foodMove {
-        animation: foodMove 2.4s steps(1) infinite;
+      .snakeHead { animation: snakeHead 3.6s steps(1) infinite; }
+      .snakeB1 { animation: snakeB1 3.6s steps(1) infinite; }
+      .snakeB2 { animation: snakeB2 3.6s steps(1) infinite; }
+      .snakeB3 { animation: snakeB3 3.6s steps(1) infinite; }
+      .snakeB4 { animation: snakeB4 3.6s steps(1) infinite; }
+      .foodAnim { animation: foodAnim 3.6s steps(1) infinite; }
+
+      @keyframes snakeHead {
+        0%,15%   { transform: translate(0px,0px); }
+        16%,31%  { transform: translate(34px,0px); }
+        32%,47%  { transform: translate(68px,0px); }
+        48%,63%  { transform: translate(102px,0px); }
+        64%,79%  { transform: translate(102px,-34px); }
+        80%,100% { transform: translate(136px,-34px); }
+      }
+      @keyframes snakeB1 {
+        0%,15%   { transform: translate(0px,0px); }
+        16%,31%  { transform: translate(0px,0px); }
+        32%,47%  { transform: translate(34px,0px); }
+        48%,63%  { transform: translate(68px,0px); }
+        64%,79%  { transform: translate(102px,0px); }
+        80%,100% { transform: translate(102px,-34px); }
+      }
+      @keyframes snakeB2 {
+        0%,15%   { transform: translate(0px,0px); }
+        16%,31%  { transform: translate(0px,0px); }
+        32%,47%  { transform: translate(0px,0px); }
+        48%,63%  { transform: translate(34px,0px); }
+        64%,79%  { transform: translate(68px,0px); }
+        80%,100% { transform: translate(102px,0px); }
+      }
+      @keyframes snakeB3 {
+        0%,15%   { transform: translate(0px,0px); }
+        16%,31%  { transform: translate(0px,0px); }
+        32%,47%  { transform: translate(0px,0px); }
+        48%,63%  { transform: translate(0px,0px); }
+        64%,79%  { transform: translate(34px,0px); }
+        80%,100% { transform: translate(68px,0px); }
+      }
+      @keyframes snakeB4 {
+        0%,15%   { transform: translate(0px,0px); }
+        16%,31%  { transform: translate(0px,0px); }
+        32%,47%  { transform: translate(0px,0px); }
+        48%,63%  { transform: translate(0px,0px); }
+        64%,79%  { transform: translate(0px,0px); }
+        80%,100% { transform: translate(34px,0px); }
+      }
+      @keyframes foodAnim {
+        0%,79%   { transform: translate(0px,0px); opacity: 1; }
+        80%,89%  { transform: translate(0px,0px); opacity: 0; }
+        90%,100% { transform: translate(34px,-34px); opacity: 1; }
       }
 
-      @keyframes foodMove {
-        0%,49%   { x: 1350px; y: 480px; opacity: 1; }
-        50%,100% { x: 1350px; y: 410px; opacity: 1; }
+      .type-mask {
+        fill: #000000;
       }
+
+      .mask-cs1  { animation: mcs1 20s linear infinite; }
+      .mask-cs2  { animation: mcs2 20s linear infinite; }
+      .mask-cs3  { animation: mcs3 20s linear infinite; }
+      .mask-cs4  { animation: mcs4 20s linear infinite; }
+      .mask-cs5  { animation: mcs5 20s linear infinite; }
+      .mask-cs6  { animation: mcs6 20s linear infinite; }
+      .mask-cs7  { animation: mcs7 20s linear infinite; }
+      .mask-cs8  { animation: mcs8 20s linear infinite; }
+
+      .mask-py1  { animation: mpy1 20s linear infinite; }
+      .mask-py2  { animation: mpy2 20s linear infinite; }
+      .mask-py3  { animation: mpy3 20s linear infinite; }
+      .mask-py4  { animation: mpy4 20s linear infinite; }
+      .mask-py5  { animation: mpy5 20s linear infinite; }
+      .mask-py6  { animation: mpy6 20s linear infinite; }
+      .mask-py7  { animation: mpy7 20s linear infinite; }
+      .mask-py8  { animation: mpy8 20s linear infinite; }
+
+      .mask-ts1  { animation: mts1 20s linear infinite; }
+      .mask-ts2  { animation: mts2 20s linear infinite; }
+      .mask-ts3  { animation: mts3 20s linear infinite; }
+      .mask-ts4  { animation: mts4 20s linear infinite; }
+      .mask-ts5  { animation: mts5 20s linear infinite; }
+      .mask-ts6  { animation: mts6 20s linear infinite; }
+      .mask-ts7  { animation: mts7 20s linear infinite; }
+      .mask-ts8  { animation: mts8 20s linear infinite; }
+
+      .mask-go1  { animation: mgo1 20s linear infinite; }
+      .mask-go2  { animation: mgo2 20s linear infinite; }
+      .mask-go3  { animation: mgo3 20s linear infinite; }
+      .mask-go4  { animation: mgo4 20s linear infinite; }
+      .mask-go5  { animation: mgo5 20s linear infinite; }
+      .mask-go6  { animation: mgo6 20s linear infinite; }
+      .mask-go7  { animation: mgo7 20s linear infinite; }
+      .mask-go8  { animation: mgo8 20s linear infinite; }
+
+      @keyframes mcs1  { 0%,0.4%{width:1000px} 1.6%,100%{width:0px} }
+      @keyframes mcs2  { 0%,1.6%{width:1000px} 2.8%,100%{width:0px} }
+      @keyframes mcs3  { 0%,2.8%{width:1000px} 4.0%,100%{width:0px} }
+      @keyframes mcs4  { 0%,4.0%{width:1000px} 5.2%,100%{width:0px} }
+      @keyframes mcs5  { 0%,5.2%{width:1000px} 6.4%,100%{width:0px} }
+      @keyframes mcs6  { 0%,6.4%{width:1000px} 7.6%,100%{width:0px} }
+      @keyframes mcs7  { 0%,7.6%{width:1000px} 8.8%,100%{width:0px} }
+      @keyframes mcs8  { 0%,8.8%{width:1000px} 10.0%,100%{width:0px} }
+
+      @keyframes mpy1  { 0%,25.4%{width:1000px} 26.6%,100%{width:0px} }
+      @keyframes mpy2  { 0%,26.6%{width:1000px} 27.8%,100%{width:0px} }
+      @keyframes mpy3  { 0%,27.8%{width:1000px} 29.0%,100%{width:0px} }
+      @keyframes mpy4  { 0%,29.0%{width:1000px} 30.2%,100%{width:0px} }
+      @keyframes mpy5  { 0%,30.2%{width:1000px} 31.4%,100%{width:0px} }
+      @keyframes mpy6  { 0%,31.4%{width:1000px} 32.6%,100%{width:0px} }
+      @keyframes mpy7  { 0%,32.6%{width:1000px} 33.8%,100%{width:0px} }
+      @keyframes mpy8  { 0%,33.8%{width:1000px} 35.0%,100%{width:0px} }
+
+      @keyframes mts1  { 0%,50.4%{width:1000px} 51.6%,100%{width:0px} }
+      @keyframes mts2  { 0%,51.6%{width:1000px} 52.8%,100%{width:0px} }
+      @keyframes mts3  { 0%,52.8%{width:1000px} 54.0%,100%{width:0px} }
+      @keyframes mts4  { 0%,54.0%{width:1000px} 55.2%,100%{width:0px} }
+      @keyframes mts5  { 0%,55.2%{width:1000px} 56.4%,100%{width:0px} }
+      @keyframes mts6  { 0%,56.4%{width:1000px} 57.6%,100%{width:0px} }
+      @keyframes mts7  { 0%,57.6%{width:1000px} 58.8%,100%{width:0px} }
+      @keyframes mts8  { 0%,58.8%{width:1000px} 60.0%,100%{width:0px} }
+
+      @keyframes mgo1  { 0%,75.4%{width:1100px} 76.6%,100%{width:0px} }
+      @keyframes mgo2  { 0%,76.6%{width:1100px} 77.8%,100%{width:0px} }
+      @keyframes mgo3  { 0%,77.8%{width:1100px} 79.0%,100%{width:0px} }
+      @keyframes mgo4  { 0%,79.0%{width:1100px} 80.2%,100%{width:0px} }
+      @keyframes mgo5  { 0%,80.2%{width:1100px} 81.4%,100%{width:0px} }
+      @keyframes mgo6  { 0%,81.4%{width:1100px} 82.6%,100%{width:0px} }
+      @keyframes mgo7  { 0%,82.6%{width:1100px} 83.8%,100%{width:0px} }
+      @keyframes mgo8  { 0%,83.8%{width:1100px} 85.0%,100%{width:0px} }
     </style>
   </defs>
 
@@ -330,31 +353,31 @@
 
   <!-- tabs -->
   <g class="tabs1 tabset">
-    <text x="110" y="180" class="tab tab-active">orchestrator.py</text>
-    <text x="300" y="180" class="tab">particles.ts</text>
-    <text x="462" y="180" class="tab">server.go</text>
-    <text x="590" y="180" class="tab">snake.cs</text>
+    <text x="110" y="180" class="tab tab-active">snake.cs</text>
+    <text x="250" y="180" class="tab">orchestrator.py</text>
+    <text x="470" y="180" class="tab">particles.ts</text>
+    <text x="640" y="180" class="tab">server.go</text>
   </g>
 
   <g class="tabs2 tabset">
-    <text x="110" y="180" class="tab">orchestrator.py</text>
-    <text x="300" y="180" class="tab tab-active">particles.ts</text>
-    <text x="462" y="180" class="tab">server.go</text>
-    <text x="590" y="180" class="tab">snake.cs</text>
+    <text x="110" y="180" class="tab">snake.cs</text>
+    <text x="250" y="180" class="tab tab-active">orchestrator.py</text>
+    <text x="470" y="180" class="tab">particles.ts</text>
+    <text x="640" y="180" class="tab">server.go</text>
   </g>
 
   <g class="tabs3 tabset">
-    <text x="110" y="180" class="tab">orchestrator.py</text>
-    <text x="300" y="180" class="tab">particles.ts</text>
-    <text x="462" y="180" class="tab tab-active">server.go</text>
-    <text x="590" y="180" class="tab">snake.cs</text>
+    <text x="110" y="180" class="tab">snake.cs</text>
+    <text x="250" y="180" class="tab">orchestrator.py</text>
+    <text x="470" y="180" class="tab tab-active">particles.ts</text>
+    <text x="640" y="180" class="tab">server.go</text>
   </g>
 
   <g class="tabs4 tabset">
-    <text x="110" y="180" class="tab">orchestrator.py</text>
-    <text x="300" y="180" class="tab">particles.ts</text>
-    <text x="462" y="180" class="tab">server.go</text>
-    <text x="590" y="180" class="tab tab-active">snake.cs</text>
+    <text x="110" y="180" class="tab">snake.cs</text>
+    <text x="250" y="180" class="tab">orchestrator.py</text>
+    <text x="470" y="180" class="tab">particles.ts</text>
+    <text x="640" y="180" class="tab tab-active">server.go</text>
   </g>
 
   <!-- gutter -->
@@ -371,147 +394,200 @@
   <text x="111" y="612" text-anchor="middle" class="line-no">8</text>
 
   <!-- preview zone -->
-  <rect x="1108" y="222" width="448" height="620" rx="20" class="preview-box"/>
-  <text x="1136" y="258" class="preview-label">PREVIEW</text>
+  <rect x="1120" y="252" width="400" height="430" rx="20" class="preview-box"/>
+  <text x="1266" y="232" class="preview-label">PREVIEW</text>
 
-  <!-- preview 1: python -->
-  <g class="python-preview">
-    <rect x="1142" y="310" width="110" height="28" rx="10" fill="#111111"/>
-    <rect x="1142" y="354" width="110" height="28" rx="10" fill="#111111"/>
-    <rect x="1142" y="398" width="110" height="28" rx="10" fill="#111111"/>
-
-    <circle cx="1170" cy="324" r="10" class="node pulse1"/>
-    <circle cx="1170" cy="368" r="10" class="node pulse2"/>
-    <circle cx="1170" cy="412" r="10" class="node pulse3"/>
-
-    <rect x="1360" y="326" width="130" height="24" rx="12" fill="#111111"/>
-    <rect x="1360" y="386" width="130" height="24" rx="12" fill="#111111"/>
-
-    <circle cx="1260" cy="324" r="8" class="packet move-l"/>
-    <circle cx="1260" cy="412" r="8" class="packet move-r"/>
-
-    <text x="1142" y="500" class="code" style="font-size:20px;"><tspan class="op">workers = </tspan><tspan class="num">3</tspan></text>
-    <text x="1142" y="540" class="code" style="font-size:20px;"><tspan class="op">queue = </tspan><tspan class="str">"active"</tspan></text>
-    <text x="1142" y="580" class="code" style="font-size:20px;"><tspan class="op">status = </tspan><tspan class="str">"synced"</tspan></text>
-    <text x="1142" y="620" class="code" style="font-size:20px;"><tspan class="cm"># async workers process tasks</tspan></text>
-  </g>
-
-  <!-- preview 2: ts -->
-  <g class="ts-preview">
-    <circle cx="1325" cy="505" r="8" fill="#ffd8cd"/>
-    <circle cx="1325" cy="505" r="10" class="dot orbit1"/>
-    <circle cx="1325" cy="505" r="9" class="dot orbit2"/>
-    <circle cx="1325" cy="505" r="8" class="dot orbit3"/>
-
-    <circle cx="1325" cy="505" r="70" fill="none" stroke="#131313"/>
-    <circle cx="1325" cy="505" r="100" fill="none" stroke="#131313"/>
-    <circle cx="1325" cy="505" r="130" fill="none" stroke="#131313"/>
-
-    <text x="1142" y="650" class="code" style="font-size:20px;"><tspan class="op">mode = </tspan><tspan class="str">"particles"</tspan></text>
-    <text x="1142" y="690" class="code" style="font-size:20px;"><tspan class="op">count = </tspan><tspan class="num">48</tspan></text>
-    <text x="1142" y="730" class="code" style="font-size:20px;"><tspan class="cm">// canvas draws motion in loops</tspan></text>
-  </g>
-
-  <!-- preview 3: go -->
-  <g class="go-preview">
-    <rect x="1160" y="560" width="42" height="40" rx="8" class="bar go-bar1"/>
-    <rect x="1220" y="530" width="42" height="70" rx="8" class="bar go-bar2"/>
-    <rect x="1280" y="545" width="42" height="55" rx="8" class="bar go-bar3"/>
-    <rect x="1340" y="520" width="42" height="90" rx="8" class="bar go-bar4"/>
-
-    <rect x="1160" y="330" width="250" height="26" rx="13" fill="#111111"/>
-    <rect x="1160" y="370" width="290" height="26" rx="13" fill="#111111"/>
-    <rect x="1160" y="410" width="220" height="26" rx="13" fill="#111111"/>
-
-    <rect x="1160" y="330" width="180" height="26" rx="13" fill="#ffb7c8" opacity="0.85"/>
-    <rect x="1160" y="370" width="248" height="26" rx="13" fill="#ffd8cd" opacity="0.85"/>
-    <rect x="1160" y="410" width="140" height="26" rx="13" fill="#f5e5a6" opacity="0.85"/>
-
-    <text x="1160" y="680" class="code" style="font-size:20px;"><tspan class="op">/health = </tspan><tspan class="str">"ok"</tspan></text>
-    <text x="1160" y="720" class="code" style="font-size:20px;"><tspan class="op">uptime = </tspan><tspan class="num">86400</tspan></text>
-  </g>
-
-  <!-- preview 4: c# snake -->
+  <!-- preview 1: c# snake -->
   <g class="cs-preview">
-    <rect x="1100" y="290" width="400" height="400" rx="16" fill="#050505" stroke="#141414"/>
-    <line x1="1170" y1="290" x2="1170" y2="690" class="grid-line"/>
-    <line x1="1240" y1="290" x2="1240" y2="690" class="grid-line"/>
-    <line x1="1310" y1="290" x2="1310" y2="690" class="grid-line"/>
-    <line x1="1380" y1="290" x2="1380" y2="690" class="grid-line"/>
-    <line x1="1450" y1="290" x2="1450" y2="690" class="grid-line"/>
+    <rect x="1180" y="300" width="280" height="320" rx="16" fill="#050505" stroke="#141414"/>
 
-    <line x1="1100" y1="360" x2="1500" y2="360" class="grid-line"/>
-    <line x1="1100" y1="430" x2="1500" y2="430" class="grid-line"/>
-    <line x1="1100" y1="500" x2="1500" y2="500" class="grid-line"/>
-    <line x1="1100" y1="570" x2="1500" y2="570" class="grid-line"/>
-    <line x1="1100" y1="640" x2="1500" y2="640" class="grid-line"/>
+    <line x1="1214" y1="300" x2="1214" y2="620" class="grid-line"/>
+    <line x1="1248" y1="300" x2="1248" y2="620" class="grid-line"/>
+    <line x1="1282" y1="300" x2="1282" y2="620" class="grid-line"/>
+    <line x1="1316" y1="300" x2="1316" y2="620" class="grid-line"/>
+    <line x1="1350" y1="300" x2="1350" y2="620" class="grid-line"/>
+    <line x1="1384" y1="300" x2="1384" y2="620" class="grid-line"/>
+    <line x1="1418" y1="300" x2="1418" y2="620" class="grid-line"/>
 
-    <rect width="30" height="30" rx="8" class="snake snake1"/>
-    <rect width="30" height="30" rx="8" class="snake snake2"/>
-    <rect width="30" height="30" rx="8" class="snake snake3"/>
-    <rect width="30" height="30" rx="8" class="snake snake4"/>
+    <line x1="1180" y1="334" x2="1460" y2="334" class="grid-line"/>
+    <line x1="1180" y1="368" x2="1460" y2="368" class="grid-line"/>
+    <line x1="1180" y1="402" x2="1460" y2="402" class="grid-line"/>
+    <line x1="1180" y1="436" x2="1460" y2="436" class="grid-line"/>
+    <line x1="1180" y1="470" x2="1460" y2="470" class="grid-line"/>
+    <line x1="1180" y1="504" x2="1460" y2="504" class="grid-line"/>
+    <line x1="1180" y1="538" x2="1460" y2="538" class="grid-line"/>
+    <line x1="1180" y1="572" x2="1460" y2="572" class="grid-line"/>
 
-    <rect width="30" height="30" rx="10" class="food foodMove"/>
+    <rect x="1214" y="504" width="26" height="26" rx="8" class="snake snakeHead"/>
+    <rect x="1180" y="504" width="26" height="26" rx="8" class="snake snakeB1"/>
+    <rect x="1146" y="504" width="26" height="26" rx="8" class="snake snakeB2"/>
+    <rect x="1112" y="504" width="26" height="26" rx="8" class="snake snakeB3"/>
+    <rect x="1078" y="504" width="26" height="26" rx="8" class="snake snakeB4"/>
 
-    <text x="1142" y="740" class="code" style="font-size:20px;"><tspan class="op">game = </tspan><tspan class="str">"snake"</tspan></text>
-    <text x="1260" y="740" class="code" style="font-size:20px;"><tspan class="op">fps = </tspan><tspan class="num">12</tspan></text>
+    <rect x="1384" y="470" width="26" height="26" rx="10" class="food foodAnim"/>
+  </g>
+
+  <!-- preview 2: python -->
+  <g class="python-preview">
+    <rect x="1188" y="332" width="120" height="30" rx="14" fill="#111111"/>
+    <rect x="1188" y="392" width="120" height="30" rx="14" fill="#111111"/>
+    <rect x="1188" y="452" width="120" height="30" rx="14" fill="#111111"/>
+
+    <circle cx="1218" cy="347" r="10" class="node pulse1"/>
+    <circle cx="1218" cy="407" r="10" class="node pulse2"/>
+    <circle cx="1218" cy="467" r="10" class="node pulse3"/>
+
+    <rect x="1410" y="340" width="34" height="14" rx="7" fill="#111111"/>
+    <rect x="1450" y="400" width="34" height="14" rx="7" fill="#111111"/>
+    <rect x="1410" y="460" width="34" height="14" rx="7" fill="#111111"/>
+
+    <circle cx="1268" cy="347" r="8" class="packet move-a"/>
+    <circle cx="1268" cy="467" r="8" class="packet move-b"/>
+  </g>
+
+  <!-- preview 3: ts -->
+  <g class="ts-preview">
+    <circle cx="1342" cy="500" r="8" fill="#ffd8cd"/>
+    <circle cx="1342" cy="500" r="10" class="dot orbit1"/>
+    <circle cx="1342" cy="500" r="9" class="dot orbit2"/>
+    <circle cx="1342" cy="500" r="8" class="dot orbit3"/>
+
+    <circle cx="1342" cy="500" r="64" fill="none" stroke="#131313"/>
+    <circle cx="1342" cy="500" r="92" fill="none" stroke="#131313"/>
+    <circle cx="1342" cy="500" r="120" fill="none" stroke="#131313"/>
+  </g>
+
+  <!-- preview 4: go -->
+  <g class="go-preview">
+    <rect x="1198" y="334" width="190" height="24" rx="12" fill="#111111"/>
+    <rect x="1198" y="376" width="226" height="24" rx="12" fill="#111111"/>
+    <rect x="1198" y="418" width="164" height="24" rx="12" fill="#111111"/>
+
+    <rect x="1198" y="334" width="142" height="24" rx="12" fill="#ffb7c8" opacity="0.9"/>
+    <rect x="1198" y="376" width="182" height="24" rx="12" fill="#ffd8cd" opacity="0.9"/>
+    <rect x="1198" y="418" width="110" height="24" rx="12" fill="#f5e5a6" opacity="0.9"/>
+
+    <rect x="1222" y="530" width="34" height="120" rx="8" class="bar go-bar1"/>
+    <rect x="1276" y="500" width="34" height="150" rx="8" class="bar go-bar2"/>
+    <rect x="1330" y="518" width="34" height="102" rx="8" class="bar go-bar3"/>
+    <rect x="1384" y="490" width="34" height="140" rx="8" class="bar go-bar4"/>
   </g>
 
   <!-- code panels -->
 
-  <!-- Python -->
+  <!-- C# -->
   <g class="panel p1">
+    <text x="1068" y="248" text-anchor="end" class="lang">C#</text>
+
+    <text x="188" y="248" class="code"><tspan class="kw">public class</tspan><tspan class="op"> </tspan><tspan class="typ">SnakeGame</tspan><tspan class="op"> {</tspan></text>
+    <rect x="188" y="222" width="1000" height="34" class="type-mask mask-cs1"/>
+
+    <text x="188" y="300" class="code"><tspan class="op">    </tspan><tspan class="kw">private</tspan><tspan class="op"> Queue&lt;Point&gt; snake = </tspan><tspan class="kw">new</tspan><tspan class="op">();</tspan></text>
+    <rect x="188" y="274" width="1000" height="34" class="type-mask mask-cs2"/>
+
+    <text x="188" y="352" class="code"><tspan class="op">    </tspan><tspan class="kw">private</tspan><tspan class="op"> Point food = </tspan><tspan class="kw">new</tspan><tspan class="op">(</tspan><tspan class="num">6</tspan><tspan class="op">, </tspan><tspan class="num">3</tspan><tspan class="op">);</tspan></text>
+    <rect x="188" y="326" width="1000" height="34" class="type-mask mask-cs3"/>
+
+    <text x="188" y="404" class="code"><tspan class="op">    </tspan><tspan class="kw">public void</tspan><tspan class="op"> </tspan><tspan class="fn">Tick</tspan><tspan class="op">() { </tspan><tspan class="kw">var</tspan><tspan class="op"> head = snake.Last(); }</tspan></text>
+    <rect x="188" y="378" width="1000" height="34" class="type-mask mask-cs4"/>
+
+    <text x="188" y="456" class="code"><tspan class="op">    </tspan><tspan class="kw">public void</tspan><tspan class="op"> </tspan><tspan class="fn">MoveRight</tspan><tspan class="op">() { snake.Enqueue(NextCell()); }</tspan></text>
+    <rect x="188" y="430" width="1000" height="34" class="type-mask mask-cs5"/>
+
+    <text x="188" y="508" class="code"><tspan class="op">    </tspan><tspan class="kw">if</tspan><tspan class="op"> (snake.Last() == food) </tspan><tspan class="fn">SpawnFood</tspan><tspan class="op">();</tspan></text>
+    <rect x="188" y="482" width="1000" height="34" class="type-mask mask-cs6"/>
+
+    <text x="188" y="560" class="code"><tspan class="op">    </tspan><tspan class="kw">public void</tspan><tspan class="op"> </tspan><tspan class="fn">Render</tspan><tspan class="op">() { DrawGrid(); DrawSnake(); DrawFood(); }</tspan></text>
+    <rect x="188" y="534" width="1000" height="34" class="type-mask mask-cs7"/>
+
+    <text x="188" y="612" class="code"><tspan class="cm">// classic snake updates state and renders each frame</tspan></text>
+    <rect x="188" y="586" width="1000" height="34" class="type-mask mask-cs8"/>
+  </g>
+
+  <!-- Python -->
+  <g class="panel p2">
     <text x="1068" y="248" text-anchor="end" class="lang">PYTHON</text>
 
-    <text x="188" y="248" class="code line l1"><tspan class="kw">async def</tspan><tspan class="op"> </tspan><tspan class="fn">orchestrate</tspan><tspan class="op">(workers, queue):</tspan></text>
-    <text x="188" y="300" class="code line l2"><tspan class="op">    active = [w </tspan><tspan class="kw">for</tspan><tspan class="op"> w </tspan><tspan class="kw">in</tspan><tspan class="op"> workers </tspan><tspan class="kw">if</tspan><tspan class="op"> w.online]</tspan></text>
-    <text x="188" y="352" class="code line l3"><tspan class="op">    batches = await </tspan><tspan class="fn">split_queue</tspan><tspan class="op">(queue, size=</tspan><tspan class="num">50</tspan><tspan class="op">)</tspan></text>
-    <text x="188" y="404" class="code line l4"><tspan class="op">    result = await </tspan><tspan class="fn">gather</tspan><tspan class="op">(*[w.run(b) </tspan><tspan class="kw">for</tspan><tspan class="op"> w, b </tspan><tspan class="kw">in</tspan><tspan class="op"> zip(active, batches)])</tspan></text>
-    <text x="188" y="456" class="code line l5"><tspan class="op">    stats = {</tspan><tspan class="str">"processed"</tspan><tspan class="op">: </tspan><tspan class="fn">sum</tspan><tspan class="op">(result), </tspan><tspan class="str">"workers"</tspan><tspan class="op">: </tspan><tspan class="fn">len</tspan><tspan class="op">(active)}</tspan></text>
-    <text x="188" y="508" class="code line l6"><tspan class="op">    await </tspan><tspan class="fn">save_metrics</tspan><tspan class="op">(stats)</tspan></text>
-    <text x="188" y="560" class="code line l7"><tspan class="op">    await </tspan><tspan class="fn">publish_event</tspan><tspan class="op">(</tspan><tspan class="str">"pipeline.synced"</tspan><tspan class="op">, stats)</tspan></text>
-    <text x="188" y="612" class="code line l8"><tspan class="cm"># async workers process queue and emit telemetry</tspan></text>
+    <text x="188" y="248" class="code"><tspan class="kw">async def</tspan><tspan class="op"> </tspan><tspan class="fn">orchestrate</tspan><tspan class="op">(workers, queue):</tspan></text>
+    <rect x="188" y="222" width="1000" height="34" class="type-mask mask-py1"/>
+
+    <text x="188" y="300" class="code"><tspan class="op">    active = [w </tspan><tspan class="kw">for</tspan><tspan class="op"> w </tspan><tspan class="kw">in</tspan><tspan class="op"> workers </tspan><tspan class="kw">if</tspan><tspan class="op"> w.online]</tspan></text>
+    <rect x="188" y="274" width="1000" height="34" class="type-mask mask-py2"/>
+
+    <text x="188" y="352" class="code"><tspan class="op">    batches = await </tspan><tspan class="fn">split_queue</tspan><tspan class="op">(queue, size=</tspan><tspan class="num">50</tspan><tspan class="op">)</tspan></text>
+    <rect x="188" y="326" width="1000" height="34" class="type-mask mask-py3"/>
+
+    <text x="188" y="404" class="code"><tspan class="op">    result = await </tspan><tspan class="fn">gather</tspan><tspan class="op">(*[w.run(b) </tspan><tspan class="kw">for</tspan><tspan class="op"> w, b </tspan><tspan class="kw">in</tspan><tspan class="op"> zip(active, batches)])</tspan></text>
+    <rect x="188" y="378" width="1000" height="34" class="type-mask mask-py4"/>
+
+    <text x="188" y="456" class="code"><tspan class="op">    stats = {</tspan><tspan class="str">"processed"</tspan><tspan class="op">: </tspan><tspan class="fn">sum</tspan><tspan class="op">(result), </tspan><tspan class="str">"workers"</tspan><tspan class="op">: </tspan><tspan class="fn">len</tspan><tspan class="op">(active)}</tspan></text>
+    <rect x="188" y="430" width="1000" height="34" class="type-mask mask-py5"/>
+
+    <text x="188" y="508" class="code"><tspan class="op">    await </tspan><tspan class="fn">save_metrics</tspan><tspan class="op">(stats)</tspan></text>
+    <rect x="188" y="482" width="1000" height="34" class="type-mask mask-py6"/>
+
+    <text x="188" y="560" class="code"><tspan class="op">    await </tspan><tspan class="fn">publish_event</tspan><tspan class="op">(</tspan><tspan class="str">"pipeline.synced"</tspan><tspan class="op">, stats)</tspan></text>
+    <rect x="188" y="534" width="1000" height="34" class="type-mask mask-py7"/>
+
+    <text x="188" y="612" class="code"><tspan class="cm"># async workers process queue and emit telemetry</tspan></text>
+    <rect x="188" y="586" width="1000" height="34" class="type-mask mask-py8"/>
   </g>
 
   <!-- TypeScript -->
-  <g class="panel p2">
+  <g class="panel p3">
     <text x="1068" y="248" text-anchor="end" class="lang">TYPESCRIPT</text>
 
-    <text x="188" y="248" class="code line l1"><tspan class="kw">type</tspan><tspan class="op"> Particle = { x: </tspan><tspan class="typ">number</tspan><tspan class="op">; y: </tspan><tspan class="typ">number</tspan><tspan class="op">; r: </tspan><tspan class="typ">number</tspan><tspan class="op"> }</tspan></text>
-    <text x="188" y="300" class="code line l2"><tspan class="kw">const</tspan><tspan class="op"> ctx = canvas.getContext(</tspan><tspan class="str">"2d"</tspan><tspan class="op">)!</tspan></text>
-    <text x="188" y="352" class="code line l3"><tspan class="kw">const</tspan><tspan class="op"> particles = Array.from({ length: </tspan><tspan class="num">48</tspan><tspan class="op"> }, seedParticle)</tspan></text>
-    <text x="188" y="404" class="code line l4"><tspan class="kw">function</tspan><tspan class="op"> </tspan><tspan class="fn">draw</tspan><tspan class="op">() { ctx.clearRect(</tspan><tspan class="num">0</tspan><tspan class="op">, </tspan><tspan class="num">0</tspan><tspan class="op">, w, h) }</tspan></text>
-    <text x="188" y="456" class="code line l5"><tspan class="kw">function</tspan><tspan class="op"> </tspan><tspan class="fn">tick</tspan><tspan class="op">() { particles.forEach(updateParticle); draw() }</tspan></text>
-    <text x="188" y="508" class="code line l6"><tspan class="kw">function</tspan><tspan class="op"> </tspan><tspan class="fn">loop</tspan><tspan class="op">() { tick(); requestAnimationFrame(loop) }</tspan></text>
-    <text x="188" y="560" class="code line l7"><tspan class="op">particles.forEach(p =&gt; p.r = </tspan><tspan class="num">2</tspan><tspan class="op"> + Math.random() * </tspan><tspan class="num">4</tspan><tspan class="op">)</tspan></text>
-    <text x="188" y="612" class="code line l8"><tspan class="cm">// canvas renders orbiting particles in real time</tspan></text>
+    <text x="188" y="248" class="code"><tspan class="kw">type</tspan><tspan class="op"> Particle = { x: </tspan><tspan class="typ">number</tspan><tspan class="op">; y: </tspan><tspan class="typ">number</tspan><tspan class="op">; r: </tspan><tspan class="typ">number</tspan><tspan class="op"> }</tspan></text>
+    <rect x="188" y="222" width="1000" height="34" class="type-mask mask-ts1"/>
+
+    <text x="188" y="300" class="code"><tspan class="kw">const</tspan><tspan class="op"> ctx = canvas.getContext(</tspan><tspan class="str">"2d"</tspan><tspan class="op">)!</tspan></text>
+    <rect x="188" y="274" width="1000" height="34" class="type-mask mask-ts2"/>
+
+    <text x="188" y="352" class="code"><tspan class="kw">const</tspan><tspan class="op"> particles = Array.from({ length: </tspan><tspan class="num">48</tspan><tspan class="op"> }, seedParticle)</tspan></text>
+    <rect x="188" y="326" width="1000" height="34" class="type-mask mask-ts3"/>
+
+    <text x="188" y="404" class="code"><tspan class="kw">function</tspan><tspan class="op"> </tspan><tspan class="fn">draw</tspan><tspan class="op">() { ctx.clearRect(</tspan><tspan class="num">0</tspan><tspan class="op">, </tspan><tspan class="num">0</tspan><tspan class="op">, w, h) }</tspan></text>
+    <rect x="188" y="378" width="1000" height="34" class="type-mask mask-ts4"/>
+
+    <text x="188" y="456" class="code"><tspan class="kw">function</tspan><tspan class="op"> </tspan><tspan class="fn">tick</tspan><tspan class="op">() { particles.forEach(updateParticle); draw() }</tspan></text>
+    <rect x="188" y="430" width="1000" height="34" class="type-mask mask-ts5"/>
+
+    <text x="188" y="508" class="code"><tspan class="kw">function</tspan><tspan class="op"> </tspan><tspan class="fn">loop</tspan><tspan class="op">() { tick(); requestAnimationFrame(loop) }</tspan></text>
+    <rect x="188" y="482" width="1000" height="34" class="type-mask mask-ts6"/>
+
+    <text x="188" y="560" class="code"><tspan class="op">particles.forEach(p =&gt; p.r = </tspan><tspan class="num">2</tspan><tspan class="op"> + Math.random() * </tspan><tspan class="num">4</tspan><tspan class="op">)</tspan></text>
+    <rect x="188" y="534" width="1000" height="34" class="type-mask mask-ts7"/>
+
+    <text x="188" y="612" class="code"><tspan class="cm">// canvas renders orbiting particles in real time</tspan></text>
+    <rect x="188" y="586" width="1000" height="34" class="type-mask mask-ts8"/>
   </g>
 
   <!-- Go -->
-  <g class="panel p3">
+  <g class="panel p4">
     <text x="1068" y="248" text-anchor="end" class="lang">GO</text>
 
-    <text x="188" y="248" class="code line l1"><tspan class="kw">package</tspan><tspan class="op"> main</tspan></text>
-    <text x="188" y="300" class="code line l2"><tspan class="kw">import</tspan><tspan class="op"> (</tspan><tspan class="str">"encoding/json"</tspan><tspan class="op"> </tspan><tspan class="str">"net/http"</tspan><tspan class="op">)</tspan></text>
-    <text x="188" y="352" class="code line l3"><tspan class="kw">type</tspan><tspan class="op"> Health struct { Status string; Uptime int }</tspan></text>
-    <text x="188" y="404" class="code line l4"><tspan class="kw">func</tspan><tspan class="op"> </tspan><tspan class="fn">health</tspan><tspan class="op">(w http.ResponseWriter, r *http.Request) {</tspan></text>
-    <text x="188" y="456" class="code line l5"><tspan class="op">    payload := Health{Status: </tspan><tspan class="str">"ok"</tspan><tspan class="op">, Uptime: </tspan><tspan class="num">86400</tspan><tspan class="op">}</tspan></text>
-    <text x="188" y="508" class="code line l6"><tspan class="op">    w.Header().Set(</tspan><tspan class="str">"Content-Type"</tspan><tspan class="op">, </tspan><tspan class="str">"application/json"</tspan><tspan class="op">)</tspan></text>
-    <text x="188" y="560" class="code line l7"><tspan class="op">    json.NewEncoder(w).Encode(payload); http.ListenAndServe(</tspan><tspan class="str">":8080"</tspan><tspan class="op">, nil)</tspan></text>
-    <text x="188" y="612" class="code line l8"><tspan class="cm">// server publishes health metrics and response stats</tspan></text>
-  </g>
+    <text x="188" y="248" class="code"><tspan class="kw">package</tspan><tspan class="op"> main</tspan></text>
+    <rect x="188" y="222" width="1100" height="34" class="type-mask mask-go1"/>
 
-  <!-- C# -->
-  <g class="panel p4">
-    <text x="1068" y="248" text-anchor="end" class="lang">C#</text>
+    <text x="188" y="300" class="code"><tspan class="kw">import</tspan><tspan class="op"> (</tspan><tspan class="str">"encoding/json"</tspan><tspan class="op"> </tspan><tspan class="str">"net/http"</tspan><tspan class="op">)</tspan></text>
+    <rect x="188" y="274" width="1100" height="34" class="type-mask mask-go2"/>
 
-    <text x="188" y="248" class="code line l1"><tspan class="kw">public class</tspan><tspan class="op"> </tspan><tspan class="typ">SnakeGame</tspan><tspan class="op"> {</tspan></text>
-    <text x="188" y="300" class="code line l2"><tspan class="op">    </tspan><tspan class="kw">private</tspan><tspan class="op"> Queue&lt;Point&gt; snake = </tspan><tspan class="kw">new</tspan><tspan class="op">();</tspan></text>
-    <text x="188" y="352" class="code line l3"><tspan class="op">    </tspan><tspan class="kw">private</tspan><tspan class="op"> Point food = </tspan><tspan class="kw">new</tspan><tspan class="op">(</tspan><tspan class="num">6</tspan><tspan class="op">, </tspan><tspan class="num">3</tspan><tspan class="op">);</tspan></text>
-    <text x="188" y="404" class="code line l4"><tspan class="op">    </tspan><tspan class="kw">public void</tspan><tspan class="op"> </tspan><tspan class="fn">Tick</tspan><tspan class="op">() { </tspan><tspan class="kw">var</tspan><tspan class="op"> head = snake.Last(); }</tspan></text>
-    <text x="188" y="456" class="code line l5"><tspan class="op">    </tspan><tspan class="kw">public void</tspan><tspan class="op"> </tspan><tspan class="fn">MoveRight</tspan><tspan class="op">() { snake.Enqueue(NextCell()); }</tspan></text>
-    <text x="188" y="508" class="code line l6"><tspan class="op">    </tspan><tspan class="kw">if</tspan><tspan class="op"> (snake.Last() == food) </tspan><tspan class="fn">SpawnFood</tspan><tspan class="op">();</tspan></text>
-    <text x="188" y="560" class="code line l7"><tspan class="op">    </tspan><tspan class="kw">public void</tspan><tspan class="op"> </tspan><tspan class="fn">Render</tspan><tspan class="op">() { DrawGrid(); DrawSnake(); DrawFood(); }</tspan></text>
-    <text x="188" y="612" class="code line l8"><tspan class="cm">// classic snake updates state and renders each frame</tspan></text>
+    <text x="188" y="352" class="code"><tspan class="kw">type</tspan><tspan class="op"> Health struct { Status string; Uptime int }</tspan></text>
+    <rect x="188" y="326" width="1100" height="34" class="type-mask mask-go3"/>
+
+    <text x="188" y="404" class="code"><tspan class="kw">func</tspan><tspan class="op"> </tspan><tspan class="fn">health</tspan><tspan class="op">(w http.ResponseWriter, r *http.Request) {</tspan></text>
+    <rect x="188" y="378" width="1100" height="34" class="type-mask mask-go4"/>
+
+    <text x="188" y="456" class="code"><tspan class="op">    payload := Health{Status: </tspan><tspan class="str">"ok"</tspan><tspan class="op">, Uptime: </tspan><tspan class="num">86400</tspan><tspan class="op">}</tspan></text>
+    <rect x="188" y="430" width="1100" height="34" class="type-mask mask-go5"/>
+
+    <text x="188" y="508" class="code"><tspan class="op">    w.Header().Set(</tspan><tspan class="str">"Content-Type"</tspan><tspan class="op">, </tspan><tspan class="str">"application/json"</tspan><tspan class="op">)</tspan></text>
+    <rect x="188" y="482" width="1100" height="34" class="type-mask mask-go6"/>
+
+    <text x="188" y="560" class="code"><tspan class="op">    json.NewEncoder(w).Encode(payload); http.ListenAndServe(</tspan><tspan class="str">":8080"</tspan><tspan class="op">, nil)</tspan></text>
+    <rect x="188" y="534" width="1100" height="34" class="type-mask mask-go7"/>
+
+    <text x="188" y="612" class="code"><tspan class="cm">// server publishes health metrics and response stats</tspan></text>
+    <rect x="188" y="586" width="1100" height="34" class="type-mask mask-go8"/>
   </g>
 </svg>
