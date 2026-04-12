@@ -22,7 +22,7 @@
 
       .tab {
         font: 700 18px 'Segoe UI', Inter, Arial, sans-serif;
-        fill: #798392;
+        fill: #7f8997;
         letter-spacing: 0.5px;
       }
 
@@ -35,7 +35,7 @@
       }
 
       .tab-bg-active {
-        fill: #171717;
+        fill: #1a1a1a;
       }
 
       .line-no {
@@ -103,7 +103,7 @@
         transform-origin: 100% 50%;
       }
 
-      /* C# line typing */
+      /* C# */
       .p1 .c1  { animation: c1 24s infinite; }
       .p1 .c2  { animation: c2 24s infinite; }
       .p1 .c3  { animation: c3 24s infinite; }
@@ -130,7 +130,7 @@
       @keyframes c11 { 0%,12.4%{transform:scaleX(1)} 13.6%,24.5%{transform:scaleX(0)} 25%,100%{transform:scaleX(1)} }
       @keyframes c12 { 0%,13.6%{transform:scaleX(1)} 14.8%,24.5%{transform:scaleX(0)} 25%,100%{transform:scaleX(1)} }
 
-      /* Python line typing */
+      /* Python */
       .p2 .c1  { animation: p2c1 24s infinite; }
       .p2 .c2  { animation: p2c2 24s infinite; }
       .p2 .c3  { animation: p2c3 24s infinite; }
@@ -153,7 +153,7 @@
       @keyframes p2c9  { 0%,35.0%{transform:scaleX(1)} 36.2%,49.5%{transform:scaleX(0)} 50%,100%{transform:scaleX(1)} }
       @keyframes p2c10 { 0%,36.2%{transform:scaleX(1)} 37.4%,49.5%{transform:scaleX(0)} 50%,100%{transform:scaleX(1)} }
 
-      /* TS line typing */
+      /* TS */
       .p3 .c1  { animation: p3c1 24s infinite; }
       .p3 .c2  { animation: p3c2 24s infinite; }
       .p3 .c3  { animation: p3c3 24s infinite; }
@@ -176,7 +176,7 @@
       @keyframes p3c9  { 0%,60.0%{transform:scaleX(1)} 61.2%,74.5%{transform:scaleX(0)} 75%,100%{transform:scaleX(1)} }
       @keyframes p3c10 { 0%,61.2%{transform:scaleX(1)} 62.4%,74.5%{transform:scaleX(0)} 75%,100%{transform:scaleX(1)} }
 
-      /* Go line typing */
+      /* Go */
       .p4 .c1  { animation: p4c1 24s infinite; }
       .p4 .c2  { animation: p4c2 24s infinite; }
       .p4 .c3  { animation: p4c3 24s infinite; }
@@ -194,162 +194,10 @@
       @keyframes p4c6  { 0%,81.4%{transform:scaleX(1)} 82.6%,99.5%{transform:scaleX(0)} 100%{transform:scaleX(1)} }
       @keyframes p4c7  { 0%,82.6%{transform:scaleX(1)} 83.8%,99.5%{transform:scaleX(0)} 100%{transform:scaleX(1)} }
       @keyframes p4c8  { 0%,83.8%{transform:scaleX(1)} 85.0%,99.5%{transform:scaleX(0)} 100%{transform:scaleX(1)} }
-
-      /* preview animations */
-      .pulse1 { animation: pulse1 1.15s infinite; transform-origin: center; }
-      .pulse2 { animation: pulse2 1.15s infinite; transform-origin: center; }
-      .pulse3 { animation: pulse3 1.15s infinite; transform-origin: center; }
-
-      @keyframes pulse1 {
-        0%,100% { opacity: 0.25; transform: scale(0.86); }
-        50% { opacity: 1; transform: scale(1.02); }
-      }
-      @keyframes pulse2 {
-        0%,100% { opacity: 0.35; transform: scale(0.9); }
-        50% { opacity: 1; transform: scale(1.05); }
-      }
-      @keyframes pulse3 {
-        0%,100% { opacity: 0.3; transform: scale(0.9); }
-        50% { opacity: 1; transform: scale(1.02); }
-      }
-
-      .move-packet-a { animation: movePacketA 2.6s linear infinite; }
-      .move-packet-b { animation: movePacketB 2.6s linear infinite; }
-
-      @keyframes movePacketA {
-        0% { transform: translate(0px,0px); opacity: 0; }
-        8% { opacity: 1; }
-        50% { transform: translate(180px,-54px); opacity: 1; }
-        100% { transform: translate(340px,0px); opacity: 0; }
-      }
-      @keyframes movePacketB {
-        0% { transform: translate(0px,0px); opacity: 0; }
-        8% { opacity: 1; }
-        50% { transform: translate(180px,54px); opacity: 1; }
-        100% { transform: translate(340px,0px); opacity: 0; }
-      }
-
-      .orbit1 { animation: orbit1 3s linear infinite; transform-origin: 1328px 486px; }
-      .orbit2 { animation: orbit2 4s linear infinite; transform-origin: 1328px 486px; }
-      .orbit3 { animation: orbit3 5s linear infinite; transform-origin: 1328px 486px; }
-
-      @keyframes orbit1 {
-        from { transform: rotate(0deg) translateX(76px) rotate(0deg); }
-        to   { transform: rotate(360deg) translateX(76px) rotate(-360deg); }
-      }
-      @keyframes orbit2 {
-        from { transform: rotate(360deg) translateX(110px) rotate(-360deg); }
-        to   { transform: rotate(0deg) translateX(110px) rotate(0deg); }
-      }
-      @keyframes orbit3 {
-        from { transform: rotate(0deg) translateX(144px) rotate(0deg); }
-        to   { transform: rotate(360deg) translateX(144px) rotate(-360deg); }
-      }
-
-      .go-bar1 { animation: gobar1 1.6s ease-in-out infinite; }
-      .go-bar2 { animation: gobar2 1.6s ease-in-out infinite; }
-      .go-bar3 { animation: gobar3 1.6s ease-in-out infinite; }
-      .go-bar4 { animation: gobar4 1.6s ease-in-out infinite; }
-
-      @keyframes gobar1 { 0%,100% { height: 40px; y: 626px; } 50% { height: 126px; y: 540px; } }
-      @keyframes gobar2 { 0%,100% { height: 78px; y: 588px; } 50% { height: 160px; y: 506px; } }
-      @keyframes gobar3 { 0%,100% { height: 54px; y: 612px; } 50% { height: 98px; y: 568px; } }
-      @keyframes gobar4 { 0%,100% { height: 94px; y: 572px; } 50% { height: 148px; y: 518px; } }
-
-      .snake1 { animation: snake1 3.2s steps(1) infinite; }
-      .snake2 { animation: snake2 3.2s steps(1) infinite; }
-      .snake3 { animation: snake3 3.2s steps(1) infinite; }
-      .snake4 { animation: snake4 3.2s steps(1) infinite; }
-      .snake5 { animation: snake5 3.2s steps(1) infinite; }
-
-      @keyframes snake1 {
-        0%,19%   { x: 1180px; y: 522px; }
-        20%,39%  { x: 1218px; y: 522px; }
-        40%,59%  { x: 1256px; y: 522px; }
-        60%,79%  { x: 1294px; y: 522px; }
-        80%,100% { x: 1332px; y: 522px; }
-      }
-      @keyframes snake2 {
-        0%,19%   { x: 1142px; y: 522px; }
-        20%,39%  { x: 1180px; y: 522px; }
-        40%,59%  { x: 1218px; y: 522px; }
-        60%,79%  { x: 1256px; y: 522px; }
-        80%,100% { x: 1294px; y: 522px; }
-      }
-      @keyframes snake3 {
-        0%,19%   { x: 1104px; y: 522px; }
-        20%,39%  { x: 1142px; y: 522px; }
-        40%,59%  { x: 1180px; y: 522px; }
-        60%,79%  { x: 1218px; y: 522px; }
-        80%,100% { x: 1256px; y: 522px; }
-      }
-      @keyframes snake4 {
-        0%,19%   { x: 1066px; y: 522px; }
-        20%,39%  { x: 1104px; y: 522px; }
-        40%,59%  { x: 1142px; y: 522px; }
-        60%,79%  { x: 1180px; y: 522px; }
-        80%,100% { x: 1218px; y: 522px; }
-      }
-      @keyframes snake5 {
-        0%,19%   { x: 1028px; y: 522px; }
-        20%,39%  { x: 1066px; y: 522px; }
-        40%,59%  { x: 1104px; y: 522px; }
-        60%,79%  { x: 1142px; y: 522px; }
-        80%,100% { x: 1180px; y: 522px; }
-      }
-
-      .foodMove {
-        animation: foodMove 3.2s steps(1) infinite;
-      }
-
-      @keyframes foodMove {
-        0%,79%   { x: 1370px; y: 522px; opacity: 1; }
-        80%,100% { x: 1408px; y: 484px; opacity: 1; }
-      }
-
-      .preview-box {
-        fill: #030303;
-        stroke: #111111;
-      }
-
-      .grid-line {
-        stroke: #131313;
-        stroke-width: 1;
-      }
-
-      .snake {
-        fill: #ffb7c8;
-      }
-
-      .food {
-        fill: #f5e5a6;
-      }
-
-      .node {
-        fill: #ffd7cc;
-      }
-
-      .packet {
-        fill: #ffe6df;
-      }
-
-      .ring {
-        fill: none;
-        stroke: #131313;
-      }
-
-      .bar {
-        fill: #ffb7c8;
-      }
-
-      .metric1 { fill: #ffd8cd; }
-      .metric2 { fill: #f5e5a6; }
-      .metric3 { fill: #bde7ff; }
     </style>
   </defs>
 
   <rect x="28" y="28" width="1644" height="874" rx="30" fill="url(#frameBg)" filter="url(#shadow)"/>
-
   <rect x="28" y="28" width="1644" height="82" rx="30" fill="url(#topBar)"/>
   <rect x="28" y="82" width="1644" height="28" fill="url(#topBar)"/>
 
@@ -416,27 +264,27 @@
   <text x="112" y="768" text-anchor="middle" class="line-no">11</text>
   <text x="112" y="820" text-anchor="middle" class="line-no">12</text>
 
-  <text x="1136" y="236" class="preview-title">PREVIEW</text>
-  <rect x="1110" y="258" width="456" height="560" rx="20" class="preview-box"/>
+  <text x="1248" y="236" class="preview-title">PREVIEW</text>
+  <rect x="1180" y="258" width="386" height="560" rx="20" class="preview-box"/>
 
   <!-- C# preview -->
   <g class="preview pv1">
-    <rect x="1142" y="300" width="232" height="400" rx="16" fill="#050505" stroke="#141414"/>
-    <line x1="1180" y1="300" x2="1180" y2="700" class="grid-line"/>
-    <line x1="1218" y1="300" x2="1218" y2="700" class="grid-line"/>
-    <line x1="1256" y1="300" x2="1256" y2="700" class="grid-line"/>
-    <line x1="1294" y1="300" x2="1294" y2="700" class="grid-line"/>
-    <line x1="1332" y1="300" x2="1332" y2="700" class="grid-line"/>
+    <rect x="1204" y="298" width="232" height="400" rx="16" fill="#050505" stroke="#141414"/>
+    <line x1="1242" y1="298" x2="1242" y2="698" class="grid-line"/>
+    <line x1="1280" y1="298" x2="1280" y2="698" class="grid-line"/>
+    <line x1="1318" y1="298" x2="1318" y2="698" class="grid-line"/>
+    <line x1="1356" y1="298" x2="1356" y2="698" class="grid-line"/>
+    <line x1="1394" y1="298" x2="1394" y2="698" class="grid-line"/>
 
-    <line x1="1142" y1="338" x2="1374" y2="338" class="grid-line"/>
-    <line x1="1142" y1="376" x2="1374" y2="376" class="grid-line"/>
-    <line x1="1142" y1="414" x2="1374" y2="414" class="grid-line"/>
-    <line x1="1142" y1="452" x2="1374" y2="452" class="grid-line"/>
-    <line x1="1142" y1="490" x2="1374" y2="490" class="grid-line"/>
-    <line x1="1142" y1="528" x2="1374" y2="528" class="grid-line"/>
-    <line x1="1142" y1="566" x2="1374" y2="566" class="grid-line"/>
-    <line x1="1142" y1="604" x2="1374" y2="604" class="grid-line"/>
-    <line x1="1142" y1="642" x2="1374" y2="642" class="grid-line"/>
+    <line x1="1204" y1="336" x2="1436" y2="336" class="grid-line"/>
+    <line x1="1204" y1="374" x2="1436" y2="374" class="grid-line"/>
+    <line x1="1204" y1="412" x2="1436" y2="412" class="grid-line"/>
+    <line x1="1204" y1="450" x2="1436" y2="450" class="grid-line"/>
+    <line x1="1204" y1="488" x2="1436" y2="488" class="grid-line"/>
+    <line x1="1204" y1="526" x2="1436" y2="526" class="grid-line"/>
+    <line x1="1204" y1="564" x2="1436" y2="564" class="grid-line"/>
+    <line x1="1204" y1="602" x2="1436" y2="602" class="grid-line"/>
+    <line x1="1204" y1="640" x2="1436" y2="640" class="grid-line"/>
 
     <rect width="30" height="30" rx="8" class="snake snake1"/>
     <rect width="30" height="30" rx="8" class="snake snake2"/>
@@ -449,190 +297,190 @@
 
   <!-- Python preview -->
   <g class="preview pv2">
-    <rect x="1148" y="318" width="120" height="34" rx="16" fill="#111111"/>
-    <rect x="1148" y="374" width="120" height="34" rx="16" fill="#111111"/>
-    <rect x="1148" y="430" width="120" height="34" rx="16" fill="#111111"/>
+    <rect x="1216" y="330" width="120" height="34" rx="16" fill="#111111"/>
+    <rect x="1216" y="390" width="120" height="34" rx="16" fill="#111111"/>
+    <rect x="1216" y="450" width="120" height="34" rx="16" fill="#111111"/>
 
-    <circle cx="1178" cy="335" r="10" class="node pulse1"/>
-    <circle cx="1178" cy="391" r="10" class="node pulse2"/>
-    <circle cx="1178" cy="447" r="10" class="node pulse3"/>
+    <circle cx="1246" cy="347" r="10" class="node pulse1"/>
+    <circle cx="1246" cy="407" r="10" class="node pulse2"/>
+    <circle cx="1246" cy="467" r="10" class="node pulse3"/>
 
-    <rect x="1322" y="326" width="70" height="18" rx="9" fill="#111111"/>
-    <rect x="1460" y="382" width="70" height="18" rx="9" fill="#111111"/>
-    <rect x="1322" y="438" width="70" height="18" rx="9" fill="#111111"/>
+    <rect x="1402" y="338" width="70" height="18" rx="9" fill="#111111"/>
+    <rect x="1466" y="398" width="70" height="18" rx="9" fill="#111111"/>
+    <rect x="1402" y="458" width="70" height="18" rx="9" fill="#111111"/>
 
-    <circle cx="1224" cy="335" r="8" class="packet move-packet-a"/>
-    <circle cx="1224" cy="447" r="8" class="packet move-packet-b"/>
+    <circle cx="1294" cy="347" r="8" class="packet move-packet-a"/>
+    <circle cx="1294" cy="467" r="8" class="packet move-packet-b"/>
   </g>
 
   <!-- TS preview -->
   <g class="preview pv3">
-    <circle cx="1328" cy="486" r="8" fill="#ffd8cd"/>
-    <circle cx="1328" cy="486" r="10" class="node orbit1"/>
-    <circle cx="1328" cy="486" r="9" class="node orbit2"/>
-    <circle cx="1328" cy="486" r="8" class="node orbit3"/>
+    <circle cx="1372" cy="478" r="8" fill="#ffd8cd"/>
+    <circle cx="1372" cy="478" r="10" class="node orbit1"/>
+    <circle cx="1372" cy="478" r="9" class="node orbit2"/>
+    <circle cx="1372" cy="478" r="8" class="node orbit3"/>
 
-    <circle cx="1328" cy="486" r="76" class="ring"/>
-    <circle cx="1328" cy="486" r="110" class="ring"/>
-    <circle cx="1328" cy="486" r="144" class="ring"/>
+    <circle cx="1372" cy="478" r="76" class="ring"/>
+    <circle cx="1372" cy="478" r="110" class="ring"/>
+    <circle cx="1372" cy="478" r="144" class="ring"/>
   </g>
 
   <!-- Go preview -->
   <g class="preview pv4">
-    <rect x="1164" y="626" width="44" height="40" rx="8" class="bar go-bar1"/>
-    <rect x="1226" y="588" width="44" height="78" rx="8" class="bar go-bar2"/>
-    <rect x="1288" y="612" width="44" height="54" rx="8" class="bar go-bar3"/>
-    <rect x="1350" y="572" width="44" height="94" rx="8" class="bar go-bar4"/>
+    <rect x="1232" y="614" width="44" height="40" rx="8" class="bar go-bar1"/>
+    <rect x="1294" y="576" width="44" height="78" rx="8" class="bar go-bar2"/>
+    <rect x="1356" y="600" width="44" height="54" rx="8" class="bar go-bar3"/>
+    <rect x="1418" y="560" width="44" height="94" rx="8" class="bar go-bar4"/>
 
-    <rect x="1164" y="334" width="260" height="26" rx="13" fill="#111111"/>
-    <rect x="1164" y="378" width="310" height="26" rx="13" fill="#111111"/>
-    <rect x="1164" y="422" width="224" height="26" rx="13" fill="#111111"/>
+    <rect x="1226" y="332" width="260" height="26" rx="13" fill="#111111"/>
+    <rect x="1226" y="376" width="310" height="26" rx="13" fill="#111111"/>
+    <rect x="1226" y="420" width="224" height="26" rx="13" fill="#111111"/>
 
-    <rect x="1164" y="334" width="186" height="26" rx="13" class="metric1" opacity="0.92"/>
-    <rect x="1164" y="378" width="248" height="26" rx="13" class="metric2" opacity="0.92"/>
-    <rect x="1164" y="422" width="142" height="26" rx="13" class="metric3" opacity="0.92"/>
+    <rect x="1226" y="332" width="186" height="26" rx="13" class="metric1" opacity="0.92"/>
+    <rect x="1226" y="376" width="248" height="26" rx="13" class="metric2" opacity="0.92"/>
+    <rect x="1226" y="420" width="142" height="26" rx="13" class="metric3" opacity="0.92"/>
   </g>
 
   <!-- C# panel -->
   <g class="panel p1">
-    <text x="1064" y="248" text-anchor="end" class="panel-lang">C#</text>
+    <text x="1128" y="248" text-anchor="end" class="panel-lang">C#</text>
 
     <text x="188" y="248" class="code"><tspan class="kw">public class</tspan><tspan class="op"> </tspan><tspan class="typ">SnakeGame</tspan><tspan class="op"> {</tspan></text>
-    <rect x="188" y="222" width="360" height="34" class="cover c1"/>
+    <rect x="188" y="222" width="980" height="34" class="cover c1"/>
 
     <text x="188" y="300" class="code"><tspan class="op">    </tspan><tspan class="kw">private</tspan><tspan class="op"> Queue&lt;Point&gt; snake = </tspan><tspan class="kw">new</tspan><tspan class="op">();</tspan></text>
-    <rect x="188" y="274" width="640" height="34" class="cover c2"/>
+    <rect x="188" y="274" width="980" height="34" class="cover c2"/>
 
     <text x="188" y="352" class="code"><tspan class="op">    </tspan><tspan class="kw">private</tspan><tspan class="op"> Point food = </tspan><tspan class="kw">new</tspan><tspan class="op">(</tspan><tspan class="num">6</tspan><tspan class="op">, </tspan><tspan class="num">3</tspan><tspan class="op">);</tspan></text>
-    <rect x="188" y="326" width="520" height="34" class="cover c3"/>
+    <rect x="188" y="326" width="980" height="34" class="cover c3"/>
 
     <text x="188" y="404" class="code"><tspan class="op">    </tspan><tspan class="kw">public void</tspan><tspan class="op"> </tspan><tspan class="fn">Tick</tspan><tspan class="op">() { </tspan><tspan class="kw">var</tspan><tspan class="op"> head = snake.Last(); }</tspan></text>
-    <rect x="188" y="378" width="730" height="34" class="cover c4"/>
+    <rect x="188" y="378" width="980" height="34" class="cover c4"/>
 
     <text x="188" y="456" class="code"><tspan class="op">    </tspan><tspan class="kw">public void</tspan><tspan class="op"> </tspan><tspan class="fn">MoveRight</tspan><tspan class="op">() { snake.Enqueue(NextCell()); }</tspan></text>
-    <rect x="188" y="430" width="760" height="34" class="cover c5"/>
+    <rect x="188" y="430" width="980" height="34" class="cover c5"/>
 
     <text x="188" y="508" class="code"><tspan class="op">    </tspan><tspan class="kw">if</tspan><tspan class="op"> (snake.Last() == food) </tspan><tspan class="fn">SpawnFood</tspan><tspan class="op">();</tspan></text>
-    <rect x="188" y="482" width="650" height="34" class="cover c6"/>
+    <rect x="188" y="482" width="980" height="34" class="cover c6"/>
 
     <text x="188" y="560" class="code"><tspan class="op">    </tspan><tspan class="kw">if</tspan><tspan class="op"> (snake.Count &gt; </tspan><tspan class="num">5</tspan><tspan class="op">) snake.Dequeue();</tspan></text>
-    <rect x="188" y="534" width="560" height="34" class="cover c7"/>
+    <rect x="188" y="534" width="980" height="34" class="cover c7"/>
 
     <text x="188" y="612" class="code"><tspan class="op">    </tspan><tspan class="kw">private</tspan><tspan class="op"> Point </tspan><tspan class="fn">NextCell</tspan><tspan class="op">() =&gt; snake.Last() with { X = snake.Last().X + </tspan><tspan class="num">1</tspan><tspan class="op"> };</tspan></text>
-    <rect x="188" y="586" width="860" height="34" class="cover c8"/>
+    <rect x="188" y="586" width="980" height="34" class="cover c8"/>
 
     <text x="188" y="664" class="code"><tspan class="op">    </tspan><tspan class="kw">private void</tspan><tspan class="op"> </tspan><tspan class="fn">SpawnFood</tspan><tspan class="op">() { food = RandomCell(); }</tspan></text>
-    <rect x="188" y="638" width="700" height="34" class="cover c9"/>
+    <rect x="188" y="638" width="980" height="34" class="cover c9"/>
 
     <text x="188" y="716" class="code"><tspan class="op">    </tspan><tspan class="kw">public void</tspan><tspan class="op"> </tspan><tspan class="fn">Render</tspan><tspan class="op">() { DrawGrid(); DrawSnake(); DrawFood(); }</tspan></text>
-    <rect x="188" y="690" width="780" height="34" class="cover c10"/>
+    <rect x="188" y="690" width="980" height="34" class="cover c10"/>
 
     <text x="188" y="768" class="code"><tspan class="op">}</tspan></text>
-    <rect x="188" y="742" width="24" height="34" class="cover c11"/>
+    <rect x="188" y="742" width="980" height="34" class="cover c11"/>
 
     <text x="188" y="820" class="code"><tspan class="cm">// classic snake advances and redraws each frame</tspan></text>
-    <rect x="188" y="794" width="520" height="34" class="cover c12"/>
+    <rect x="188" y="794" width="980" height="34" class="cover c12"/>
   </g>
 
   <!-- Python panel -->
   <g class="panel p2">
-    <text x="1064" y="248" text-anchor="end" class="panel-lang">PYTHON</text>
+    <text x="1128" y="248" text-anchor="end" class="panel-lang">PYTHON</text>
 
     <text x="188" y="248" class="code"><tspan class="kw">async def</tspan><tspan class="op"> </tspan><tspan class="fn">orchestrate</tspan><tspan class="op">(workers, queue):</tspan></text>
-    <rect x="188" y="222" width="420" height="34" class="cover c1"/>
+    <rect x="188" y="222" width="980" height="34" class="cover c1"/>
 
     <text x="188" y="300" class="code"><tspan class="op">    active = [w </tspan><tspan class="kw">for</tspan><tspan class="op"> w </tspan><tspan class="kw">in</tspan><tspan class="op"> workers </tspan><tspan class="kw">if</tspan><tspan class="op"> w.online]</tspan></text>
-    <rect x="188" y="274" width="620" height="34" class="cover c2"/>
+    <rect x="188" y="274" width="980" height="34" class="cover c2"/>
 
     <text x="188" y="352" class="code"><tspan class="op">    batches = await </tspan><tspan class="fn">split_queue</tspan><tspan class="op">(queue, size=</tspan><tspan class="num">50</tspan><tspan class="op">)</tspan></text>
-    <rect x="188" y="326" width="560" height="34" class="cover c3"/>
+    <rect x="188" y="326" width="980" height="34" class="cover c3"/>
 
     <text x="188" y="404" class="code"><tspan class="op">    result = await </tspan><tspan class="fn">gather</tspan><tspan class="op">(*[w.run(b) </tspan><tspan class="kw">for</tspan><tspan class="op"> w, b </tspan><tspan class="kw">in</tspan><tspan class="op"> zip(active, batches)])</tspan></text>
-    <rect x="188" y="378" width="860" height="34" class="cover c4"/>
+    <rect x="188" y="378" width="980" height="34" class="cover c4"/>
 
     <text x="188" y="456" class="code"><tspan class="op">    stats = {</tspan><tspan class="str">"processed"</tspan><tspan class="op">: </tspan><tspan class="fn">sum</tspan><tspan class="op">(result), </tspan><tspan class="str">"workers"</tspan><tspan class="op">: </tspan><tspan class="fn">len</tspan><tspan class="op">(active)}</tspan></text>
-    <rect x="188" y="430" width="820" height="34" class="cover c5"/>
+    <rect x="188" y="430" width="980" height="34" class="cover c5"/>
 
     <text x="188" y="508" class="code"><tspan class="op">    await </tspan><tspan class="fn">save_metrics</tspan><tspan class="op">(stats)</tspan></text>
-    <rect x="188" y="482" width="360" height="34" class="cover c6"/>
+    <rect x="188" y="482" width="980" height="34" class="cover c6"/>
 
     <text x="188" y="560" class="code"><tspan class="op">    await </tspan><tspan class="fn">publish_event</tspan><tspan class="op">(</tspan><tspan class="str">"pipeline.synced"</tspan><tspan class="op">, stats)</tspan></text>
-    <rect x="188" y="534" width="620" height="34" class="cover c7"/>
+    <rect x="188" y="534" width="980" height="34" class="cover c7"/>
 
     <text x="188" y="612" class="code"><tspan class="op">    </tspan><tspan class="kw">if</tspan><tspan class="op"> stats[</tspan><tspan class="str">"processed"</tspan><tspan class="op">] == </tspan><tspan class="num">0</tspan><tspan class="op">: raise RuntimeError(</tspan><tspan class="str">"idle queue"</tspan><tspan class="op">)</tspan></text>
-    <rect x="188" y="586" width="860" height="34" class="cover c8"/>
+    <rect x="188" y="586" width="980" height="34" class="cover c8"/>
 
     <text x="188" y="664" class="code"><tspan class="op">    </tspan><tspan class="kw">return</tspan><tspan class="op"> stats</tspan></text>
-    <rect x="188" y="638" width="180" height="34" class="cover c9"/>
+    <rect x="188" y="638" width="980" height="34" class="cover c9"/>
 
     <text x="188" y="716" class="code"><tspan class="cm"># async workers process queue and emit telemetry</tspan></text>
-    <rect x="188" y="690" width="520" height="34" class="cover c10"/>
+    <rect x="188" y="690" width="980" height="34" class="cover c10"/>
   </g>
 
   <!-- TypeScript panel -->
   <g class="panel p3">
-    <text x="1064" y="248" text-anchor="end" class="panel-lang">TYPESCRIPT</text>
+    <text x="1128" y="248" text-anchor="end" class="panel-lang">TYPESCRIPT</text>
 
     <text x="188" y="248" class="code"><tspan class="kw">type</tspan><tspan class="op"> Particle = { x: </tspan><tspan class="typ">number</tspan><tspan class="op">; y: </tspan><tspan class="typ">number</tspan><tspan class="op">; r: </tspan><tspan class="typ">number</tspan><tspan class="op"> }</tspan></text>
-    <rect x="188" y="222" width="760" height="34" class="cover c1"/>
+    <rect x="188" y="222" width="980" height="34" class="cover c1"/>
 
     <text x="188" y="300" class="code"><tspan class="kw">const</tspan><tspan class="op"> ctx = canvas.getContext(</tspan><tspan class="str">"2d"</tspan><tspan class="op">)!</tspan></text>
-    <rect x="188" y="274" width="400" height="34" class="cover c2"/>
+    <rect x="188" y="274" width="980" height="34" class="cover c2"/>
 
     <text x="188" y="352" class="code"><tspan class="kw">const</tspan><tspan class="op"> particles = Array.from({ length: </tspan><tspan class="num">48</tspan><tspan class="op"> }, seedParticle)</tspan></text>
-    <rect x="188" y="326" width="720" height="34" class="cover c3"/>
+    <rect x="188" y="326" width="980" height="34" class="cover c3"/>
 
     <text x="188" y="404" class="code"><tspan class="kw">function</tspan><tspan class="op"> </tspan><tspan class="fn">draw</tspan><tspan class="op">() { ctx.clearRect(</tspan><tspan class="num">0</tspan><tspan class="op">, </tspan><tspan class="num">0</tspan><tspan class="op">, w, h) }</tspan></text>
-    <rect x="188" y="378" width="700" height="34" class="cover c4"/>
+    <rect x="188" y="378" width="980" height="34" class="cover c4"/>
 
     <text x="188" y="456" class="code"><tspan class="kw">function</tspan><tspan class="op"> </tspan><tspan class="fn">tick</tspan><tspan class="op">() { particles.forEach(updateParticle); draw() }</tspan></text>
-    <rect x="188" y="430" width="760" height="34" class="cover c5"/>
+    <rect x="188" y="430" width="980" height="34" class="cover c5"/>
 
     <text x="188" y="508" class="code"><tspan class="kw">function</tspan><tspan class="op"> </tspan><tspan class="fn">loop</tspan><tspan class="op">() { tick(); requestAnimationFrame(loop) }</tspan></text>
-    <rect x="188" y="482" width="760" height="34" class="cover c6"/>
+    <rect x="188" y="482" width="980" height="34" class="cover c6"/>
 
     <text x="188" y="560" class="code"><tspan class="op">particles.forEach(p =&gt; p.r = </tspan><tspan class="num">2</tspan><tspan class="op"> + Math.random() * </tspan><tspan class="num">4</tspan><tspan class="op">)</tspan></text>
-    <rect x="188" y="534" width="790" height="34" class="cover c7"/>
+    <rect x="188" y="534" width="980" height="34" class="cover c7"/>
 
     <text x="188" y="612" class="code"><tspan class="op">ctx.globalCompositeOperation = </tspan><tspan class="str">"screen"</tspan></text>
-    <rect x="188" y="586" width="420" height="34" class="cover c8"/>
+    <rect x="188" y="586" width="980" height="34" class="cover c8"/>
 
     <text x="188" y="664" class="code"><tspan class="op">loop()</tspan></text>
-    <rect x="188" y="638" width="80" height="34" class="cover c9"/>
+    <rect x="188" y="638" width="980" height="34" class="cover c9"/>
 
     <text x="188" y="716" class="code"><tspan class="cm">// canvas renders orbiting particles in real time</tspan></text>
-    <rect x="188" y="690" width="540" height="34" class="cover c10"/>
+    <rect x="188" y="690" width="980" height="34" class="cover c10"/>
   </g>
 
   <!-- Go panel -->
   <g class="panel p4">
-    <text x="1064" y="248" text-anchor="end" class="panel-lang">GO</text>
+    <text x="1128" y="248" text-anchor="end" class="panel-lang">GO</text>
 
     <text x="188" y="248" class="code"><tspan class="kw">package</tspan><tspan class="op"> main</tspan></text>
-    <rect x="188" y="222" width="180" height="34" class="cover c1"/>
+    <rect x="188" y="222" width="980" height="34" class="cover c1"/>
 
     <text x="188" y="300" class="code"><tspan class="kw">import</tspan><tspan class="op"> (</tspan><tspan class="str">"encoding/json"</tspan><tspan class="op"> </tspan><tspan class="str">"net/http"</tspan><tspan class="op">)</tspan></text>
-    <rect x="188" y="274" width="500" height="34" class="cover c2"/>
+    <rect x="188" y="274" width="980" height="34" class="cover c2"/>
 
     <text x="188" y="352" class="code"><tspan class="kw">type</tspan><tspan class="op"> Health struct { Status string; Uptime int }</tspan></text>
-    <rect x="188" y="326" width="560" height="34" class="cover c3"/>
+    <rect x="188" y="326" width="980" height="34" class="cover c3"/>
 
     <text x="188" y="404" class="code"><tspan class="kw">func</tspan><tspan class="op"> </tspan><tspan class="fn">health</tspan><tspan class="op">(w http.ResponseWriter, r *http.Request) {</tspan></text>
-    <rect x="188" y="378" width="700" height="34" class="cover c4"/>
+    <rect x="188" y="378" width="980" height="34" class="cover c4"/>
 
     <text x="188" y="456" class="code"><tspan class="op">    payload := Health{Status: </tspan><tspan class="str">"ok"</tspan><tspan class="op">, Uptime: </tspan><tspan class="num">86400</tspan><tspan class="op">}</tspan></text>
-    <rect x="188" y="430" width="700" height="34" class="cover c5"/>
+    <rect x="188" y="430" width="980" height="34" class="cover c5"/>
 
     <text x="188" y="508" class="code"><tspan class="op">    w.Header().Set(</tspan><tspan class="str">"Content-Type"</tspan><tspan class="op">, </tspan><tspan class="str">"application/json"</tspan><tspan class="op">)</tspan></text>
-    <rect x="188" y="482" width="760" height="34" class="cover c6"/>
+    <rect x="188" y="482" width="980" height="34" class="cover c6"/>
 
     <text x="188" y="560" class="code"><tspan class="op">    json.NewEncoder(w).Encode(payload)</tspan></text>
-    <rect x="188" y="534" width="420" height="34" class="cover c7"/>
+    <rect x="188" y="534" width="980" height="34" class="cover c7"/>
 
     <text x="188" y="612" class="code"><tspan class="op">func main() { http.HandleFunc(</tspan><tspan class="str">"/health"</tspan><tspan class="op">, health); http.ListenAndServe(</tspan><tspan class="str">":8080"</tspan><tspan class="op">, nil) }</tspan></text>
-    <rect x="188" y="586" width="920" height="34" class="cover c8"/>
+    <rect x="188" y="586" width="980" height="34" class="cover c8"/>
 
     <text x="188" y="664" class="code"><tspan class="cm">// server publishes health metrics and response stats</tspan></text>
-    <rect x="188" y="638" width="560" height="34" class="cover c9"/>
+    <rect x="188" y="638" width="980" height="34" class="cover c9"/>
   </g>
 </svg>
