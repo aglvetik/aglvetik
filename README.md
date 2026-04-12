@@ -1,16 +1,11 @@
-<h3 align="center">Terminal</h3>
 
+---
+
+## Вариант 3 — будто пишутся разные программы на разных языках
+
+Вот это уже очень атмосферно:
+
+```md
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Source+Code+Pro&size=22&pause=700&color=A970FF&center=true&vCenter=true&repeat=true&width=1100&lines=%3E+booting+developer+environment;%3E+import+core+modules;%3E+running+asynchronous+tasks;%3E+building+discord+automation;%3E+syncing+database+state;%3E+validating+permissions;%3E+compiling+production+logic;%3E+ready." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=1200&color=C792EA&center=true&vCenter=true&repeat=true&width=1200&lines=def+start_system()%3A;++++return+%22Python+module+loaded%22;fn+main()%7B+println!(%22Rust+core+initialized%22);%7D;package+main;func+main()+%7B+fmt.Println(%22Go+service+online%22)+%7D;const+deploy+%3D+async+()%3D%3E+%7B+return+%22TypeScript+ready%22+%7D;SELECT+id%2C+status+FROM+nodes+WHERE+online+%3D+true%3B" alt="Typing SVG" />
 </p>
-
-python
-class Builder:
-    def __init__(self):
-        self.stack = ["Python", "TypeScript", "SQL", "Go"]
-
-    def create(self):
-        return "Clean architecture. Stable logic. Real systems."
-
-app = Builder()
-print(app.create())
