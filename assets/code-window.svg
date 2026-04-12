@@ -1,1 +1,191 @@
 
+<svg width="1200" height="520" viewBox="0 0 1200 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B0E14"/>
+      <stop offset="1" stop-color="#11151D"/>
+    </linearGradient>
+
+    <linearGradient id="topbar" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#151A23"/>
+      <stop offset="1" stop-color="#10141C"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+
+    <style>
+      .title {
+        font: 700 26px 'Segoe UI', Inter, Arial, sans-serif;
+        fill: #F6EDE8;
+      }
+      .lang {
+        font: 700 18px 'Segoe UI', Inter, Arial, sans-serif;
+        fill: #FFD8D0;
+        letter-spacing: 1px;
+      }
+      .code {
+        font: 22px 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+        fill: #F8F1EC;
+      }
+      .line-no {
+        font: 20px 'JetBrains Mono', Consolas, monospace;
+        fill: #7F8794;
+      }
+      .kw { fill: #FFB7C5; }
+      .fn { fill: #FFD9A8; }
+      .str { fill: #F7E7A8; }
+      .num { fill: #D9C3FF; }
+      .cm { fill: #7E8A99; }
+      .op { fill: #F8F1EC; }
+
+      .panel {
+        opacity: 0;
+      }
+
+      .p1 { animation: show1 16s infinite; }
+      .p2 { animation: show2 16s infinite; }
+      .p3 { animation: show3 16s infinite; }
+      .p4 { animation: show4 16s infinite; }
+
+      .cursor1 { animation: blink1 1s step-end infinite, show1 16s infinite; }
+      .cursor2 { animation: blink1 1s step-end infinite, show2 16s infinite; }
+      .cursor3 { animation: blink1 1s step-end infinite, show3 16s infinite; }
+      .cursor4 { animation: blink1 1s step-end infinite, show4 16s infinite; }
+
+      @keyframes blink1 {
+        50% { opacity: 0; }
+      }
+
+      @keyframes show1 {
+        0%, 23% { opacity: 1; }
+        24%, 100% { opacity: 0; }
+      }
+
+      @keyframes show2 {
+        0%, 24% { opacity: 0; }
+        25%, 48% { opacity: 1; }
+        49%, 100% { opacity: 0; }
+      }
+
+      @keyframes show3 {
+        0%, 49% { opacity: 0; }
+        50%, 73% { opacity: 1; }
+        74%, 100% { opacity: 0; }
+      }
+
+      @keyframes show4 {
+        0%, 74% { opacity: 0; }
+        75%, 98% { opacity: 1; }
+        99%, 100% { opacity: 0; }
+      }
+
+      .typing rect {
+        width: 0;
+        animation: typing 4s steps(40, end) infinite;
+      }
+
+      .t1 rect { animation-delay: 0s; }
+      .t2 rect { animation-delay: 4s; }
+      .t3 rect { animation-delay: 8s; }
+      .t4 rect { animation-delay: 12s; }
+
+      @keyframes typing {
+        0% { width: 0; }
+        70% { width: 980px; }
+        100% { width: 980px; }
+      }
+    </style>
+
+    <clipPath id="clip1" class="typing t1">
+      <rect x="120" y="120" width="0" height="300" rx="0"/>
+    </clipPath>
+    <clipPath id="clip2" class="typing t2">
+      <rect x="120" y="120" width="0" height="300" rx="0"/>
+    </clipPath>
+    <clipPath id="clip3" class="typing t3">
+      <rect x="120" y="120" width="0" height="300" rx="0"/>
+    </clipPath>
+    <clipPath id="clip4" class="typing t4">
+      <rect x="120" y="120" width="0" height="300" rx="0"/>
+    </clipPath>
+  </defs>
+
+  <rect x="30" y="25" width="1140" height="470" rx="24" fill="url(#bg)" filter="url(#shadow)"/>
+  <rect x="30" y="25" width="1140" height="64" rx="24" fill="url(#topbar)"/>
+  <rect x="30" y="65" width="1140" height="24" fill="url(#topbar)"/>
+
+  <circle cx="72" cy="57" r="8" fill="#FFB3BA"/>
+  <circle cx="98" cy="57" r="8" fill="#FFE0A3"/>
+  <circle cx="124" cy="57" r="8" fill="#CFF5C8"/>
+
+  <text x="600" y="64" text-anchor="middle" class="title">workspace</text>
+
+  <rect x="92" y="108" width="90" height="300" fill="#0E131B"/>
+  <line x1="182" y1="108" x2="182" y2="408" stroke="#1C2330"/>
+
+  <text x="132" y="152" text-anchor="middle" class="line-no">1</text>
+  <text x="132" y="188" text-anchor="middle" class="line-no">2</text>
+  <text x="132" y="224" text-anchor="middle" class="line-no">3</text>
+  <text x="132" y="260" text-anchor="middle" class="line-no">4</text>
+  <text x="132" y="296" text-anchor="middle" class="line-no">5</text>
+  <text x="132" y="332" text-anchor="middle" class="line-no">6</text>
+  <text x="132" y="368" text-anchor="middle" class="line-no">7</text>
+
+  <g class="panel p1">
+    <text x="1080" y="64" text-anchor="end" class="lang">PYTHON</text>
+    <g clip-path="url(#clip1)">
+      <text x="210" y="152" class="code"><tspan class="kw">async def</tspan><tspan class="op"> </tspan><tspan class="fn">sync_cluster</tspan><tspan class="op">():</tspan></text>
+      <text x="210" y="188" class="code"><tspan class="op">    nodes = [</tspan><tspan class="str">"alpha"</tspan><tspan class="op">, </tspan><tspan class="str">"beta"</tspan><tspan class="op">, </tspan><tspan class="str">"gamma"</tspan><tspan class="op">]</tspan></text>
+      <text x="210" y="224" class="code"><tspan class="op">    online = await check_nodes(nodes)</tspan></text>
+      <text x="210" y="260" class="code"><tspan class="op">    stats = {</tspan><tspan class="str">"online"</tspan><tspan class="op">: len(online)}</tspan></text>
+      <text x="210" y="296" class="code"><tspan class="op">    print(</tspan><tspan class="str">"cluster synced"</tspan><tspan class="op">, stats)</tspan></text>
+      <text x="210" y="332" class="code"><tspan class="op">    return stats</tspan></text>
+      <text x="210" y="368" class="code"><tspan class="cm"># deployment queue is ready</tspan></text>
+    </g>
+    <rect x="864" y="132" width="12" height="28" fill="#FFE8E1" class="cursor1"/>
+  </g>
+
+  <g class="panel p2">
+    <text x="1080" y="64" text-anchor="end" class="lang">TYPESCRIPT</text>
+    <g clip-path="url(#clip2)">
+      <text x="210" y="152" class="code"><tspan class="kw">type</tspan><tspan class="op"> Job = { id: </tspan><tspan class="num">number</tspan><tspan class="op">; status: </tspan><tspan class="str">"queued"</tspan><tspan class="op"> | </tspan><tspan class="str">"done"</tspan><tspan class="op"> }</tspan></text>
+      <text x="210" y="188" class="code"><tspan class="kw">const</tspan><tspan class="op"> jobs: Job[] = loadJobs()</tspan></text>
+      <text x="210" y="224" class="code"><tspan class="kw">const</tspan><tspan class="op"> next = jobs.find(j =&#62; j.status === </tspan><tspan class="str">"queued"</tspan><tspan class="op">)</tspan></text>
+      <text x="210" y="260" class="code"><tspan class="kw">if</tspan><tspan class="op"> (next) next.status = </tspan><tspan class="str">"done"</tspan></text>
+      <text x="210" y="296" class="code"><tspan class="kw">await</tspan><tspan class="op"> saveJobs(jobs)</tspan></text>
+      <text x="210" y="332" class="code"><tspan class="fn">console.log</tspan><tspan class="op">(</tspan><tspan class="str">"worker cycle finished"</tspan><tspan class="op">)</tspan></text>
+      <text x="210" y="368" class="code"><tspan class="cm">// state persisted successfully</tspan></text>
+    </g>
+    <rect x="952" y="132" width="12" height="28" fill="#FFE8E1" class="cursor2"/>
+  </g>
+
+  <g class="panel p3">
+    <text x="1080" y="64" text-anchor="end" class="lang">GO</text>
+    <g clip-path="url(#clip3)">
+      <text x="210" y="152" class="code"><tspan class="kw">package</tspan><tspan class="op"> main</tspan></text>
+      <text x="210" y="188" class="code"><tspan class="kw">import</tspan><tspan class="op"> (</tspan><tspan class="str">"fmt"</tspan><tspan class="op"> </tspan><tspan class="str">"net/http"</tspan><tspan class="op">)</tspan></text>
+      <text x="210" y="224" class="code"><tspan class="kw">func</tspan><tspan class="op"> </tspan><tspan class="fn">health</tspan><tspan class="op">(w http.ResponseWriter, r *http.Request) {</tspan></text>
+      <text x="210" y="260" class="code"><tspan class="op">    fmt.Fprintln(w, </tspan><tspan class="str">"status: ok"</tspan><tspan class="op">)</tspan></text>
+      <text x="210" y="296" class="code"><tspan class="op">}</tspan></text>
+      <text x="210" y="332" class="code"><tspan class="kw">func</tspan><tspan class="op"> </tspan><tspan class="fn">main</tspan><tspan class="op">() { http.ListenAndServe(</tspan><tspan class="str">":8080"</tspan><tspan class="op">, nil) }</tspan></text>
+      <text x="210" y="368" class="code"><tspan class="cm">// api is accepting connections</tspan></text>
+    </g>
+    <rect x="830" y="132" width="12" height="28" fill="#FFE8E1" class="cursor3"/>
+  </g>
+
+  <g class="panel p4">
+    <text x="1080" y="64" text-anchor="end" class="lang">RUST</text>
+    <g clip-path="url(#clip4)">
+      <text x="210" y="152" class="code"><tspan class="kw">struct</tspan><tspan class="op"> Node { id: </tspan><tspan class="num">u64</tspan><tspan class="op">, online: </tspan><tspan class="num">bool</tspan><tspan class="op"> }</tspan></text>
+      <text x="210" y="188" class="code"><tspan class="kw">fn</tspan><tspan class="op"> </tspan><tspan class="fn">count_online</tspan><tspan class="op">(nodes: &amp;Vec&lt;Node&gt;) -&gt; usize {</tspan></text>
+      <text x="210" y="224" class="code"><tspan class="op">    nodes.iter().filter(|n| n.online).count()</tspan></text>
+      <text x="210" y="260" class="code"><tspan class="op">}</tspan></text>
+      <text x="210" y="296" class="code"><tspan class="kw">fn</tspan><tspan class="op"> </tspan><tspan class="fn">main</tspan><tspan class="op">() {</tspan></text>
+      <text x="210" y="332" class="code"><tspan class="op">    println!(</tspan><tspan class="str">"online nodes: {}"</tspan><tspan class="op">, count_online(&amp;nodes));</tspan></text>
+      <text x="210" y="368" class="code"><tspan class="op">}</tspan></text>
+    </g>
+    <rect x="860" y="132" width="12" height="28" fill="#FFE8E1" class="cursor4"/>
+  </g>
+</svg>
