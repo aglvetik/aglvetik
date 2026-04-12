@@ -15,224 +15,135 @@
     </filter>
 
     <style>
-            .pulse1 { animation: pulse1 1.15s infinite; transform-origin: center; }
-      .pulse2 { animation: pulse2 1.15s infinite; transform-origin: center; }
-      .pulse3 { animation: pulse3 1.15s infinite; transform-origin: center; }
-
-      @keyframes pulse1 {
-        0%,100% { opacity: 0.25; transform: scale(0.86); }
-        50% { opacity: 1; transform: scale(1.02); }
+      .title {
+        font: 700 30px 'Segoe UI', Inter, Arial, sans-serif;
+        fill: #f8efe9;
       }
-      @keyframes pulse2 {
-        0%,100% { opacity: 0.35; transform: scale(0.9); }
-        50% { opacity: 1; transform: scale(1.05); }
+      .tab {
+        font: 700 18px 'Segoe UI', Inter, Arial, sans-serif;
+        fill: #7f8997;
+        letter-spacing: 0.5px;
       }
-      @keyframes pulse3 {
-        0%,100% { opacity: 0.3; transform: scale(0.9); }
-        50% { opacity: 1; transform: scale(1.02); }
+      .tab-active {
+        fill: #fff0ea;
       }
-
-      .move-packet-a { animation: movePacketA 2.6s linear infinite; }
-      .move-packet-b { animation: movePacketB 2.6s linear infinite; }
-
-      @keyframes movePacketA {
-        0% { transform: translate(0px,0px); opacity: 0; }
-        8% { opacity: 1; }
-        50% { transform: translate(180px,-54px); opacity: 1; }
-        100% { transform: translate(340px,0px); opacity: 0; }
+      .tab-bg {
+        fill: #090909;
       }
-      @keyframes movePacketB {
-        0% { transform: translate(0px,0px); opacity: 0; }
-        8% { opacity: 1; }
-        50% { transform: translate(180px,54px); opacity: 1; }
-        100% { transform: translate(340px,0px); opacity: 0; }
+      .tab-bg-active {
+        fill: #1a1a1a;
       }
-
-      .orbit1 { animation: orbit1 3s linear infinite; transform-origin: 1372px 478px; }
-      .orbit2 { animation: orbit2 4s linear infinite; transform-origin: 1372px 478px; }
-      .orbit3 { animation: orbit3 5s linear infinite; transform-origin: 1372px 478px; }
-
-      @keyframes orbit1 {
-        from { transform: rotate(0deg) translateX(76px) rotate(0deg); }
-        to   { transform: rotate(360deg) translateX(76px) rotate(-360deg); }
+      .line-no {
+        font: 18px 'JetBrains Mono', Consolas, monospace;
+        fill: #55606f;
       }
-      @keyframes orbit2 {
-        from { transform: rotate(360deg) translateX(110px) rotate(-360deg); }
-        to   { transform: rotate(0deg) translateX(110px) rotate(0deg); }
+      .code {
+        font: 24px 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+        fill: #f8f3ef;
       }
-      @keyframes orbit3 {
-        from { transform: rotate(0deg) translateX(144px) rotate(0deg); }
-        to   { transform: rotate(360deg) translateX(144px) rotate(-360deg); }
+      .panel-lang {
+        font: 700 20px 'Segoe UI', Inter, Arial, sans-serif;
+        fill: #ffcfc2;
+        letter-spacing: 1px;
+      }
+      .preview-title {
+        font: 700 20px 'Segoe UI', Inter, Arial, sans-serif;
+        fill: #ffd98f;
+        letter-spacing: 1px;
       }
 
-      .barWrap1 { transform-origin: 1254px 654px; animation: barWrap1 1.6s ease-in-out infinite; }
-      .barWrap2 { transform-origin: 1316px 654px; animation: barWrap2 1.6s ease-in-out infinite; }
-      .barWrap3 { transform-origin: 1378px 654px; animation: barWrap3 1.6s ease-in-out infinite; }
-      .barWrap4 { transform-origin: 1440px 654px; animation: barWrap4 1.6s ease-in-out infinite; }
+      .kw  { fill: #ffb7c8; }
+      .fn  { fill: #ffd9a8; }
+      .str { fill: #f5e5a6; }
+      .num { fill: #d8c5ff; }
+      .typ { fill: #bde7ff; }
+      .cm  { fill: #6d7c90; }
+      .op  { fill: #f8f3ef; }
 
-      @keyframes barWrap1 {
-        0%,100% { transform: scaleY(0.35); }
-        50% { transform: scaleY(1.1); }
+      .preview-box {
+        fill: #030303;
+        stroke: #111111;
       }
-      @keyframes barWrap2 {
-        0%,100% { transform: scaleY(0.55); }
-        50% { transform: scaleY(1.25); }
+      .grid-line {
+        stroke: #131313;
+        stroke-width: 1;
       }
-      @keyframes barWrap3 {
-        0%,100% { transform: scaleY(0.42); }
-        50% { transform: scaleY(0.88); }
+      .snake {
+        fill: #ffb7c8;
       }
-      @keyframes barWrap4 {
-        0%,100% { transform: scaleY(0.68); }
-        50% { transform: scaleY(1.2); }
+      .food {
+        fill: #f5e5a6;
       }
-
-      .snakeHead { animation: snakeHead 3.4s steps(1) infinite; }
-      .snakeB1 { animation: snakeB1 3.4s steps(1) infinite; }
-      .snakeB2 { animation: snakeB2 3.4s steps(1) infinite; }
-      .snakeB3 { animation: snakeB3 3.4s steps(1) infinite; }
-      .snakeB4 { animation: snakeB4 3.4s steps(1) infinite; }
-      .foodAnim { animation: foodAnim 3.4s steps(1) infinite; }
-
-      @keyframes snakeHead {
-        0%,16%   { transform: translate(0px,0px); }
-        17%,33%  { transform: translate(38px,0px); }
-        34%,50%  { transform: translate(76px,0px); }
-        51%,67%  { transform: translate(114px,0px); }
-        68%,83%  { transform: translate(114px,-38px); }
-        84%,100% { transform: translate(152px,-38px); }
+      .node {
+        fill: #ffd7cc;
       }
-      @keyframes snakeB1 {
-        0%,16%   { transform: translate(0px,0px); }
-        17%,33%  { transform: translate(0px,0px); }
-        34%,50%  { transform: translate(38px,0px); }
-        51%,67%  { transform: translate(76px,0px); }
-        68%,83%  { transform: translate(114px,0px); }
-        84%,100% { transform: translate(114px,-38px); }
+      .packet {
+        fill: #ffe6df;
       }
-      @keyframes snakeB2 {
-        0%,16%   { transform: translate(0px,0px); }
-        17%,33%  { transform: translate(0px,0px); }
-        34%,50%  { transform: translate(0px,0px); }
-        51%,67%  { transform: translate(38px,0px); }
-        68%,83%  { transform: translate(76px,0px); }
-        84%,100% { transform: translate(114px,0px); }
+      .ring {
+        fill: none;
+        stroke: #131313;
       }
-      @keyframes snakeB3 {
-        0%,16%   { transform: translate(0px,0px); }
-        17%,33%  { transform: translate(0px,0px); }
-        34%,50%  { transform: translate(0px,0px); }
-        51%,67%  { transform: translate(0px,0px); }
-        68%,83%  { transform: translate(38px,0px); }
-        84%,100% { transform: translate(76px,0px); }
+      .bar {
+        fill: #ffb7c8;
       }
-      @keyframes snakeB4 {
-        0%,16%   { transform: translate(0px,0px); }
-        17%,33%  { transform: translate(0px,0px); }
-        34%,50%  { transform: translate(0px,0px); }
-        51%,67%  { transform: translate(0px,0px); }
-        68%,83%  { transform: translate(0px,0px); }
-        84%,100% { transform: translate(38px,0px); }
-      }
-      @keyframes foodAnim {
-        0%,83%   { transform: translate(0px,0px); opacity: 1; }
-        84%,100% { transform: translate(38px,-38px); opacity: 1; }
-      }
-
-      /* C# */
-      .p1 .c1  { animation: c1 24s infinite; }
-      .p1 .c2  { animation: c2 24s infinite; }
-      .p1 .c3  { animation: c3 24s infinite; }
-      .p1 .c4  { animation: c4 24s infinite; }
-      .p1 .c5  { animation: c5 24s infinite; }
-      .p1 .c6  { animation: c6 24s infinite; }
-      .p1 .c7  { animation: c7 24s infinite; }
-      .p1 .c8  { animation: c8 24s infinite; }
-      .p1 .c9  { animation: c9 24s infinite; }
-      .p1 .c10 { animation: c10 24s infinite; }
-      .p1 .c11 { animation: c11 24s infinite; }
-      .p1 .c12 { animation: c12 24s infinite; }
-
-      @keyframes c1  { 0%,0.4%{transform:scaleX(1)} 1.6%,24.5%{transform:scaleX(0)} 25%,100%{transform:scaleX(1)} }
-      @keyframes c2  { 0%,1.6%{transform:scaleX(1)} 2.8%,24.5%{transform:scaleX(0)} 25%,100%{transform:scaleX(1)} }
-      @keyframes c3  { 0%,2.8%{transform:scaleX(1)} 4.0%,24.5%{transform:scaleX(0)} 25%,100%{transform:scaleX(1)} }
-      @keyframes c4  { 0%,4.0%{transform:scaleX(1)} 5.2%,24.5%{transform:scaleX(0)} 25%,100%{transform:scaleX(1)} }
-      @keyframes c5  { 0%,5.2%{transform:scaleX(1)} 6.4%,24.5%{transform:scaleX(0)} 25%,100%{transform:scaleX(1)} }
-      @keyframes c6  { 0%,6.4%{transform:scaleX(1)} 7.6%,24.5%{transform:scaleX(0)} 25%,100%{transform:scaleX(1)} }
-      @keyframes c7  { 0%,7.6%{transform:scaleX(1)} 8.8%,24.5%{transform:scaleX(0)} 25%,100%{transform:scaleX(1)} }
-      @keyframes c8  { 0%,8.8%{transform:scaleX(1)} 10.0%,24.5%{transform:scaleX(0)} 25%,100%{transform:scaleX(1)} }
-      @keyframes c9  { 0%,10.0%{transform:scaleX(1)} 11.2%,24.5%{transform:scaleX(0)} 25%,100%{transform:scaleX(1)} }
-      @keyframes c10 { 0%,11.2%{transform:scaleX(1)} 12.4%,24.5%{transform:scaleX(0)} 25%,100%{transform:scaleX(1)} }
-      @keyframes c11 { 0%,12.4%{transform:scaleX(1)} 13.6%,24.5%{transform:scaleX(0)} 25%,100%{transform:scaleX(1)} }
-      @keyframes c12 { 0%,13.6%{transform:scaleX(1)} 14.8%,24.5%{transform:scaleX(0)} 25%,100%{transform:scaleX(1)} }
-
-      /* Python */
-      .p2 .c1  { animation: p2c1 24s infinite; }
-      .p2 .c2  { animation: p2c2 24s infinite; }
-      .p2 .c3  { animation: p2c3 24s infinite; }
-      .p2 .c4  { animation: p2c4 24s infinite; }
-      .p2 .c5  { animation: p2c5 24s infinite; }
-      .p2 .c6  { animation: p2c6 24s infinite; }
-      .p2 .c7  { animation: p2c7 24s infinite; }
-      .p2 .c8  { animation: p2c8 24s infinite; }
-      .p2 .c9  { animation: p2c9 24s infinite; }
-      .p2 .c10 { animation: p2c10 24s infinite; }
-
-      @keyframes p2c1  { 0%,25.4%{transform:scaleX(1)} 26.6%,49.5%{transform:scaleX(0)} 50%,100%{transform:scaleX(1)} }
-      @keyframes p2c2  { 0%,26.6%{transform:scaleX(1)} 27.8%,49.5%{transform:scaleX(0)} 50%,100%{transform:scaleX(1)} }
-      @keyframes p2c3  { 0%,27.8%{transform:scaleX(1)} 29.0%,49.5%{transform:scaleX(0)} 50%,100%{transform:scaleX(1)} }
-      @keyframes p2c4  { 0%,29.0%{transform:scaleX(1)} 30.2%,49.5%{transform:scaleX(0)} 50%,100%{transform:scaleX(1)} }
-      @keyframes p2c5  { 0%,30.2%{transform:scaleX(1)} 31.4%,49.5%{transform:scaleX(0)} 50%,100%{transform:scaleX(1)} }
-      @keyframes p2c6  { 0%,31.4%{transform:scaleX(1)} 32.6%,49.5%{transform:scaleX(0)} 50%,100%{transform:scaleX(1)} }
-      @keyframes p2c7  { 0%,32.6%{transform:scaleX(1)} 33.8%,49.5%{transform:scaleX(0)} 50%,100%{transform:scaleX(1)} }
-      @keyframes p2c8  { 0%,33.8%{transform:scaleX(1)} 35.0%,49.5%{transform:scaleX(0)} 50%,100%{transform:scaleX(1)} }
-      @keyframes p2c9  { 0%,35.0%{transform:scaleX(1)} 36.2%,49.5%{transform:scaleX(0)} 50%,100%{transform:scaleX(1)} }
-      @keyframes p2c10 { 0%,36.2%{transform:scaleX(1)} 37.4%,49.5%{transform:scaleX(0)} 50%,100%{transform:scaleX(1)} }
-
-      /* TS */
-      .p3 .c1  { animation: p3c1 24s infinite; }
-      .p3 .c2  { animation: p3c2 24s infinite; }
-      .p3 .c3  { animation: p3c3 24s infinite; }
-      .p3 .c4  { animation: p3c4 24s infinite; }
-      .p3 .c5  { animation: p3c5 24s infinite; }
-      .p3 .c6  { animation: p3c6 24s infinite; }
-      .p3 .c7  { animation: p3c7 24s infinite; }
-      .p3 .c8  { animation: p3c8 24s infinite; }
-      .p3 .c9  { animation: p3c9 24s infinite; }
-      .p3 .c10 { animation: p3c10 24s infinite; }
-
-      @keyframes p3c1  { 0%,50.4%{transform:scaleX(1)} 51.6%,74.5%{transform:scaleX(0)} 75%,100%{transform:scaleX(1)} }
-      @keyframes p3c2  { 0%,51.6%{transform:scaleX(1)} 52.8%,74.5%{transform:scaleX(0)} 75%,100%{transform:scaleX(1)} }
-      @keyframes p3c3  { 0%,52.8%{transform:scaleX(1)} 54.0%,74.5%{transform:scaleX(0)} 75%,100%{transform:scaleX(1)} }
-      @keyframes p3c4  { 0%,54.0%{transform:scaleX(1)} 55.2%,74.5%{transform:scaleX(0)} 75%,100%{transform:scaleX(1)} }
-      @keyframes p3c5  { 0%,55.2%{transform:scaleX(1)} 56.4%,74.5%{transform:scaleX(0)} 75%,100%{transform:scaleX(1)} }
-      @keyframes p3c6  { 0%,56.4%{transform:scaleX(1)} 57.6%,74.5%{transform:scaleX(0)} 75%,100%{transform:scaleX(1)} }
-      @keyframes p3c7  { 0%,57.6%{transform:scaleX(1)} 58.8%,74.5%{transform:scaleX(0)} 75%,100%{transform:scaleX(1)} }
-      @keyframes p3c8  { 0%,58.8%{transform:scaleX(1)} 60.0%,74.5%{transform:scaleX(0)} 75%,100%{transform:scaleX(1)} }
-      @keyframes p3c9  { 0%,60.0%{transform:scaleX(1)} 61.2%,74.5%{transform:scaleX(0)} 75%,100%{transform:scaleX(1)} }
-      @keyframes p3c10 { 0%,61.2%{transform:scaleX(1)} 62.4%,74.5%{transform:scaleX(0)} 75%,100%{transform:scaleX(1)} }
-
-      /* Go */
-      .p4 .c1  { animation: p4c1 24s infinite; }
-      .p4 .c2  { animation: p4c2 24s infinite; }
-      .p4 .c3  { animation: p4c3 24s infinite; }
-      .p4 .c4  { animation: p4c4 24s infinite; }
-      .p4 .c5  { animation: p4c5 24s infinite; }
-      .p4 .c6  { animation: p4c6 24s infinite; }
-      .p4 .c7  { animation: p4c7 24s infinite; }
-      .p4 .c8  { animation: p4c8 24s infinite; }
-
-      @keyframes p4c1  { 0%,75.4%{transform:scaleX(1)} 76.6%,99.5%{transform:scaleX(0)} 100%{transform:scaleX(1)} }
-      @keyframes p4c2  { 0%,76.6%{transform:scaleX(1)} 77.8%,99.5%{transform:scaleX(0)} 100%{transform:scaleX(1)} }
-      @keyframes p4c3  { 0%,77.8%{transform:scaleX(1)} 79.0%,99.5%{transform:scaleX(0)} 100%{transform:scaleX(1)} }
-      @keyframes p4c4  { 0%,79.0%{transform:scaleX(1)} 80.2%,99.5%{transform:scaleX(0)} 100%{transform:scaleX(1)} }
-      @keyframes p4c5  { 0%,80.2%{transform:scaleX(1)} 81.4%,99.5%{transform:scaleX(0)} 100%{transform:scaleX(1)} }
-      @keyframes p4c6  { 0%,81.4%{transform:scaleX(1)} 82.6%,99.5%{transform:scaleX(0)} 100%{transform:scaleX(1)} }
-      @keyframes p4c7  { 0%,82.6%{transform:scaleX(1)} 83.8%,99.5%{transform:scaleX(0)} 100%{transform:scaleX(1)} }
-      @keyframes p4c8  { 0%,83.8%{transform:scaleX(1)} 85.0%,99.5%{transform:scaleX(0)} 100%{transform:scaleX(1)} }
+      .metric1 { fill: #ffd8cd; }
+      .metric2 { fill: #f5e5a6; }
+      .metric3 { fill: #bde7ff; }
     </style>
+
+    <!-- line clip masks -->
+    <!-- C# -->
+    <clipPath id="cs1"><rect id="cs1r" x="188" y="222" width="0" height="34"/></clipPath>
+    <clipPath id="cs2"><rect id="cs2r" x="188" y="274" width="0" height="34"/></clipPath>
+    <clipPath id="cs3"><rect id="cs3r" x="188" y="326" width="0" height="34"/></clipPath>
+    <clipPath id="cs4"><rect id="cs4r" x="188" y="378" width="0" height="34"/></clipPath>
+    <clipPath id="cs5"><rect id="cs5r" x="188" y="430" width="0" height="34"/></clipPath>
+    <clipPath id="cs6"><rect id="cs6r" x="188" y="482" width="0" height="34"/></clipPath>
+    <clipPath id="cs7"><rect id="cs7r" x="188" y="534" width="0" height="34"/></clipPath>
+    <clipPath id="cs8"><rect id="cs8r" x="188" y="586" width="0" height="34"/></clipPath>
+    <clipPath id="cs9"><rect id="cs9r" x="188" y="638" width="0" height="34"/></clipPath>
+    <clipPath id="cs10"><rect id="cs10r" x="188" y="690" width="0" height="34"/></clipPath>
+    <clipPath id="cs11"><rect id="cs11r" x="188" y="742" width="0" height="34"/></clipPath>
+    <clipPath id="cs12"><rect id="cs12r" x="188" y="794" width="0" height="34"/></clipPath>
+
+    <!-- Python -->
+    <clipPath id="py1"><rect id="py1r" x="188" y="222" width="0" height="34"/></clipPath>
+    <clipPath id="py2"><rect id="py2r" x="188" y="274" width="0" height="34"/></clipPath>
+    <clipPath id="py3"><rect id="py3r" x="188" y="326" width="0" height="34"/></clipPath>
+    <clipPath id="py4"><rect id="py4r" x="188" y="378" width="0" height="34"/></clipPath>
+    <clipPath id="py5"><rect id="py5r" x="188" y="430" width="0" height="34"/></clipPath>
+    <clipPath id="py6"><rect id="py6r" x="188" y="482" width="0" height="34"/></clipPath>
+    <clipPath id="py7"><rect id="py7r" x="188" y="534" width="0" height="34"/></clipPath>
+    <clipPath id="py8"><rect id="py8r" x="188" y="586" width="0" height="34"/></clipPath>
+    <clipPath id="py9"><rect id="py9r" x="188" y="638" width="0" height="34"/></clipPath>
+    <clipPath id="py10"><rect id="py10r" x="188" y="690" width="0" height="34"/></clipPath>
+
+    <!-- TS -->
+    <clipPath id="ts1"><rect id="ts1r" x="188" y="222" width="0" height="34"/></clipPath>
+    <clipPath id="ts2"><rect id="ts2r" x="188" y="274" width="0" height="34"/></clipPath>
+    <clipPath id="ts3"><rect id="ts3r" x="188" y="326" width="0" height="34"/></clipPath>
+    <clipPath id="ts4"><rect id="ts4r" x="188" y="378" width="0" height="34"/></clipPath>
+    <clipPath id="ts5"><rect id="ts5r" x="188" y="430" width="0" height="34"/></clipPath>
+    <clipPath id="ts6"><rect id="ts6r" x="188" y="482" width="0" height="34"/></clipPath>
+    <clipPath id="ts7"><rect id="ts7r" x="188" y="534" width="0" height="34"/></clipPath>
+    <clipPath id="ts8"><rect id="ts8r" x="188" y="586" width="0" height="34"/></clipPath>
+    <clipPath id="ts9"><rect id="ts9r" x="188" y="638" width="0" height="34"/></clipPath>
+    <clipPath id="ts10"><rect id="ts10r" x="188" y="690" width="0" height="34"/></clipPath>
+
+    <!-- Go -->
+    <clipPath id="go1"><rect id="go1r" x="188" y="222" width="0" height="34"/></clipPath>
+    <clipPath id="go2"><rect id="go2r" x="188" y="274" width="0" height="34"/></clipPath>
+    <clipPath id="go3"><rect id="go3r" x="188" y="326" width="0" height="34"/></clipPath>
+    <clipPath id="go4"><rect id="go4r" x="188" y="378" width="0" height="34"/></clipPath>
+    <clipPath id="go5"><rect id="go5r" x="188" y="430" width="0" height="34"/></clipPath>
+    <clipPath id="go6"><rect id="go6r" x="188" y="482" width="0" height="34"/></clipPath>
+    <clipPath id="go7"><rect id="go7r" x="188" y="534" width="0" height="34"/></clipPath>
+    <clipPath id="go8"><rect id="go8r" x="188" y="586" width="0" height="34"/></clipPath>
+    <clipPath id="go9"><rect id="go9r" x="188" y="638" width="0" height="34"/></clipPath>
   </defs>
 
+  <!-- frame -->
   <rect x="28" y="28" width="1644" height="874" rx="30" fill="url(#frameBg)" filter="url(#shadow)"/>
   <rect x="28" y="28" width="1644" height="82" rx="30" fill="url(#topBar)"/>
   <rect x="28" y="82" width="1644" height="28" fill="url(#topBar)"/>
@@ -243,47 +154,18 @@
 
   <text x="850" y="79" text-anchor="middle" class="title">workspace</text>
 
+  <!-- editor -->
   <rect x="58" y="142" width="1584" height="730" rx="24" fill="#000000"/>
   <rect x="58" y="142" width="1584" height="62" rx="24" fill="#080808"/>
   <rect x="58" y="180" width="1584" height="24" fill="#080808"/>
 
+  <!-- tabs base -->
   <rect x="96" y="158" width="180" height="28" rx="8" class="tab-bg"/>
   <rect x="286" y="158" width="180" height="28" rx="8" class="tab-bg"/>
   <rect x="476" y="158" width="160" height="28" rx="8" class="tab-bg"/>
   <rect x="646" y="158" width="150" height="28" rx="8" class="tab-bg"/>
 
-  <g class="tabs1 tabs-set">
-    <rect x="96" y="158" width="180" height="28" rx="8" class="tab-bg-active"/>
-    <text x="116" y="178" class="tab tab-active">snake.cs</text>
-    <text x="306" y="178" class="tab">orchestrator.py</text>
-    <text x="496" y="178" class="tab">particles.ts</text>
-    <text x="666" y="178" class="tab">server.go</text>
-  </g>
-
-  <g class="tabs2 tabs-set">
-    <rect x="286" y="158" width="180" height="28" rx="8" class="tab-bg-active"/>
-    <text x="116" y="178" class="tab">snake.cs</text>
-    <text x="306" y="178" class="tab tab-active">orchestrator.py</text>
-    <text x="496" y="178" class="tab">particles.ts</text>
-    <text x="666" y="178" class="tab">server.go</text>
-  </g>
-
-  <g class="tabs3 tabs-set">
-    <rect x="476" y="158" width="160" height="28" rx="8" class="tab-bg-active"/>
-    <text x="116" y="178" class="tab">snake.cs</text>
-    <text x="306" y="178" class="tab">orchestrator.py</text>
-    <text x="496" y="178" class="tab tab-active">particles.ts</text>
-    <text x="666" y="178" class="tab">server.go</text>
-  </g>
-
-  <g class="tabs4 tabs-set">
-    <rect x="646" y="158" width="150" height="28" rx="8" class="tab-bg-active"/>
-    <text x="116" y="178" class="tab">snake.cs</text>
-    <text x="306" y="178" class="tab">orchestrator.py</text>
-    <text x="496" y="178" class="tab">particles.ts</text>
-    <text x="666" y="178" class="tab tab-active">server.go</text>
-  </g>
-
+  <!-- gutter -->
   <rect x="58" y="204" width="108" height="668" fill="#050505"/>
   <line x1="166" y1="204" x2="166" y2="872" stroke="#151515"/>
 
@@ -300,109 +182,295 @@
   <text x="112" y="768" text-anchor="middle" class="line-no">11</text>
   <text x="112" y="820" text-anchor="middle" class="line-no">12</text>
 
+  <!-- preview title and box -->
   <text x="1248" y="236" class="preview-title">PREVIEW</text>
   <rect x="1180" y="258" width="386" height="560" rx="20" class="preview-box"/>
 
-  <!-- C# preview -->
-    <!-- C# preview -->
-  <g class="preview pv1">
-    <rect x="1204" y="298" width="232" height="400" rx="16" fill="#050505" stroke="#141414"/>
-    <line x1="1242" y1="298" x2="1242" y2="698" class="grid-line"/>
-    <line x1="1280" y1="298" x2="1280" y2="698" class="grid-line"/>
-    <line x1="1318" y1="298" x2="1318" y2="698" class="grid-line"/>
-    <line x1="1356" y1="298" x2="1356" y2="698" class="grid-line"/>
-    <line x1="1394" y1="298" x2="1394" y2="698" class="grid-line"/>
+  <!-- tab state 1 -->
+  <g opacity="1">
+    <animate attributeName="opacity" values="1;1;0;0;0" keyTimes="0;0.245;0.25;0.999;1" dur="24s" repeatCount="indefinite"/>
+    <rect x="96" y="158" width="180" height="28" rx="8" class="tab-bg-active"/>
+    <text x="116" y="178" class="tab tab-active">snake.cs</text>
+    <text x="306" y="178" class="tab">orchestrator.py</text>
+    <text x="496" y="178" class="tab">particles.ts</text>
+    <text x="666" y="178" class="tab">server.go</text>
+  </g>
 
-    <line x1="1204" y1="336" x2="1436" y2="336" class="grid-line"/>
-    <line x1="1204" y1="374" x2="1436" y2="374" class="grid-line"/>
-    <line x1="1204" y1="412" x2="1436" y2="412" class="grid-line"/>
-    <line x1="1204" y1="450" x2="1436" y2="450" class="grid-line"/>
-    <line x1="1204" y1="488" x2="1436" y2="488" class="grid-line"/>
-    <line x1="1204" y1="526" x2="1436" y2="526" class="grid-line"/>
-    <line x1="1204" y1="564" x2="1436" y2="564" class="grid-line"/>
-    <line x1="1204" y1="602" x2="1436" y2="602" class="grid-line"/>
-    <line x1="1204" y1="640" x2="1436" y2="640" class="grid-line"/>
+  <!-- tab state 2 -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.25;0.255;0.495;1" dur="24s" repeatCount="indefinite"/>
+    <rect x="286" y="158" width="180" height="28" rx="8" class="tab-bg-active"/>
+    <text x="116" y="178" class="tab">snake.cs</text>
+    <text x="306" y="178" class="tab tab-active">orchestrator.py</text>
+    <text x="496" y="178" class="tab">particles.ts</text>
+    <text x="666" y="178" class="tab">server.go</text>
+  </g>
 
-    <g class="snakeHead">
-      <rect x="1242" y="526" width="30" height="30" rx="8" class="snake"/>
-    </g>
-    <g class="snakeB1">
-      <rect x="1204" y="526" width="30" height="30" rx="8" class="snake"/>
-    </g>
-    <g class="snakeB2">
-      <rect x="1166" y="526" width="30" height="30" rx="8" class="snake"/>
-    </g>
-    <g class="snakeB3">
-      <rect x="1128" y="526" width="30" height="30" rx="8" class="snake"/>
-    </g>
-    <g class="snakeB4">
-      <rect x="1090" y="526" width="30" height="30" rx="8" class="snake"/>
-    </g>
+  <!-- tab state 3 -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0;1;0" keyTimes="0;0.5;0.505;0.745;1" dur="24s" repeatCount="indefinite"/>
+    <rect x="476" y="158" width="160" height="28" rx="8" class="tab-bg-active"/>
+    <text x="116" y="178" class="tab">snake.cs</text>
+    <text x="306" y="178" class="tab">orchestrator.py</text>
+    <text x="496" y="178" class="tab tab-active">particles.ts</text>
+    <text x="666" y="178" class="tab">server.go</text>
+  </g>
 
-    <g class="foodAnim">
-      <rect x="1394" y="488" width="30" height="30" rx="10" class="food"/>
+  <!-- tab state 4 -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;1;1;0" keyTimes="0;0.75;0.755;0.995;0.999;1;1" dur="24s" repeatCount="indefinite"/>
+    <rect x="646" y="158" width="150" height="28" rx="8" class="tab-bg-active"/>
+    <text x="116" y="178" class="tab">snake.cs</text>
+    <text x="306" y="178" class="tab">orchestrator.py</text>
+    <text x="496" y="178" class="tab">particles.ts</text>
+    <text x="666" y="178" class="tab tab-active">server.go</text>
+  </g>
+
+  <!-- C# panel -->
+  <g opacity="1">
+    <animate attributeName="opacity" values="1;1;0;0;0" keyTimes="0;0.245;0.25;0.999;1" dur="24s" repeatCount="indefinite"/>
+    <text x="1128" y="248" text-anchor="end" class="panel-lang">C#</text>
+
+    <g clip-path="url(#cs1)"><text x="188" y="248" class="code"><tspan class="kw">public class</tspan><tspan class="op"> </tspan><tspan class="typ">SnakeGame</tspan><tspan class="op"> {</tspan></text></g>
+    <g clip-path="url(#cs2)"><text x="188" y="300" class="code"><tspan class="op">    </tspan><tspan class="kw">private</tspan><tspan class="op"> Queue&lt;Point&gt; snake = </tspan><tspan class="kw">new</tspan><tspan class="op">();</tspan></text></g>
+    <g clip-path="url(#cs3)"><text x="188" y="352" class="code"><tspan class="op">    </tspan><tspan class="kw">private</tspan><tspan class="op"> Point food = </tspan><tspan class="kw">new</tspan><tspan class="op">(</tspan><tspan class="num">6</tspan><tspan class="op">, </tspan><tspan class="num">3</tspan><tspan class="op">);</tspan></text></g>
+    <g clip-path="url(#cs4)"><text x="188" y="404" class="code"><tspan class="op">    </tspan><tspan class="kw">public void</tspan><tspan class="op"> </tspan><tspan class="fn">Tick</tspan><tspan class="op">() { </tspan><tspan class="kw">var</tspan><tspan class="op"> head = snake.Last(); }</tspan></text></g>
+    <g clip-path="url(#cs5)"><text x="188" y="456" class="code"><tspan class="op">    </tspan><tspan class="kw">public void</tspan><tspan class="op"> </tspan><tspan class="fn">MoveRight</tspan><tspan class="op">() { snake.Enqueue(NextCell()); }</tspan></text></g>
+    <g clip-path="url(#cs6)"><text x="188" y="508" class="code"><tspan class="op">    </tspan><tspan class="kw">if</tspan><tspan class="op"> (snake.Last() == food) </tspan><tspan class="fn">SpawnFood</tspan><tspan class="op">();</tspan></text></g>
+    <g clip-path="url(#cs7)"><text x="188" y="560" class="code"><tspan class="op">    </tspan><tspan class="kw">if</tspan><tspan class="op"> (snake.Count &gt; </tspan><tspan class="num">5</tspan><tspan class="op">) snake.Dequeue();</tspan></text></g>
+    <g clip-path="url(#cs8)"><text x="188" y="612" class="code"><tspan class="op">    </tspan><tspan class="kw">private</tspan><tspan class="op"> Point </tspan><tspan class="fn">NextCell</tspan><tspan class="op">() =&gt; snake.Last() with { X = snake.Last().X + </tspan><tspan class="num">1</tspan><tspan class="op"> };</tspan></text></g>
+    <g clip-path="url(#cs9)"><text x="188" y="664" class="code"><tspan class="op">    </tspan><tspan class="kw">private void</tspan><tspan class="op"> </tspan><tspan class="fn">SpawnFood</tspan><tspan class="op">() { food = RandomCell(); }</tspan></text></g>
+    <g clip-path="url(#cs10)"><text x="188" y="716" class="code"><tspan class="op">    </tspan><tspan class="kw">public void</tspan><tspan class="op"> </tspan><tspan class="fn">Render</tspan><tspan class="op">() { DrawGrid(); DrawSnake(); DrawFood(); }</tspan></text></g>
+    <g clip-path="url(#cs11)"><text x="188" y="768" class="code"><tspan class="op">}</tspan></text></g>
+    <g clip-path="url(#cs12)"><text x="188" y="820" class="code"><tspan class="cm">// classic snake advances and redraws each frame</tspan></text></g>
+  </g>
+
+  <!-- Python panel -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.25;0.255;0.495;1" dur="24s" repeatCount="indefinite"/>
+    <text x="1128" y="248" text-anchor="end" class="panel-lang">PYTHON</text>
+
+    <g clip-path="url(#py1)"><text x="188" y="248" class="code"><tspan class="kw">async def</tspan><tspan class="op"> </tspan><tspan class="fn">orchestrate</tspan><tspan class="op">(workers, queue):</tspan></text></g>
+    <g clip-path="url(#py2)"><text x="188" y="300" class="code"><tspan class="op">    active = [w </tspan><tspan class="kw">for</tspan><tspan class="op"> w </tspan><tspan class="kw">in</tspan><tspan class="op"> workers </tspan><tspan class="kw">if</tspan><tspan class="op"> w.online]</tspan></text></g>
+    <g clip-path="url(#py3)"><text x="188" y="352" class="code"><tspan class="op">    batches = await </tspan><tspan class="fn">split_queue</tspan><tspan class="op">(queue, size=</tspan><tspan class="num">50</tspan><tspan class="op">)</tspan></text></g>
+    <g clip-path="url(#py4)"><text x="188" y="404" class="code"><tspan class="op">    result = await </tspan><tspan class="fn">gather</tspan><tspan class="op">(*[w.run(b) </tspan><tspan class="kw">for</tspan><tspan class="op"> w, b </tspan><tspan class="kw">in</tspan><tspan class="op"> zip(active, batches)])</tspan></text></g>
+    <g clip-path="url(#py5)"><text x="188" y="456" class="code"><tspan class="op">    stats = {</tspan><tspan class="str">"processed"</tspan><tspan class="op">: </tspan><tspan class="fn">sum</tspan><tspan class="op">(result), </tspan><tspan class="str">"workers"</tspan><tspan class="op">: </tspan><tspan class="fn">len</tspan><tspan class="op">(active)}</tspan></text></g>
+    <g clip-path="url(#py6)"><text x="188" y="508" class="code"><tspan class="op">    await </tspan><tspan class="fn">save_metrics</tspan><tspan class="op">(stats)</tspan></text></g>
+    <g clip-path="url(#py7)"><text x="188" y="560" class="code"><tspan class="op">    await </tspan><tspan class="fn">publish_event</tspan><tspan class="op">(</tspan><tspan class="str">"pipeline.synced"</tspan><tspan class="op">, stats)</tspan></text></g>
+    <g clip-path="url(#py8)"><text x="188" y="612" class="code"><tspan class="op">    </tspan><tspan class="kw">if</tspan><tspan class="op"> stats[</tspan><tspan class="str">"processed"</tspan><tspan class="op">] == </tspan><tspan class="num">0</tspan><tspan class="op">: raise RuntimeError(</tspan><tspan class="str">"idle queue"</tspan><tspan class="op">)</tspan></text></g>
+    <g clip-path="url(#py9)"><text x="188" y="664" class="code"><tspan class="op">    </tspan><tspan class="kw">return</tspan><tspan class="op"> stats</tspan></text></g>
+    <g clip-path="url(#py10)"><text x="188" y="716" class="code"><tspan class="cm"># async workers process queue and emit telemetry</tspan></text></g>
+  </g>
+
+  <!-- TypeScript panel -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0;1;0" keyTimes="0;0.5;0.505;0.745;1" dur="24s" repeatCount="indefinite"/>
+    <text x="1128" y="248" text-anchor="end" class="panel-lang">TYPESCRIPT</text>
+
+    <g clip-path="url(#ts1)"><text x="188" y="248" class="code"><tspan class="kw">type</tspan><tspan class="op"> Particle = { x: </tspan><tspan class="typ">number</tspan><tspan class="op">; y: </tspan><tspan class="typ">number</tspan><tspan class="op">; r: </tspan><tspan class="typ">number</tspan><tspan class="op"> }</tspan></text></g>
+    <g clip-path="url(#ts2)"><text x="188" y="300" class="code"><tspan class="kw">const</tspan><tspan class="op"> ctx = canvas.getContext(</tspan><tspan class="str">"2d"</tspan><tspan class="op">)!</tspan></text></g>
+    <g clip-path="url(#ts3)"><text x="188" y="352" class="code"><tspan class="kw">const</tspan><tspan class="op"> particles = Array.from({ length: </tspan><tspan class="num">48</tspan><tspan class="op"> }, seedParticle)</tspan></text></g>
+    <g clip-path="url(#ts4)"><text x="188" y="404" class="code"><tspan class="kw">function</tspan><tspan class="op"> </tspan><tspan class="fn">draw</tspan><tspan class="op">() { ctx.clearRect(</tspan><tspan class="num">0</tspan><tspan class="op">, </tspan><tspan class="num">0</tspan><tspan class="op">, w, h) }</tspan></text></g>
+    <g clip-path="url(#ts5)"><text x="188" y="456" class="code"><tspan class="kw">function</tspan><tspan class="op"> </tspan><tspan class="fn">tick</tspan><tspan class="op">() { particles.forEach(updateParticle); draw() }</tspan></text></g>
+    <g clip-path="url(#ts6)"><text x="188" y="508" class="code"><tspan class="kw">function</tspan><tspan class="op"> </tspan><tspan class="fn">loop</tspan><tspan class="op">() { tick(); requestAnimationFrame(loop) }</tspan></text></g>
+    <g clip-path="url(#ts7)"><text x="188" y="560" class="code"><tspan class="op">particles.forEach(p =&gt; p.r = </tspan><tspan class="num">2</tspan><tspan class="op"> + Math.random() * </tspan><tspan class="num">4</tspan><tspan class="op">)</tspan></text></g>
+    <g clip-path="url(#ts8)"><text x="188" y="612" class="code"><tspan class="op">ctx.globalCompositeOperation = </tspan><tspan class="str">"screen"</tspan></text></g>
+    <g clip-path="url(#ts9)"><text x="188" y="664" class="code"><tspan class="op">loop()</tspan></text></g>
+    <g clip-path="url(#ts10)"><text x="188" y="716" class="code"><tspan class="cm">// canvas renders orbiting particles in real time</tspan></text></g>
+  </g>
+
+  <!-- Go panel -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;1;1;0" keyTimes="0;0.75;0.755;0.995;0.999;1;1" dur="24s" repeatCount="indefinite"/>
+    <text x="1128" y="248" text-anchor="end" class="panel-lang">GO</text>
+
+    <g clip-path="url(#go1)"><text x="188" y="248" class="code"><tspan class="kw">package</tspan><tspan class="op"> main</tspan></text></g>
+    <g clip-path="url(#go2)"><text x="188" y="300" class="code"><tspan class="kw">import</tspan><tspan class="op"> (</tspan><tspan class="str">"encoding/json"</tspan><tspan class="op"> </tspan><tspan class="str">"net/http"</tspan><tspan class="op">)</tspan></text></g>
+    <g clip-path="url(#go3)"><text x="188" y="352" class="code"><tspan class="kw">type</tspan><tspan class="op"> Health struct { Status string; Uptime int }</tspan></text></g>
+    <g clip-path="url(#go4)"><text x="188" y="404" class="code"><tspan class="kw">func</tspan><tspan class="op"> </tspan><tspan class="fn">health</tspan><tspan class="op">(w http.ResponseWriter, r *http.Request) {</tspan></text></g>
+    <g clip-path="url(#go5)"><text x="188" y="456" class="code"><tspan class="op">    payload := Health{Status: </tspan><tspan class="str">"ok"</tspan><tspan class="op">, Uptime: </tspan><tspan class="num">86400</tspan><tspan class="op">}</tspan></text></g>
+    <g clip-path="url(#go6)"><text x="188" y="508" class="code"><tspan class="op">    w.Header().Set(</tspan><tspan class="str">"Content-Type"</tspan><tspan class="op">, </tspan><tspan class="str">"application/json"</tspan><tspan class="op">)</tspan></text></g>
+    <g clip-path="url(#go7)"><text x="188" y="560" class="code"><tspan class="op">    json.NewEncoder(w).Encode(payload)</tspan></text></g>
+    <g clip-path="url(#go8)"><text x="188" y="612" class="code"><tspan class="op">func main() { http.HandleFunc(</tspan><tspan class="str">"/health"</tspan><tspan class="op">, health); http.ListenAndServe(</tspan><tspan class="str">":8080"</tspan><tspan class="op">, nil) }</tspan></text></g>
+    <g clip-path="url(#go9)"><text x="188" y="664" class="code"><tspan class="cm">// server publishes health metrics and response stats</tspan></text></g>
+  </g>
+
+  <!-- animate clip widths -->
+
+  <!-- C# -->
+  <animate xlink:href="#cs1r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.016;0.245;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#cs2r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.028;0.245;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#cs3r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.040;0.245;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#cs4r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.052;0.245;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#cs5r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.064;0.245;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#cs6r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.076;0.245;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#cs7r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.088;0.245;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#cs8r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.100;0.245;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#cs9r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.112;0.245;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#cs10r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.124;0.245;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#cs11r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.136;0.245;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#cs12r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.148;0.245;1" dur="24s" repeatCount="indefinite"/>
+
+  <!-- Python -->
+  <animate xlink:href="#py1r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.266;0.495;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#py2r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.278;0.495;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#py3r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.290;0.495;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#py4r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.302;0.495;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#py5r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.314;0.495;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#py6r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.326;0.495;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#py7r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.338;0.495;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#py8r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.350;0.495;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#py9r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.362;0.495;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#py10r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.374;0.495;1" dur="24s" repeatCount="indefinite"/>
+
+  <!-- TS -->
+  <animate xlink:href="#ts1r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.516;0.745;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#ts2r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.528;0.745;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#ts3r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.540;0.745;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#ts4r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.552;0.745;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#ts5r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.564;0.745;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#ts6r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.576;0.745;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#ts7r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.588;0.745;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#ts8r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.600;0.745;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#ts9r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.612;0.745;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#ts10r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.624;0.745;1" dur="24s" repeatCount="indefinite"/>
+
+  <!-- Go -->
+  <animate xlink:href="#go1r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.766;0.995;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#go2r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.778;0.995;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#go3r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.790;0.995;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#go4r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.802;0.995;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#go5r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.814;0.995;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#go6r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.826;0.995;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#go7r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.838;0.995;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#go8r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.850;0.995;1" dur="24s" repeatCount="indefinite"/>
+  <animate xlink:href="#go9r" attributeName="width" values="0;1100;1100;0" keyTimes="0;0.862;0.995;1" dur="24s" repeatCount="indefinite"/>
+
+  <!-- Preview animations -->
+
+  <!-- C# snake -->
+  <g opacity="1">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.77;0.79;0.995;1" dur="24s" repeatCount="indefinite"/>
+
+    <g>
+      <rect x="1242" y="526" width="30" height="30" rx="8" class="snake">
+        <animateTransform attributeName="transform" type="translate"
+          values="0 0;38 0;76 0;114 0;114 -38;152 -38"
+          keyTimes="0;0.16;0.33;0.50;0.67;1"
+          dur="3.2s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="1204" y="526" width="30" height="30" rx="8" class="snake">
+        <animateTransform attributeName="transform" type="translate"
+          values="0 0;0 0;38 0;76 0;114 0;114 -38"
+          keyTimes="0;0.16;0.33;0.50;0.67;1"
+          dur="3.2s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="1166" y="526" width="30" height="30" rx="8" class="snake">
+        <animateTransform attributeName="transform" type="translate"
+          values="0 0;0 0;0 0;38 0;76 0;114 0"
+          keyTimes="0;0.16;0.33;0.50;0.67;1"
+          dur="3.2s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="1128" y="526" width="30" height="30" rx="8" class="snake">
+        <animateTransform attributeName="transform" type="translate"
+          values="0 0;0 0;0 0;0 0;38 0;76 0"
+          keyTimes="0;0.16;0.33;0.50;0.67;1"
+          dur="3.2s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="1090" y="526" width="30" height="30" rx="8" class="snake">
+        <animateTransform attributeName="transform" type="translate"
+          values="0 0;0 0;0 0;0 0;0 0;38 0"
+          keyTimes="0;0.16;0.33;0.50;0.67;1"
+          dur="3.2s" repeatCount="indefinite"/>
+      </rect>
+
+      <rect x="1394" y="488" width="30" height="30" rx="10" class="food">
+        <animateTransform attributeName="transform" type="translate"
+          values="0 0;0 0;38 -38"
+          keyTimes="0;0.79;1"
+          dur="3.2s" repeatCount="indefinite"/>
+      </rect>
     </g>
   </g>
 
-  <!-- Python preview -->
-  <g class="preview pv2">
+  <!-- Python -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.27;0.29;0.495;1" dur="24s" repeatCount="indefinite"/>
+
     <rect x="1216" y="330" width="120" height="34" rx="16" fill="#111111"/>
     <rect x="1216" y="390" width="120" height="34" rx="16" fill="#111111"/>
     <rect x="1216" y="450" width="120" height="34" rx="16" fill="#111111"/>
 
-    <circle cx="1246" cy="347" r="10" class="node pulse1"/>
-    <circle cx="1246" cy="407" r="10" class="node pulse2"/>
-    <circle cx="1246" cy="467" r="10" class="node pulse3"/>
+    <circle cx="1246" cy="347" r="10" class="node">
+      <animateTransform attributeName="transform" type="scale" values="0.86;1.02;0.86" dur="1.15s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.25;1;0.25" dur="1.15s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1246" cy="407" r="10" class="node">
+      <animateTransform attributeName="transform" type="scale" values="0.9;1.05;0.9" dur="1.15s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.35;1;0.35" dur="1.15s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1246" cy="467" r="10" class="node">
+      <animateTransform attributeName="transform" type="scale" values="0.9;1.02;0.9" dur="1.15s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.15s" repeatCount="indefinite"/>
+    </circle>
 
     <rect x="1460" y="338" width="40" height="18" rx="9" fill="#111111"/>
     <rect x="1508" y="398" width="40" height="18" rx="9" fill="#111111"/>
     <rect x="1460" y="458" width="40" height="18" rx="9" fill="#111111"/>
 
-    <circle cx="1294" cy="347" r="8" class="packet move-packet-a"/>
-    <circle cx="1294" cy="467" r="8" class="packet move-packet-b"/>
+    <circle cx="1294" cy="347" r="8" class="packet">
+      <animateTransform attributeName="transform" type="translate"
+        values="0 0;180 -54;340 0"
+        dur="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.5;1" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1294" cy="467" r="8" class="packet">
+      <animateTransform attributeName="transform" type="translate"
+        values="0 0;180 54;340 0"
+        dur="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.5;1" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
   </g>
 
-  <!-- TS preview -->
-  <g class="preview pv3">
+  <!-- TS -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.52;0.54;0.745;1" dur="24s" repeatCount="indefinite"/>
+
     <circle cx="1372" cy="478" r="8" fill="#ffd8cd"/>
-    <circle cx="1372" cy="478" r="10" class="node orbit1"/>
-    <circle cx="1372" cy="478" r="9" class="node orbit2"/>
-    <circle cx="1372" cy="478" r="8" class="node orbit3"/>
+
+    <circle cx="1372" cy="478" r="10" class="node">
+      <animateTransform attributeName="transform" type="rotate"
+        from="0 1372 478" to="360 1372 478"
+        dur="3s" repeatCount="indefinite"/>
+      <animateTransform additive="sum" attributeName="transform" type="translate"
+        from="76 0" to="76 0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1372" cy="478" r="9" class="node">
+      <animateTransform attributeName="transform" type="rotate"
+        from="360 1372 478" to="0 1372 478"
+        dur="4s" repeatCount="indefinite"/>
+      <animateTransform additive="sum" attributeName="transform" type="translate"
+        from="110 0" to="110 0" dur="4s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1372" cy="478" r="8" class="node">
+      <animateTransform attributeName="transform" type="rotate"
+        from="0 1372 478" to="360 1372 478"
+        dur="5s" repeatCount="indefinite"/>
+      <animateTransform additive="sum" attributeName="transform" type="translate"
+        from="144 0" to="144 0" dur="5s" repeatCount="indefinite"/>
+    </circle>
 
     <circle cx="1372" cy="478" r="76" class="ring"/>
     <circle cx="1372" cy="478" r="110" class="ring"/>
     <circle cx="1372" cy="478" r="144" class="ring"/>
   </g>
 
-  <!-- Go preview -->
-  <g class="preview pv4">
-    <rect x="1226" y="332" width="260" height="26" rx="13" fill="#111111"/>
-    <rect x="1226" y="376" width="310" height="26" rx="13" fill="#111111"/>
-    <rect x="1226" y="420" width="224" height="26" rx="13" fill="#111111"/>
-
-    <rect x="1226" y="332" width="186" height="26" rx="13" class="metric1" opacity="0.92"/>
-    <rect x="1226" y="376" width="248" height="26" rx="13" class="metric2" opacity="0.92"/>
-    <rect x="1226" y="420" width="142" height="26" rx="13" class="metric3" opacity="0.92"/>
-
-    <g class="barWrap1">
-      <rect x="1232" y="540" width="44" height="114" rx="8" class="bar"/>
-    </g>
-    <g class="barWrap2">
-      <rect x="1294" y="506" width="44" height="148" rx="8" class="bar"/>
-    </g>
-    <g class="barWrap3">
-      <rect x="1356" y="556" width="44" height="98" rx="8" class="bar"/>
-    </g>
-    <g class="barWrap4">
-      <rect x="1418" y="518" width="44" height="136" rx="8" class="bar"/>
-    </g>
-  </g>
-  <!-- Go preview -->
-  <g class="preview pv4">
-    <rect x="1232" y="614" width="44" height="40" rx="8" class="bar go-bar1"/>
-    <rect x="1294" y="576" width="44" height="78" rx="8" class="bar go-bar2"/>
-    <rect x="1356" y="600" width="44" height="54" rx="8" class="bar go-bar3"/>
-    <rect x="1418" y="560" width="44" height="94" rx="8" class="bar go-bar4"/>
+  <!-- Go -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.77;0.79;0.995;1" dur="24s" repeatCount="indefinite"/>
 
     <rect x="1226" y="332" width="260" height="26" rx="13" fill="#111111"/>
     <rect x="1226" y="376" width="310" height="26" rx="13" fill="#111111"/>
@@ -411,148 +479,18 @@
     <rect x="1226" y="332" width="186" height="26" rx="13" class="metric1" opacity="0.92"/>
     <rect x="1226" y="376" width="248" height="26" rx="13" class="metric2" opacity="0.92"/>
     <rect x="1226" y="420" width="142" height="26" rx="13" class="metric3" opacity="0.92"/>
-  </g>
 
-  <!-- C# panel -->
-  <g class="panel p1">
-    <text x="1128" y="248" text-anchor="end" class="panel-lang">C#</text>
-
-    <text x="188" y="248" class="code"><tspan class="kw">public class</tspan><tspan class="op"> </tspan><tspan class="typ">SnakeGame</tspan><tspan class="op"> {</tspan></text>
-    <rect x="188" y="222" width="980" height="34" class="cover c1"/>
-
-    <text x="188" y="300" class="code"><tspan class="op">    </tspan><tspan class="kw">private</tspan><tspan class="op"> Queue&lt;Point&gt; snake = </tspan><tspan class="kw">new</tspan><tspan class="op">();</tspan></text>
-    <rect x="188" y="274" width="980" height="34" class="cover c2"/>
-
-    <text x="188" y="352" class="code"><tspan class="op">    </tspan><tspan class="kw">private</tspan><tspan class="op"> Point food = </tspan><tspan class="kw">new</tspan><tspan class="op">(</tspan><tspan class="num">6</tspan><tspan class="op">, </tspan><tspan class="num">3</tspan><tspan class="op">);</tspan></text>
-    <rect x="188" y="326" width="980" height="34" class="cover c3"/>
-
-    <text x="188" y="404" class="code"><tspan class="op">    </tspan><tspan class="kw">public void</tspan><tspan class="op"> </tspan><tspan class="fn">Tick</tspan><tspan class="op">() { </tspan><tspan class="kw">var</tspan><tspan class="op"> head = snake.Last(); }</tspan></text>
-    <rect x="188" y="378" width="980" height="34" class="cover c4"/>
-
-    <text x="188" y="456" class="code"><tspan class="op">    </tspan><tspan class="kw">public void</tspan><tspan class="op"> </tspan><tspan class="fn">MoveRight</tspan><tspan class="op">() { snake.Enqueue(NextCell()); }</tspan></text>
-    <rect x="188" y="430" width="980" height="34" class="cover c5"/>
-
-    <text x="188" y="508" class="code"><tspan class="op">    </tspan><tspan class="kw">if</tspan><tspan class="op"> (snake.Last() == food) </tspan><tspan class="fn">SpawnFood</tspan><tspan class="op">();</tspan></text>
-    <rect x="188" y="482" width="980" height="34" class="cover c6"/>
-
-    <text x="188" y="560" class="code"><tspan class="op">    </tspan><tspan class="kw">if</tspan><tspan class="op"> (snake.Count &gt; </tspan><tspan class="num">5</tspan><tspan class="op">) snake.Dequeue();</tspan></text>
-    <rect x="188" y="534" width="980" height="34" class="cover c7"/>
-
-    <text x="188" y="612" class="code"><tspan class="op">    </tspan><tspan class="kw">private</tspan><tspan class="op"> Point </tspan><tspan class="fn">NextCell</tspan><tspan class="op">() =&gt; snake.Last() with { X = snake.Last().X + </tspan><tspan class="num">1</tspan><tspan class="op"> };</tspan></text>
-    <rect x="188" y="586" width="1100" height="34" class="cover c8"/>
-
-    <text x="188" y="664" class="code"><tspan class="op">    </tspan><tspan class="kw">private void</tspan><tspan class="op"> </tspan><tspan class="fn">SpawnFood</tspan><tspan class="op">() { food = RandomCell(); }</tspan></text>
-    <rect x="188" y="638" width="980" height="34" class="cover c9"/>
-
-    <text x="188" y="716" class="code"><tspan class="op">    </tspan><tspan class="kw">public void</tspan><tspan class="op"> </tspan><tspan class="fn">Render</tspan><tspan class="op">() { DrawGrid(); DrawSnake(); DrawFood(); }</tspan></text>
-    <rect x="188" y="690" width="980" height="34" class="cover c10"/>
-
-    <text x="188" y="768" class="code"><tspan class="op">}</tspan></text>
-    <rect x="188" y="742" width="980" height="34" class="cover c11"/>
-
-    <text x="188" y="820" class="code"><tspan class="cm">// classic snake advances and redraws each frame</tspan></text>
-    <rect x="188" y="794" width="980" height="34" class="cover c12"/>
-  </g>
-
-  <!-- Python panel -->
-  <g class="panel p2">
-    <text x="1128" y="248" text-anchor="end" class="panel-lang">PYTHON</text>
-
-    <text x="188" y="248" class="code"><tspan class="kw">async def</tspan><tspan class="op"> </tspan><tspan class="fn">orchestrate</tspan><tspan class="op">(workers, queue):</tspan></text>
-    <rect x="188" y="222" width="980" height="34" class="cover c1"/>
-
-    <text x="188" y="300" class="code"><tspan class="op">    active = [w </tspan><tspan class="kw">for</tspan><tspan class="op"> w </tspan><tspan class="kw">in</tspan><tspan class="op"> workers </tspan><tspan class="kw">if</tspan><tspan class="op"> w.online]</tspan></text>
-    <rect x="188" y="274" width="980" height="34" class="cover c2"/>
-
-    <text x="188" y="352" class="code"><tspan class="op">    batches = await </tspan><tspan class="fn">split_queue</tspan><tspan class="op">(queue, size=</tspan><tspan class="num">50</tspan><tspan class="op">)</tspan></text>
-    <rect x="188" y="326" width="980" height="34" class="cover c3"/>
-
-    <text x="188" y="404" class="code"><tspan class="op">    result = await </tspan><tspan class="fn">gather</tspan><tspan class="op">(*[w.run(b) </tspan><tspan class="kw">for</tspan><tspan class="op"> w, b </tspan><tspan class="kw">in</tspan><tspan class="op"> zip(active, batches)])</tspan></text>
-    <rect x="188" y="378" width="980" height="34" class="cover c4"/>
-
-    <text x="188" y="456" class="code"><tspan class="op">    stats = {</tspan><tspan class="str">"processed"</tspan><tspan class="op">: </tspan><tspan class="fn">sum</tspan><tspan class="op">(result), </tspan><tspan class="str">"workers"</tspan><tspan class="op">: </tspan><tspan class="fn">len</tspan><tspan class="op">(active)}</tspan></text>
-    <rect x="188" y="430" width="980" height="34" class="cover c5"/>
-
-    <text x="188" y="508" class="code"><tspan class="op">    await </tspan><tspan class="fn">save_metrics</tspan><tspan class="op">(stats)</tspan></text>
-    <rect x="188" y="482" width="980" height="34" class="cover c6"/>
-
-    <text x="188" y="560" class="code"><tspan class="op">    await </tspan><tspan class="fn">publish_event</tspan><tspan class="op">(</tspan><tspan class="str">"pipeline.synced"</tspan><tspan class="op">, stats)</tspan></text>
-    <rect x="188" y="534" width="980" height="34" class="cover c7"/>
-
-    <text x="188" y="612" class="code"><tspan class="op">    </tspan><tspan class="kw">if</tspan><tspan class="op"> stats[</tspan><tspan class="str">"processed"</tspan><tspan class="op">] == </tspan><tspan class="num">0</tspan><tspan class="op">: raise RuntimeError(</tspan><tspan class="str">"idle queue"</tspan><tspan class="op">)</tspan></text>
-   <rect x="188" y="586" width="1100" height="34" class="cover c8"/>
-
-    <text x="188" y="664" class="code"><tspan class="op">    </tspan><tspan class="kw">return</tspan><tspan class="op"> stats</tspan></text>
-    <rect x="188" y="638" width="980" height="34" class="cover c9"/>
-
-    <text x="188" y="716" class="code"><tspan class="cm"># async workers process queue and emit telemetry</tspan></text>
-    <rect x="188" y="690" width="980" height="34" class="cover c10"/>
-  </g>
-
-  <!-- TypeScript panel -->
-  <g class="panel p3">
-    <text x="1128" y="248" text-anchor="end" class="panel-lang">TYPESCRIPT</text>
-
-    <text x="188" y="248" class="code"><tspan class="kw">type</tspan><tspan class="op"> Particle = { x: </tspan><tspan class="typ">number</tspan><tspan class="op">; y: </tspan><tspan class="typ">number</tspan><tspan class="op">; r: </tspan><tspan class="typ">number</tspan><tspan class="op"> }</tspan></text>
-    <rect x="188" y="222" width="980" height="34" class="cover c1"/>
-
-    <text x="188" y="300" class="code"><tspan class="kw">const</tspan><tspan class="op"> ctx = canvas.getContext(</tspan><tspan class="str">"2d"</tspan><tspan class="op">)!</tspan></text>
-    <rect x="188" y="274" width="980" height="34" class="cover c2"/>
-
-    <text x="188" y="352" class="code"><tspan class="kw">const</tspan><tspan class="op"> particles = Array.from({ length: </tspan><tspan class="num">48</tspan><tspan class="op"> }, seedParticle)</tspan></text>
-    <rect x="188" y="326" width="980" height="34" class="cover c3"/>
-
-    <text x="188" y="404" class="code"><tspan class="kw">function</tspan><tspan class="op"> </tspan><tspan class="fn">draw</tspan><tspan class="op">() { ctx.clearRect(</tspan><tspan class="num">0</tspan><tspan class="op">, </tspan><tspan class="num">0</tspan><tspan class="op">, w, h) }</tspan></text>
-    <rect x="188" y="378" width="980" height="34" class="cover c4"/>
-
-    <text x="188" y="456" class="code"><tspan class="kw">function</tspan><tspan class="op"> </tspan><tspan class="fn">tick</tspan><tspan class="op">() { particles.forEach(updateParticle); draw() }</tspan></text>
-    <rect x="188" y="430" width="980" height="34" class="cover c5"/>
-
-    <text x="188" y="508" class="code"><tspan class="kw">function</tspan><tspan class="op"> </tspan><tspan class="fn">loop</tspan><tspan class="op">() { tick(); requestAnimationFrame(loop) }</tspan></text>
-    <rect x="188" y="482" width="980" height="34" class="cover c6"/>
-
-    <text x="188" y="560" class="code"><tspan class="op">particles.forEach(p =&gt; p.r = </tspan><tspan class="num">2</tspan><tspan class="op"> + Math.random() * </tspan><tspan class="num">4</tspan><tspan class="op">)</tspan></text>
-    <rect x="188" y="534" width="980" height="34" class="cover c7"/>
-
-    <text x="188" y="612" class="code"><tspan class="op">ctx.globalCompositeOperation = </tspan><tspan class="str">"screen"</tspan></text>
-    <rect x="188" y="586" width="1100" height="34" class="cover c8"/>
-
-    <text x="188" y="664" class="code"><tspan class="op">loop()</tspan></text>
-    <rect x="188" y="638" width="980" height="34" class="cover c9"/>
-
-    <text x="188" y="716" class="code"><tspan class="cm">// canvas renders orbiting particles in real time</tspan></text>
-    <rect x="188" y="690" width="980" height="34" class="cover c10"/>
-  </g>
-
-  <!-- Go panel -->
-  <g class="panel p4">
-    <text x="1128" y="248" text-anchor="end" class="panel-lang">GO</text>
-
-    <text x="188" y="248" class="code"><tspan class="kw">package</tspan><tspan class="op"> main</tspan></text>
-    <rect x="188" y="222" width="980" height="34" class="cover c1"/>
-
-    <text x="188" y="300" class="code"><tspan class="kw">import</tspan><tspan class="op"> (</tspan><tspan class="str">"encoding/json"</tspan><tspan class="op"> </tspan><tspan class="str">"net/http"</tspan><tspan class="op">)</tspan></text>
-    <rect x="188" y="274" width="980" height="34" class="cover c2"/>
-
-    <text x="188" y="352" class="code"><tspan class="kw">type</tspan><tspan class="op"> Health struct { Status string; Uptime int }</tspan></text>
-    <rect x="188" y="326" width="980" height="34" class="cover c3"/>
-
-    <text x="188" y="404" class="code"><tspan class="kw">func</tspan><tspan class="op"> </tspan><tspan class="fn">health</tspan><tspan class="op">(w http.ResponseWriter, r *http.Request) {</tspan></text>
-    <rect x="188" y="378" width="980" height="34" class="cover c4"/>
-
-    <text x="188" y="456" class="code"><tspan class="op">    payload := Health{Status: </tspan><tspan class="str">"ok"</tspan><tspan class="op">, Uptime: </tspan><tspan class="num">86400</tspan><tspan class="op">}</tspan></text>
-    <rect x="188" y="430" width="980" height="34" class="cover c5"/>
-
-    <text x="188" y="508" class="code"><tspan class="op">    w.Header().Set(</tspan><tspan class="str">"Content-Type"</tspan><tspan class="op">, </tspan><tspan class="str">"application/json"</tspan><tspan class="op">)</tspan></text>
-    <rect x="188" y="482" width="980" height="34" class="cover c6"/>
-
-    <text x="188" y="560" class="code"><tspan class="op">    json.NewEncoder(w).Encode(payload)</tspan></text>
-    <rect x="188" y="534" width="980" height="34" class="cover c7"/>
-
-    <text x="188" y="612" class="code"><tspan class="op">func main() { http.HandleFunc(</tspan><tspan class="str">"/health"</tspan><tspan class="op">, health); http.ListenAndServe(</tspan><tspan class="str">":8080"</tspan><tspan class="op">, nil) }</tspan></text>
-    <rect x="188" y="586" width="1100" height="34" class="cover c8"/>
-
-    <text x="188" y="664" class="code"><tspan class="cm">// server publishes health metrics and response stats</tspan></text>
-    <rect x="188" y="638" width="980" height="34" class="cover c9"/>
+    <rect x="1232" y="540" width="44" height="114" rx="8" class="bar">
+      <animateTransform attributeName="transform" type="scale" values="1 0.35;1 1.1;1 0.35" dur="1.6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1294" y="506" width="44" height="148" rx="8" class="bar">
+      <animateTransform attributeName="transform" type="scale" values="1 0.55;1 1.25;1 0.55" dur="1.6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1356" y="556" width="44" height="98" rx="8" class="bar">
+      <animateTransform attributeName="transform" type="scale" values="1 0.42;1 0.88;1 0.42" dur="1.6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1418" y="518" width="44" height="136" rx="8" class="bar">
+      <animateTransform attributeName="transform" type="scale" values="1 0.68;1 1.2;1 0.68" dur="1.6s" repeatCount="indefinite"/>
+    </rect>
   </g>
 </svg>
