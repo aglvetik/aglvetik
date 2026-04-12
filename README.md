@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://media.tenor.com/kpVnSAU68RUAAAAM/working-xtremeverse.gif" width="400" alt="">
+  <img src="https://media.tenor.com/kpVnSAU68RUAAAAM/working-xtremeverse.gif" width="300" alt="">
 </p>
 
 <p align="center">
