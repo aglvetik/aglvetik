@@ -23,6 +23,32 @@
       .grid{stroke:#141414}.box{fill:#040404;stroke:#121212}.ring{fill:none;stroke:#131313;stroke-width:2}
       .sn{fill:#ffb7c8}.fd{fill:#f5e5a6}.nd{fill:#ffcfbe}.pk{fill:#ffd8cd}.dt{fill:#ffe1d7}.bar{fill:#ffb7c8}
     </style>
+    <clipPath id="ts1" clipPathUnits="userSpaceOnUse"><rect x="176" y="224" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.506;0.514;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="ts2" clipPathUnits="userSpaceOnUse"><rect x="176" y="272" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.516;0.524;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="ts3" clipPathUnits="userSpaceOnUse"><rect x="176" y="320" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.526;0.534;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="ts4" clipPathUnits="userSpaceOnUse"><rect x="176" y="368" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.536;0.544;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="ts5" clipPathUnits="userSpaceOnUse"><rect x="176" y="416" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.546;0.554;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="ts6" clipPathUnits="userSpaceOnUse"><rect x="176" y="464" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.556;0.564;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="ts7" clipPathUnits="userSpaceOnUse"><rect x="176" y="512" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.566;0.574;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="ts8" clipPathUnits="userSpaceOnUse"><rect x="176" y="560" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.576;0.584;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="ts9" clipPathUnits="userSpaceOnUse"><rect x="176" y="608" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.586;0.594;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="ts10" clipPathUnits="userSpaceOnUse"><rect x="176" y="656" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.596;0.604;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="ts11" clipPathUnits="userSpaceOnUse"><rect x="176" y="704" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.606;0.614;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="ts12" clipPathUnits="userSpaceOnUse"><rect x="176" y="752" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.616;0.624;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="ts13" clipPathUnits="userSpaceOnUse"><rect x="176" y="800" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.626;0.634;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="go1" clipPathUnits="userSpaceOnUse"><rect x="176" y="224" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.756;0.764;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="go2" clipPathUnits="userSpaceOnUse"><rect x="176" y="272" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.766;0.774;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="go3" clipPathUnits="userSpaceOnUse"><rect x="176" y="320" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.776;0.784;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="go4" clipPathUnits="userSpaceOnUse"><rect x="176" y="368" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.786;0.794;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="go5" clipPathUnits="userSpaceOnUse"><rect x="176" y="416" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.796;0.804;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="go6" clipPathUnits="userSpaceOnUse"><rect x="176" y="464" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.806;0.814;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="go7" clipPathUnits="userSpaceOnUse"><rect x="176" y="512" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.816;0.824;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="go8" clipPathUnits="userSpaceOnUse"><rect x="176" y="560" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.826;0.834;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="go9" clipPathUnits="userSpaceOnUse"><rect x="176" y="608" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.836;0.844;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="go10" clipPathUnits="userSpaceOnUse"><rect x="176" y="656" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.846;0.854;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="go11" clipPathUnits="userSpaceOnUse"><rect x="176" y="704" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.856;0.864;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="go12" clipPathUnits="userSpaceOnUse"><rect x="176" y="752" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.866;0.874;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="go13" clipPathUnits="userSpaceOnUse"><rect x="176" y="800" width="0" height="34"><animate attributeName="width" values="0;0;920;920" keyTimes="0;0.876;0.884;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
   </defs>
   <rect x="28" y="28" width="1624" height="904" rx="30" fill="url(#bg)" filter="url(#sh)"/>
   <rect x="28" y="28" width="1624" height="82" rx="30" fill="url(#top)"/>
@@ -218,67 +244,67 @@
   </g>
   <g class="panel p3">
 <text x="830" y="188" text-anchor="start" class="l">TYPESCRIPT</text>
-    <text x="176" y="248" class="c"><tspan class="k">type</tspan><tspan class="o"> Particle = { x: </tspan><tspan class="y">number</tspan><tspan class="o">; y: </tspan><tspan class="y">number</tspan></text>
+    <text x="176" y="248" class="c" clip-path="url(#ts1)"><tspan class="k">type</tspan><tspan class="o"> Particle = { x: </tspan><tspan class="y">number</tspan><tspan class="o">; y: </tspan><tspan class="y">number</tspan></text>
     <rect x="176" y="224" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.506;0.514;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.506;0.514;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="296" class="c"><tspan class="o">  r: </tspan><tspan class="y">number</tspan><tspan class="o">; orbit: </tspan><tspan class="y">number</tspan><tspan class="o"> }</tspan></text>
+    <text x="176" y="296" class="c" clip-path="url(#ts2)"><tspan class="o">  r: </tspan><tspan class="y">number</tspan><tspan class="o">; orbit: </tspan><tspan class="y">number</tspan><tspan class="o"> }</tspan></text>
     <rect x="176" y="272" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.516;0.524;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.516;0.524;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="344" class="c"><tspan class="k">const</tspan><tspan class="o"> orbitLabel = </tspan><tspan class="s">"aglvetik-orbit"</tspan></text>
+    <text x="176" y="344" class="c" clip-path="url(#ts3)"><tspan class="k">const</tspan><tspan class="o"> orbitLabel = </tspan><tspan class="s">"aglvetik-orbit"</tspan></text>
     <rect x="176" y="320" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.526;0.534;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.526;0.534;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="392" class="c"><tspan class="k">const</tspan><tspan class="o"> particles = Array.from({ length: </tspan><tspan class="m">48</tspan><tspan class="o"> }, seedParticle)</tspan></text>
+    <text x="176" y="392" class="c" clip-path="url(#ts4)"><tspan class="k">const</tspan><tspan class="o"> particles = Array.from({ length: </tspan><tspan class="m">48</tspan><tspan class="o"> }, seedParticle)</tspan></text>
     <rect x="176" y="368" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.536;0.544;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.536;0.544;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="440" class="c"><tspan class="k">function</tspan><tspan class="o"> </tspan><tspan class="f">updateParticle</tspan><tspan class="o">(p: Particle, i: </tspan><tspan class="y">number</tspan><tspan class="o">) {</tspan></text>
+    <text x="176" y="440" class="c" clip-path="url(#ts5)"><tspan class="k">function</tspan><tspan class="o"> </tspan><tspan class="f">updateParticle</tspan><tspan class="o">(p: Particle, i: </tspan><tspan class="y">number</tspan><tspan class="o">) {</tspan></text>
     <rect x="176" y="416" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.546;0.554;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.546;0.554;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="488" class="c"><tspan class="o">    p.orbit += </tspan><tspan class="m">0.012</tspan><tspan class="o"> + i * </tspan><tspan class="m">0.0002</tspan></text>
+    <text x="176" y="488" class="c" clip-path="url(#ts6)"><tspan class="o">    p.orbit += </tspan><tspan class="m">0.012</tspan><tspan class="o"> + i * </tspan><tspan class="m">0.0002</tspan></text>
     <rect x="176" y="464" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.556;0.564;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.556;0.564;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="536" class="c"><tspan class="o">    p.x = cx + Math.cos(p.orbit) * p.r</tspan></text>
+    <text x="176" y="536" class="c" clip-path="url(#ts7)"><tspan class="o">    p.x = cx + Math.cos(p.orbit) * p.r</tspan></text>
     <rect x="176" y="512" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.566;0.574;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.566;0.574;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="584" class="c"><tspan class="o">    p.y = cy + Math.sin(p.orbit) * p.r</tspan></text>
+    <text x="176" y="584" class="c" clip-path="url(#ts8)"><tspan class="o">    p.y = cy + Math.sin(p.orbit) * p.r</tspan></text>
     <rect x="176" y="560" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.576;0.584;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.576;0.584;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="632" class="c"><tspan class="o">}</tspan></text>
+    <text x="176" y="632" class="c" clip-path="url(#ts9)"><tspan class="o">}</tspan></text>
     <rect x="176" y="608" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.586;0.594;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.586;0.594;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="680" class="c"><tspan class="k">function</tspan><tspan class="o"> </tspan><tspan class="f">frame</tspan><tspan class="o">(){</tspan></text>
+    <text x="176" y="680" class="c" clip-path="url(#ts10)"><tspan class="k">function</tspan><tspan class="o"> </tspan><tspan class="f">frame</tspan><tspan class="o">(){</tspan></text>
     <rect x="176" y="656" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.596;0.604;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.596;0.604;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="728" class="c"><tspan class="o">    particles.forEach(updateParticle)</tspan></text>
+    <text x="176" y="728" class="c" clip-path="url(#ts11)"><tspan class="o">    particles.forEach(updateParticle)</tspan></text>
     <rect x="176" y="704" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.606;0.614;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.606;0.614;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="776" class="c"><tspan class="o">    renderRings([</tspan><tspan class="m">64</tspan><tspan class="o">, </tspan><tspan class="m">92</tspan><tspan class="o">, </tspan><tspan class="m">120</tspan><tspan class="o">])</tspan></text>
+    <text x="176" y="776" class="c" clip-path="url(#ts12)"><tspan class="o">    renderRings([</tspan><tspan class="m">64</tspan><tspan class="o">, </tspan><tspan class="m">92</tspan><tspan class="o">, </tspan><tspan class="m">120</tspan><tspan class="o">])</tspan></text>
     <rect x="176" y="752" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.616;0.624;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.616;0.624;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="824" class="c"><tspan class="o">}</tspan></text>
+    <text x="176" y="824" class="c" clip-path="url(#ts13)"><tspan class="o">}</tspan></text>
     <rect x="176" y="800" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.626;0.634;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.626;0.634;1" dur="20s" repeatCount="indefinite"/>
@@ -286,67 +312,67 @@
   </g>
   <g class="panel p4">
 <text x="830" y="188" text-anchor="start" class="l">GO</text>
-    <text x="176" y="248" class="c"><tspan class="k">package</tspan><tspan class="o"> main</tspan></text>
+    <text x="176" y="248" class="c" clip-path="url(#go1)"><tspan class="k">package</tspan><tspan class="o"> main</tspan></text>
     <rect x="176" y="224" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.756;0.764;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.756;0.764;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="296" class="c"><tspan class="k">type</tspan><tspan class="o"> Sample struct { CPU, Queue, IO, Mem int; Tag string }</tspan></text>
+    <text x="176" y="296" class="c" clip-path="url(#go2)"><tspan class="k">type</tspan><tspan class="o"> Sample struct { CPU, Queue, IO, Mem int; Tag string }</tspan></text>
     <rect x="176" y="272" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.766;0.774;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.766;0.774;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="344" class="c"><tspan class="k">func</tspan><tspan class="o"> </tspan><tspan class="f">stream</tspan><tspan class="o">(w http.ResponseWriter, r *http.Request) {</tspan></text>
+    <text x="176" y="344" class="c" clip-path="url(#go3)"><tspan class="k">func</tspan><tspan class="o"> </tspan><tspan class="f">stream</tspan><tspan class="o">(w http.ResponseWriter, r *http.Request) {</tspan></text>
     <rect x="176" y="320" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.776;0.784;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.776;0.784;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="392" class="c"><tspan class="o">    sample := Sample{CPU: </tspan><tspan class="m">72</tspan><tspan class="o">, Queue: </tspan><tspan class="m">90</tspan><tspan class="o">,</tspan></text>
+    <text x="176" y="392" class="c" clip-path="url(#go4)"><tspan class="o">    sample := Sample{CPU: </tspan><tspan class="m">72</tspan><tspan class="o">, Queue: </tspan><tspan class="m">90</tspan><tspan class="o">,</tspan></text>
     <rect x="176" y="368" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.786;0.794;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.786;0.794;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="440" class="c"><tspan class="o">        IO: </tspan><tspan class="m">61</tspan><tspan class="o">, Mem: </tspan><tspan class="m">84</tspan><tspan class="o">, Tag: </tspan><tspan class="s">"aglvetik"</tspan><tspan class="o">}</tspan></text>
+    <text x="176" y="440" class="c" clip-path="url(#go5)"><tspan class="o">        IO: </tspan><tspan class="m">61</tspan><tspan class="o">, Mem: </tspan><tspan class="m">84</tspan><tspan class="o">, Tag: </tspan><tspan class="s">"aglvetik"</tspan><tspan class="o">}</tspan></text>
     <rect x="176" y="416" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.796;0.804;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.796;0.804;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="488" class="c"><tspan class="o">    bars := </tspan><tspan class="f">animateBars</tspan><tspan class="o">(sample)</tspan></text>
+    <text x="176" y="488" class="c" clip-path="url(#go6)"><tspan class="o">    bars := </tspan><tspan class="f">animateBars</tspan><tspan class="o">(sample)</tspan></text>
     <rect x="176" y="464" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.806;0.814;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.806;0.814;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="536" class="c"><tspan class="o">    w.Header().Set(</tspan><tspan class="s">"Content-Type"</tspan><tspan class="o">, </tspan><tspan class="s">"application/json"</tspan><tspan class="o">)</tspan></text>
+    <text x="176" y="536" class="c" clip-path="url(#go7)"><tspan class="o">    w.Header().Set(</tspan><tspan class="s">"Content-Type"</tspan><tspan class="o">, </tspan><tspan class="s">"application/json"</tspan><tspan class="o">)</tspan></text>
     <rect x="176" y="512" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.816;0.824;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.816;0.824;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="584" class="c"><tspan class="o">    json.NewEncoder(w).Encode(bars)</tspan></text>
+    <text x="176" y="584" class="c" clip-path="url(#go8)"><tspan class="o">    json.NewEncoder(w).Encode(bars)</tspan></text>
     <rect x="176" y="560" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.826;0.834;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.826;0.834;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="632" class="c"><tspan class="o">}</tspan></text>
+    <text x="176" y="632" class="c" clip-path="url(#go9)"><tspan class="o">}</tspan></text>
     <rect x="176" y="608" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.836;0.844;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.836;0.844;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="680" class="c"><tspan class="k">func</tspan><tspan class="o"> </tspan><tspan class="f">animateBars</tspan><tspan class="o">(sample Sample) []int {</tspan></text>
+    <text x="176" y="680" class="c" clip-path="url(#go10)"><tspan class="k">func</tspan><tspan class="o"> </tspan><tspan class="f">animateBars</tspan><tspan class="o">(sample Sample) []int {</tspan></text>
     <rect x="176" y="656" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.846;0.854;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.846;0.854;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="728" class="c"><tspan class="o">    </tspan><tspan class="k">return</tspan><tspan class="o"> []int{sample.CPU, sample.Queue,</tspan></text>
+    <text x="176" y="728" class="c" clip-path="url(#go11)"><tspan class="o">    </tspan><tspan class="k">return</tspan><tspan class="o"> []int{sample.CPU, sample.Queue,</tspan></text>
     <rect x="176" y="704" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.856;0.864;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.856;0.864;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="776" class="c"><tspan class="o">        sample.IO, sample.Mem}</tspan></text>
+    <text x="176" y="776" class="c" clip-path="url(#go12)"><tspan class="o">        sample.IO, sample.Mem}</tspan></text>
     <rect x="176" y="752" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.866;0.874;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.866;0.874;1" dur="20s" repeatCount="indefinite"/>
     </rect>
-    <text x="176" y="824" class="c"><tspan class="o">}</tspan></text>
+    <text x="176" y="824" class="c" clip-path="url(#go13)"><tspan class="o">}</tspan></text>
     <rect x="176" y="800" width="920" height="30" class="mask">
       <animate attributeName="x" values="176;176;1096;1096" keyTimes="0;0.876;0.884;1" dur="20s" repeatCount="indefinite"/>
       <animate attributeName="width" values="920;920;0;0" keyTimes="0;0.876;0.884;1" dur="20s" repeatCount="indefinite"/>
