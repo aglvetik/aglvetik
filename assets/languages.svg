@@ -1,82 +1,120 @@
-<svg width="700" height="406" viewBox="0 0 700 406" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="760" height="360" viewBox="0 0 760 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="760" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#101722" />
+    </linearGradient>
+  </defs>
+
   <style>
     .title {
       fill: #f0f6fc;
-      font: 700 20px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font: 700 22px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
-    .subtitle {
+    .label {
       fill: #8b949e;
-      font: 400 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font: 600 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-anchor: middle;
+    }
+
+    .center-main {
+      fill: #f0f6fc;
+      font: 700 20px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-anchor: middle;
+    }
+
+    .center-sub {
+      fill: #8b949e;
+      font: 500 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-anchor: middle;
     }
 
     .language {
-      fill: #c9d1d9;
-      font: 600 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      fill: #dce6f2;
+      font: 600 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
     .percent {
-      fill: #8b949e;
-      font: 600 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      fill: #ffffff;
+      font: 700 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       text-anchor: end;
     }
   </style>
 
-  <rect x="0.5" y="0.5" width="699" height="405" rx="14" fill="#0d1117" stroke="#30363d" />
+  <rect x="0.5" y="0.5" width="759" height="359" rx="22" fill="url(#cardBg)" stroke="#30363d" />
 
-  <text x="20" y="34" class="title">Repository language mix</text>
-  <text x="20" y="54" class="subtitle">Calculated by total code size across public repositories</text>
+  <text x="28" y="38" class="title">Repository language mix</text>
 
-  <clipPath id="barClip">
-    <rect x="20" y="70" width="660" height="14" rx="7" />
-  </clipPath>
+  
+  <path d="M 94.00 195.00 A 96 96 0 0 1 260.05 129.36 L 230.86 156.71 A 56 56 0 0 0 134.00 195.00 Z" fill="#3572A5" stroke="#0d1117" stroke-width="4" />
+      
 
-  <g transform="translate(20, 70)" clip-path="url(#barClip)">
-<rect x="0.00" y="0" width="251.02" height="14" fill="#3572A5" />
-<rect x="251.02" y="0" width="219.48" height="14" fill="#dea584" />
-<rect x="470.50" y="0" width="69.02" height="14" fill="#178600" />
-<rect x="539.51" y="0" width="60.72" height="14" fill="#3178c6" />
-<rect x="600.23" y="0" width="46.60" height="14" fill="#f1e05a" />
-<rect x="646.83" y="0" width="4.58" height="14" fill="#563d7c" />
-<rect x="651.41" y="0" width="4.43" height="14" fill="#e34c26" />
-<rect x="655.83" y="0" width="2.79" height="14" fill="#89e051" />
-<rect x="658.62" y="0" width="2.00" height="14" fill="#8b949e" />
-  </g>
+  <path d="M 260.05 129.36 A 96 96 0 0 1 212.38 288.36 L 203.05 249.46 A 56 56 0 0 0 230.86 156.71 Z" fill="#dea584" stroke="#0d1117" stroke-width="4" />
+      
 
+  <path d="M 212.38 288.36 A 96 96 0 0 1 150.72 282.60 L 167.09 246.10 A 56 56 0 0 0 203.05 249.46 Z" fill="#178600" stroke="#0d1117" stroke-width="4" />
+      
 
-  <circle cx="32" cy="107" r="6" fill="#3572A5" />
-  <text x="50" y="112" class="language">Python</text>
+  <path d="M 150.72 282.60 A 96 96 0 0 1 109.26 246.93 L 142.90 225.29 A 56 56 0 0 0 167.09 246.10 Z" fill="#3178c6" stroke="#0d1117" stroke-width="4" />
+      
+
+  <path d="M 109.26 246.93 A 96 96 0 0 1 94.75 207.00 L 134.44 202.00 A 56 56 0 0 0 142.90 225.29 Z" fill="#f1e05a" stroke="#0d1117" stroke-width="4" />
+      
+
+  <path d="M 94.75 207.00 A 96 96 0 0 1 94.32 202.84 L 134.19 199.57 A 56 56 0 0 0 134.44 202.00 Z" fill="#563d7c" stroke="#0d1117" stroke-width="4" />
+      
+
+  <path d="M 94.32 202.84 A 96 96 0 0 1 94.00 195.00 L 134.00 195.00 A 56 56 0 0 0 134.19 199.57 Z" fill="#8b949e" stroke="#0d1117" stroke-width="4" />
+      
+
+  <circle cx="190" cy="195" r="48" fill="#0f141d" />
+
+  <text x="190" y="189" class="center-main">7</text>
+  <text x="190" y="213" class="center-sub">languages</text>
+
+  <text x="190" y="319" class="label">calculated from total code volume</text>
+
+  
+  <rect x="360" y="92" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
+  <circle cx="382" cy="107" r="7" fill="#3572A5" />
+  <text x="398" y="112" class="language">Python</text>
   <text x="670" y="112" class="percent">38.0%</text>
+      
 
-  <circle cx="32" cy="141" r="6" fill="#dea584" />
-  <text x="50" y="146" class="language">Rust</text>
-  <text x="670" y="146" class="percent">33.3%</text>
+  <rect x="360" y="130" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
+  <circle cx="382" cy="145" r="7" fill="#dea584" />
+  <text x="398" y="150" class="language">Rust</text>
+  <text x="670" y="150" class="percent">33.2%</text>
+      
 
-  <circle cx="32" cy="175" r="6" fill="#178600" />
-  <text x="50" y="180" class="language">C#</text>
-  <text x="670" y="180" class="percent">10.5%</text>
+  <rect x="360" y="168" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
+  <circle cx="382" cy="183" r="7" fill="#178600" />
+  <text x="398" y="188" class="language">C#</text>
+  <text x="670" y="188" class="percent">10.5%</text>
+      
 
-  <circle cx="32" cy="209" r="6" fill="#3178c6" />
-  <text x="50" y="214" class="language">TypeScript</text>
-  <text x="670" y="214" class="percent">9.2%</text>
+  <rect x="360" y="206" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
+  <circle cx="382" cy="221" r="7" fill="#3178c6" />
+  <text x="398" y="226" class="language">TypeScript</text>
+  <text x="670" y="226" class="percent">9.2%</text>
+      
 
-  <circle cx="32" cy="243" r="6" fill="#f1e05a" />
-  <text x="50" y="248" class="language">JavaScript</text>
-  <text x="670" y="248" class="percent">7.1%</text>
+  <rect x="360" y="244" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
+  <circle cx="382" cy="259" r="7" fill="#f1e05a" />
+  <text x="398" y="264" class="language">JavaScript</text>
+  <text x="670" y="264" class="percent">7.1%</text>
+      
 
-  <circle cx="32" cy="277" r="6" fill="#563d7c" />
-  <text x="50" y="282" class="language">CSS</text>
-  <text x="670" y="282" class="percent">0.7%</text>
+  <rect x="360" y="282" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
+  <circle cx="382" cy="297" r="7" fill="#563d7c" />
+  <text x="398" y="302" class="language">CSS</text>
+  <text x="670" y="302" class="percent">0.7%</text>
+      
 
-  <circle cx="32" cy="311" r="6" fill="#e34c26" />
-  <text x="50" y="316" class="language">HTML</text>
-  <text x="670" y="316" class="percent">0.7%</text>
-
-  <circle cx="32" cy="345" r="6" fill="#89e051" />
-  <text x="50" y="350" class="language">Shell</text>
-  <text x="670" y="350" class="percent">0.4%</text>
-
-  <circle cx="32" cy="379" r="6" fill="#8b949e" />
-  <text x="50" y="384" class="language">Other</text>
-  <text x="670" y="384" class="percent">0.2%</text>
+  <rect x="360" y="320" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
+  <circle cx="382" cy="335" r="7" fill="#8b949e" />
+  <text x="398" y="340" class="language">Other</text>
+  <text x="670" y="340" class="percent">1.3%</text>
+      
 </svg>
