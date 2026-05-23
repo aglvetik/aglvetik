@@ -4,6 +4,22 @@
 
 <br>
 
+<p align="center">
+  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=aglvetik&theme=github_dark" alt="GitHub profile details" />
+</p>
+
+<p align="center">
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=aglvetik&theme=github_dark" alt="Repos per language" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=aglvetik&theme=github_dark" alt="Most commit language" />
+</p>
+
+<p align="center">
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=aglvetik&theme=github_dark" alt="GitHub stats" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=aglvetik&theme=github_dark&utcOffset=2" alt="Productive time" />
+</p>
+
+<br>
+
 <div align="center">
 
 <table>
@@ -19,19 +35,3 @@
 </table>
 
 </div>
-
-<br>
-
-<p align="center">
-  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=aglvetik&theme=github_dark" alt="GitHub profile details" />
-</p>
-
-<p align="center">
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=aglvetik&theme=github_dark" alt="Repos per language" />
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=aglvetik&theme=github_dark" alt="Most commit language" />
-</p>
-
-<p align="center">
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=aglvetik&theme=github_dark" alt="GitHub stats" />
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=aglvetik&theme=github_dark&utcOffset=2" alt="Productive time" />
-</p>
