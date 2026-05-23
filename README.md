@@ -22,15 +22,50 @@
 
 <br>
 
-<p align="center">
-  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=aglvetik&amp;theme=github_dark" alt="GitHub profile details" />
-</p>
+<h3 align="center">Repository language mix</h3>
+
+<table align="center">
+  <tr>
+    <td><b>Python</b></td>
+    <td>████████████░░░░░░░░</td>
+    <td><b>60%</b></td>
+  </tr>
+  <tr>
+    <td><b>TypeScript</b></td>
+    <td>████░░░░░░░░░░░░░░░░</td>
+    <td><b>20%</b></td>
+  </tr>
+  <tr>
+    <td><b>Rust</b></td>
+    <td>██░░░░░░░░░░░░░░░░░░</td>
+    <td><b>10%</b></td>
+  </tr>
+  <tr>
+    <td><b>HTML</b></td>
+    <td>█░░░░░░░░░░░░░░░░░░░</td>
+    <td><b>5%</b></td>
+  </tr>
+  <tr>
+    <td><b>JavaScript</b></td>
+    <td>█░░░░░░░░░░░░░░░░░░░</td>
+    <td><b>4%</b></td>
+  </tr>
+  <tr>
+    <td><b>C#</b></td>
+    <td>░░░░░░░░░░░░░░░░░░░░</td>
+    <td><b>1%</b></td>
+  </tr>
+</table>
 
 <br>
 
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aglvetik&amp;layout=donut&amp;theme=github_dark&amp;hide_border=true&amp;langs_count=12&amp;hide_title=false" alt="Top languages" />
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=aglvetik&amp;theme=github_dark" alt="GitHub stats" />
+  <img src="https://img.shields.io/badge/Python-111111?style=for-the-badge&logo=python&logoColor=3776AB" alt="Python" />
+  <img src="https://img.shields.io/badge/TypeScript-111111?style=for-the-badge&logo=typescript&logoColor=3178C6" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Rust-111111?style=for-the-badge&logo=rust&logoColor=FFFFFF" alt="Rust" />
+  <img src="https://img.shields.io/badge/HTML5-111111?style=for-the-badge&logo=html5&logoColor=E34F26" alt="HTML5" />
+  <img src="https://img.shields.io/badge/JavaScript-111111?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/C%23-111111?style=for-the-badge&logo=csharp&logoColor=512BD4" alt="C#" />
 </p>
 
 <br>
@@ -42,7 +77,7 @@
     <td align="center">
       <b>Repository focus</b>
       <br>
-      Small tools, experiments, bots, automation, UI ideas and backend prototypes.
+      Small tools, bots, automation, UI experiments and backend prototypes.
     </td>
   </tr>
 </table>
