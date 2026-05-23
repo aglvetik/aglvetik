@@ -23,16 +23,28 @@
 <br>
 
 <p align="center">
-  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=aglvetik&theme=github_dark" alt="GitHub profile details" />
+  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=aglvetik&amp;theme=github_dark" alt="GitHub profile details" />
 </p>
 
 <br>
 
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aglvetik&layout=donut&theme=github_dark&hide_border=true&langs_count=12" alt="Top languages" />
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=aglvetik&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=false" alt="GitHub stats" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aglvetik&amp;layout=donut&amp;theme=github_dark&amp;hide_border=true&amp;langs_count=12&amp;hide_title=false" alt="Top languages" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=aglvetik&amp;theme=github_dark" alt="GitHub stats" />
 </p>
 
-<p align="center">
-  <img width="100%" src="https://streak-stats.demolab.com?user=aglvetik&theme=github-dark-blue&hide_border=true" alt="GitHub streak" />
-</p>
+<br>
+
+<div align="center">
+
+<table>
+  <tr>
+    <td align="center">
+      <b>Repository focus</b>
+      <br>
+      Small tools, experiments, bots, automation, UI ideas and backend prototypes.
+    </td>
+  </tr>
+</table>
+
+</div>
