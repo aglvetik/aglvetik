@@ -5,15 +5,23 @@
 <br>
 
 <p align="center">
-  <sub>This account is used for personal experiments, side projects and fun. Not my main client-facing GitHub profile.</sub>
+  <sub>
+    personal experiments · side projects · fun builds · not my main client-facing GitHub profile
+  </sub>
 </p>
 
 <br>
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=aglvetik&show_icons=true&hide_border=true&hide_title=true&bg_color=00000000&text_color=f8f3ef&icon_color=ffb7c8&ring_color=87efff" />
+  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=aglvetik&theme=github_dark" alt="GitHub profile details" />
 </p>
 
 <p align="center">
-  <img height="210" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aglvetik&layout=compact&hide_border=true&bg_color=00000000&title_color=87efff&text_color=f8f3ef" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=aglvetik&theme=github_dark" alt="Repos per language" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=aglvetik&theme=github_dark" alt="Most commit language" />
+</p>
+
+<p align="center">
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=aglvetik&theme=github_dark" alt="GitHub stats" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=aglvetik&theme=github_dark&utcOffset=2" alt="Productive time" />
 </p>
