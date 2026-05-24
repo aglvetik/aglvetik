@@ -196,7 +196,7 @@ function buildVisibleEntries(entries) {
   return selected;
 }
 
-function generateSvg(languageTotals) {
+function generateSvg(languageTotals, repoCount) {
   const entries = Object.entries(languageTotals)
     .sort((a, b) => b[1] - a[1])
     .filter(([, bytes]) => bytes > 0);
@@ -208,14 +208,16 @@ function generateSvg(languageTotals) {
   }
 
   const visibleEntries = buildVisibleEntries(entries);
+  const topLanguage = entries[0][0];
+  const topPercent = formatPercent(entries[0][1], totalBytes);
 
   const width = 760;
   const rowStartY = 137;
   const rowGap = 32;
-  const bottomPadding = 48;
+  const bottomPadding = 54;
 
   const height = Math.max(
-    370,
+    380,
     rowStartY + visibleEntries.length * rowGap + bottomPadding
   );
 
@@ -225,7 +227,7 @@ function generateSvg(languageTotals) {
   const cardH = height - 32;
 
   const cx = 205;
-  const cy = Math.round(height / 2 + 24);
+  const cy = Math.round(height / 2 + 20);
   const outerR = 94;
   const innerR = 62;
 
@@ -258,7 +260,7 @@ function generateSvg(languageTotals) {
       const percent = formatPercent(bytes, totalBytes);
       const y = rowStartY + index * rowGap;
       const color = colorForLanguage(language);
-      const barWidth = Math.max(4, Math.round((bytes / totalBytes) * 178));
+      const barWidth = Math.max(4, Math.round((bytes / totalBytes) * 170));
 
       return `
 <g>
@@ -266,15 +268,13 @@ function generateSvg(languageTotals) {
   <text x="428" y="${y}" fill="#e6edf3" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">${escapeXml(language)}</text>
   <text x="704" y="${y}" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">${escapeXml(percent)}</text>
 
-  <rect x="428" y="${y + 9}" width="178" height="5" rx="2.5" fill="#21262d"/>
+  <rect x="428" y="${y + 9}" width="170" height="5" rx="2.5" fill="#21262d"/>
   <rect x="428" y="${y + 9}" width="${barWidth}" height="5" rx="2.5" fill="${color}"/>
 </g>`;
     })
     .join("\n");
 
-  const topLanguage = entries[0][0];
-  const topPercent = formatPercent(entries[0][1], totalBytes);
-  const totalReposLabel = `${entries.length} detected`;
+  const reposLabel = `${repoCount} repos`;
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -300,12 +300,12 @@ function generateSvg(languageTotals) {
   <text x="58" y="62" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="800">Repository language mix</text>
   <text x="58" y="80" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="500">GitHub Linguist stats from public owner repositories</text>
 
-  <rect x="551" y="49" width="77" height="26" rx="13" fill="#13233a" stroke="#27496d"/>
-  <circle cx="568" cy="62" r="4" fill="#3fb950"/>
-  <text x="580" y="66" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">auto</text>
+  <rect x="560" y="49" width="70" height="26" rx="13" fill="#13233a" stroke="#27496d"/>
+  <circle cx="576" cy="62" r="4" fill="#3fb950"/>
+  <text x="588" y="66" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">auto</text>
 
-  <rect x="638" y="49" width="66" height="26" rx="13" fill="#161b22" stroke="#30363d"/>
-  <text x="671" y="66" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">${escapeXml(totalReposLabel)}</text>
+  <rect x="638" y="49" width="72" height="26" rx="13" fill="#161b22" stroke="#30363d"/>
+  <text x="674" y="66" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">${escapeXml(reposLabel)}</text>
 
   <circle cx="${cx}" cy="${cy}" r="${outerR}" fill="none" stroke="#21262d" stroke-width="${outerR - innerR}"/>
 
@@ -316,17 +316,15 @@ function generateSvg(languageTotals) {
   <text x="${cx}" y="${cy - 10}" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="900" text-anchor="middle">${entries.length}</text>
   <text x="${cx}" y="${cy + 13}" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">languages</text>
 
-  <rect x="${cx - 54}" y="${cy + 28}" width="108" height="24" rx="12" fill="#161b22" stroke="#30363d"/>
-  <text x="${cx}" y="${cy + 44}" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle">${escapeXml(topLanguage)} ${escapeXml(topPercent)}</text>
-
   <text x="410" y="118" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">LANGUAGE</text>
   <text x="704" y="118" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="end">SHARE</text>
 
   ${legendRows}
 
-  <line x1="382" y1="102" x2="382" y2="${height - 44}" stroke="#21262d"/>
+  <line x1="382" y1="102" x2="382" y2="${height - 56}" stroke="#21262d"/>
 
-  <text x="${cx}" y="${cy + outerR + 34}" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">calculated from total code volume</text>
+  <text x="${cx}" y="${cy + outerR + 24}" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">top language · ${escapeXml(topLanguage)} · ${escapeXml(topPercent)}</text>
+  <text x="${cx}" y="${cy + outerR + 42}" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">calculated from total code volume</text>
 </svg>`;
 }
 
@@ -357,7 +355,7 @@ async function main() {
 
   await fs.mkdir("assets", { recursive: true });
 
-  const svg = generateSvg(languageTotals);
+  const svg = generateSvg(languageTotals, repos.length);
 
   await fs.writeFile("assets/languages.svg", svg, "utf8");
 
