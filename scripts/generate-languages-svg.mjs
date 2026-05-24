@@ -80,28 +80,27 @@ function colorForLanguage(language) {
     Rust: "#dea584",
     HTML: "#e34c26",
     CSS: "#563d7c",
+    SCSS: "#c6538c",
+    Less: "#1d365d",
     Shell: "#89e051",
     Go: "#00ADD8",
     C: "#555555",
     "C++": "#f34b7d",
     "C#": "#178600",
     Java: "#b07219",
+    Kotlin: "#A97BFF",
+    Swift: "#F05138",
     PHP: "#4F5D95",
     Ruby: "#701516",
-    Dockerfile: "#384d54",
+    Dart: "#00B4AB",
+    Lua: "#000080",
     Vue: "#41b883",
     Svelte: "#ff3e00",
     Astro: "#ff5d01",
-    SCSS: "#c6538c",
-    Less: "#1d365d",
-    Kotlin: "#A97BFF",
-    Swift: "#F05138",
-    Dart: "#00B4AB",
-    Lua: "#000080",
+    Dockerfile: "#384d54",
+    Makefile: "#427819",
     PowerShell: "#012456",
     Batchfile: "#C1F12E",
-    Makefile: "#427819",
-    HCL: "#844FBA",
     YAML: "#cb171e",
     JSON: "#292929",
     Markdown: "#083fa1",
@@ -120,13 +119,36 @@ function polarToCartesian(cx, cy, r, angleInDegrees) {
   };
 }
 
+function describeFullDonut(cx, cy, outerR, innerR) {
+  const outerTop = polarToCartesian(cx, cy, outerR, 0);
+  const outerBottom = polarToCartesian(cx, cy, outerR, 180);
+  const innerTop = polarToCartesian(cx, cy, innerR, 0);
+  const innerBottom = polarToCartesian(cx, cy, innerR, 180);
+
+  return [
+    `M ${outerTop.x.toFixed(2)} ${outerTop.y.toFixed(2)}`,
+    `A ${outerR} ${outerR} 0 1 1 ${outerBottom.x.toFixed(2)} ${outerBottom.y.toFixed(2)}`,
+    `A ${outerR} ${outerR} 0 1 1 ${outerTop.x.toFixed(2)} ${outerTop.y.toFixed(2)}`,
+    `L ${innerTop.x.toFixed(2)} ${innerTop.y.toFixed(2)}`,
+    `A ${innerR} ${innerR} 0 1 0 ${innerBottom.x.toFixed(2)} ${innerBottom.y.toFixed(2)}`,
+    `A ${innerR} ${innerR} 0 1 0 ${innerTop.x.toFixed(2)} ${innerTop.y.toFixed(2)}`,
+    "Z",
+  ].join(" ");
+}
+
 function describeDonutSegment(cx, cy, outerR, innerR, startAngle, endAngle) {
+  const angle = endAngle - startAngle;
+
+  if (angle >= 359.99) {
+    return describeFullDonut(cx, cy, outerR, innerR);
+  }
+
   const startOuter = polarToCartesian(cx, cy, outerR, startAngle);
   const endOuter = polarToCartesian(cx, cy, outerR, endAngle);
   const startInner = polarToCartesian(cx, cy, innerR, startAngle);
   const endInner = polarToCartesian(cx, cy, innerR, endAngle);
 
-  const largeArcFlag = endAngle - startAngle > 180 ? "1" : "0";
+  const largeArcFlag = angle > 180 ? "1" : "0";
 
   return [
     `M ${startOuter.x.toFixed(2)} ${startOuter.y.toFixed(2)}`,
@@ -158,18 +180,9 @@ function generateSvg(languageTotals) {
     throw new Error("No language data found.");
   }
 
-  /*
-    ВАЖНО:
-    Раньше здесь было entries.slice(0, 6),
-    поэтому показывались только 6 главных языков,
-    а HTML/CSS/другие маленькие языки могли попадать в Other.
-
-    Теперь показываем все реальные языки отдельно.
-  */
   const visibleEntries = entries;
 
   const width = 760;
-
   const legendStartY = 92;
   const rowGap = 38;
   const bottomPadding = 46;
@@ -180,7 +193,7 @@ function generateSvg(languageTotals) {
   );
 
   const cx = 190;
-  const cy = Math.max(195, Math.min(height / 2, 245));
+  const cy = 195;
   const outerR = 96;
   const innerR = 56;
 
@@ -192,6 +205,7 @@ function generateSvg(languageTotals) {
       const angle = percent * 360;
       const startAngle = currentAngle;
       const endAngle = currentAngle + angle;
+
       currentAngle = endAngle;
 
       const path = describeDonutSegment(
@@ -219,10 +233,12 @@ function generateSvg(languageTotals) {
   <rect x="360" y="${y}" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
   <circle cx="382" cy="${y + 15}" r="7" fill="${color}" />
   <text x="398" y="${y + 20}" class="language">${escapeXml(language)}</text>
-  <text x="670" y="${y + 20}" class="percent">${percent}</text>
+  <text x="670" y="${y + 20}" class="percent">${escapeXml(percent)}</text>
       `;
     })
     .join("\n");
+
+  const languageWord = visibleEntries.length === 1 ? "language" : "languages";
 
   return `
 <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -278,7 +294,7 @@ function generateSvg(languageTotals) {
   <circle cx="${cx}" cy="${cy}" r="${innerR - 8}" fill="#0f141d" />
 
   <text x="${cx}" y="${cy - 6}" class="center-main">${visibleEntries.length}</text>
-  <text x="${cx}" y="${cy + 18}" class="center-sub">languages</text>
+  <text x="${cx}" y="${cy + 18}" class="center-sub">${languageWord}</text>
 
   <text x="${cx}" y="${cy + outerR + 28}" class="label">calculated from total code volume</text>
 
