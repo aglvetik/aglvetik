@@ -1,174 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg width="760" height="632" viewBox="0 0 760 632" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="cardBg" x1="0" y1="0" x2="760" y2="632" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#0d1117" />
-      <stop offset="100%" stop-color="#101722" />
-    </linearGradient>
-  </defs>
+<rect x="0.5" y="0.5" width="759" height="631" rx="22" fill="#0d1117" stroke="#30363d"/>
 
-  <style>
-    .title {
-      fill: #f0f6fc;
-      font: 700 22px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
+<text x="28" y="38" fill="#f0f6fc" font-family="Arial, sans-serif" font-size="22" font-weight="700">Repository language mix</text>
 
-    .label {
-      fill: #8b949e;
-      font: 600 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      text-anchor: middle;
-    }
+<path d="M 94.00 195.00 A 96 96 0 0 1 260.03 129.33 L 230.85 156.69 A 56 56 0 0 0 134.00 195.00 Z" fill="#3572A5" stroke="#0d1117" stroke-width="4"/>
+<path d="M 260.03 129.33 A 96 96 0 0 1 212.44 288.34 L 203.09 249.45 A 56 56 0 0 0 230.85 156.69 Z" fill="#dea584" stroke="#0d1117" stroke-width="4"/>
+<path d="M 212.44 288.34 A 96 96 0 0 1 150.79 282.63 L 167.13 246.12 A 56 56 0 0 0 203.09 249.45 Z" fill="#178600" stroke="#0d1117" stroke-width="4"/>
+<path d="M 150.79 282.63 A 96 96 0 0 1 109.30 247.00 L 142.93 225.33 A 56 56 0 0 0 167.13 246.12 Z" fill="#3178c6" stroke="#0d1117" stroke-width="4"/>
+<path d="M 109.30 247.00 A 96 96 0 0 1 94.75 207.00 L 134.44 202.00 A 56 56 0 0 0 142.93 225.33 Z" fill="#f1e05a" stroke="#0d1117" stroke-width="4"/>
+<path d="M 94.75 207.00 A 96 96 0 0 1 94.32 202.84 L 134.19 199.57 A 56 56 0 0 0 134.44 202.00 Z" fill="#563d7c" stroke="#0d1117" stroke-width="4"/>
+<path d="M 94.32 202.84 A 96 96 0 0 1 94.08 198.80 L 134.04 197.22 A 56 56 0 0 0 134.19 199.57 Z" fill="#e34c26" stroke="#0d1117" stroke-width="4"/>
+<path d="M 94.08 198.80 A 96 96 0 0 1 94.01 196.26 L 134.00 195.73 A 56 56 0 0 0 134.04 197.22 Z" fill="#89e051" stroke="#0d1117" stroke-width="4"/>
+<path d="M 94.01 196.26 A 96 96 0 0 1 94.00 195.51 L 134.00 195.30 A 56 56 0 0 0 134.00 195.73 Z" fill="#012456" stroke="#0d1117" stroke-width="4"/>
+<path d="M 94.00 195.51 A 96 96 0 0 1 94.00 195.18 L 134.00 195.11 A 56 56 0 0 0 134.00 195.30 Z" fill="#8b949e" stroke="#0d1117" stroke-width="4"/>
+<path d="M 94.00 195.18 A 96 96 0 0 1 94.00 195.11 L 134.00 195.06 A 56 56 0 0 0 134.00 195.11 Z" fill="#384d54" stroke="#0d1117" stroke-width="4"/>
+<path d="M 94.00 195.11 A 96 96 0 0 1 94.00 195.05 L 134.00 195.03 A 56 56 0 0 0 134.00 195.06 Z" fill="#C1F12E" stroke="#0d1117" stroke-width="4"/>
+<path d="M 94.00 195.05 A 96 96 0 0 1 94.00 195.00 L 134.00 195.00 A 56 56 0 0 0 134.00 195.03 Z" fill="#8b949e" stroke="#0d1117" stroke-width="4"/>
 
-    .center-main {
-      fill: #f0f6fc;
-      font: 700 20px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      text-anchor: middle;
-    }
+<circle cx="190" cy="195" r="48" fill="#0f141d"/>
 
-    .center-sub {
-      fill: #8b949e;
-      font: 500 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      text-anchor: middle;
-    }
+<text x="190" y="189" fill="#f0f6fc" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">13</text>
+<text x="190" y="213" fill="#8b949e" font-family="Arial, sans-serif" font-size="12" font-weight="500" text-anchor="middle">languages</text>
 
-    .language {
-      fill: #dce6f2;
-      font: 600 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
+<text x="190" y="319" fill="#8b949e" font-family="Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle">calculated from total code volume</text>
 
-    .percent {
-      fill: #ffffff;
-      font: 700 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      text-anchor: end;
-    }
-  </style>
 
-  <rect x="0.5" y="0.5" width="759" height="631" rx="22" fill="url(#cardBg)" stroke="#30363d" />
+<rect x="360" y="92" width="330" height="30" rx="15" fill="#11161f" stroke="#283041"/>
+<circle cx="382" cy="107" r="7" fill="#3572A5"/>
+<text x="398" y="112" fill="#dce6f2" font-family="Arial, sans-serif" font-size="14" font-weight="600">Python</text>
+<text x="670" y="112" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="end">38.0%</text>
 
-  <text x="28" y="38" class="title">Repository language mix</text>
+<rect x="360" y="130" width="330" height="30" rx="15" fill="#11161f" stroke="#283041"/>
+<circle cx="382" cy="145" r="7" fill="#dea584"/>
+<text x="398" y="150" fill="#dce6f2" font-family="Arial, sans-serif" font-size="14" font-weight="600">Rust</text>
+<text x="670" y="150" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="end">33.2%</text>
 
-  
-  <path d="M 94.00 195.00 A 96 96 0 0 1 259.97 129.27 L 230.82 156.66 A 56 56 0 0 0 134.00 195.00 Z" fill="#3572A5" stroke="#0d1117" stroke-width="4" />
-      
+<rect x="360" y="168" width="330" height="30" rx="15" fill="#11161f" stroke="#283041"/>
+<circle cx="382" cy="183" r="7" fill="#178600"/>
+<text x="398" y="188" fill="#dce6f2" font-family="Arial, sans-serif" font-size="14" font-weight="600">C#</text>
+<text x="670" y="188" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="end">10.5%</text>
 
-  <path d="M 259.97 129.27 A 96 96 0 0 1 212.59 288.31 L 203.18 249.43 A 56 56 0 0 0 230.82 156.66 Z" fill="#dea584" stroke="#0d1117" stroke-width="4" />
-      
+<rect x="360" y="206" width="330" height="30" rx="15" fill="#11161f" stroke="#283041"/>
+<circle cx="382" cy="221" r="7" fill="#3178c6"/>
+<text x="398" y="226" fill="#dce6f2" font-family="Arial, sans-serif" font-size="14" font-weight="600">TypeScript</text>
+<text x="670" y="226" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="end">9.2%</text>
 
-  <path d="M 212.59 288.31 A 96 96 0 0 1 150.95 282.70 L 167.22 246.16 A 56 56 0 0 0 203.18 249.43 Z" fill="#178600" stroke="#0d1117" stroke-width="4" />
-      
+<rect x="360" y="244" width="330" height="30" rx="15" fill="#11161f" stroke="#283041"/>
+<circle cx="382" cy="259" r="7" fill="#f1e05a"/>
+<text x="398" y="264" fill="#dce6f2" font-family="Arial, sans-serif" font-size="14" font-weight="600">JavaScript</text>
+<text x="670" y="264" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="end">7.1%</text>
 
-  <path d="M 150.95 282.70 A 96 96 0 0 1 109.41 247.16 L 142.99 225.43 A 56 56 0 0 0 167.22 246.16 Z" fill="#3178c6" stroke="#0d1117" stroke-width="4" />
-      
+<rect x="360" y="282" width="330" height="30" rx="15" fill="#11161f" stroke="#283041"/>
+<circle cx="382" cy="297" r="7" fill="#563d7c"/>
+<text x="398" y="302" fill="#dce6f2" font-family="Arial, sans-serif" font-size="14" font-weight="600">CSS</text>
+<text x="670" y="302" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="end">0.7%</text>
 
-  <path d="M 109.41 247.16 A 96 96 0 0 1 94.75 207.00 L 134.44 202.00 A 56 56 0 0 0 142.99 225.43 Z" fill="#f1e05a" stroke="#0d1117" stroke-width="4" />
-      
+<rect x="360" y="320" width="330" height="30" rx="15" fill="#11161f" stroke="#283041"/>
+<circle cx="382" cy="335" r="7" fill="#e34c26"/>
+<text x="398" y="340" fill="#dce6f2" font-family="Arial, sans-serif" font-size="14" font-weight="600">HTML</text>
+<text x="670" y="340" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="end">0.7%</text>
 
-  <path d="M 94.75 207.00 A 96 96 0 0 1 94.32 202.84 L 134.19 199.57 A 56 56 0 0 0 134.44 202.00 Z" fill="#563d7c" stroke="#0d1117" stroke-width="4" />
-      
+<rect x="360" y="358" width="330" height="30" rx="15" fill="#11161f" stroke="#283041"/>
+<circle cx="382" cy="373" r="7" fill="#89e051"/>
+<text x="398" y="378" fill="#dce6f2" font-family="Arial, sans-serif" font-size="14" font-weight="600">Shell</text>
+<text x="670" y="378" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="end">0.4%</text>
 
-  <path d="M 94.32 202.84 A 96 96 0 0 1 94.08 198.80 L 134.04 197.22 A 56 56 0 0 0 134.19 199.57 Z" fill="#e34c26" stroke="#0d1117" stroke-width="4" />
-      
+<rect x="360" y="396" width="330" height="30" rx="15" fill="#11161f" stroke="#283041"/>
+<circle cx="382" cy="411" r="7" fill="#012456"/>
+<text x="398" y="416" fill="#dce6f2" font-family="Arial, sans-serif" font-size="14" font-weight="600">PowerShell</text>
+<text x="670" y="416" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="end">0.1%</text>
 
-  <path d="M 94.08 198.80 A 96 96 0 0 1 94.01 196.26 L 134.00 195.73 A 56 56 0 0 0 134.04 197.22 Z" fill="#89e051" stroke="#0d1117" stroke-width="4" />
-      
+<rect x="360" y="434" width="330" height="30" rx="15" fill="#11161f" stroke="#283041"/>
+<circle cx="382" cy="449" r="7" fill="#8b949e"/>
+<text x="398" y="454" fill="#dce6f2" font-family="Arial, sans-serif" font-size="14" font-weight="600">Inno Setup</text>
+<text x="670" y="454" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="end">0.1%</text>
 
-  <path d="M 94.01 196.26 A 96 96 0 0 1 94.00 195.51 L 134.00 195.30 A 56 56 0 0 0 134.00 195.73 Z" fill="#012456" stroke="#0d1117" stroke-width="4" />
-      
+<rect x="360" y="472" width="330" height="30" rx="15" fill="#11161f" stroke="#283041"/>
+<circle cx="382" cy="487" r="7" fill="#384d54"/>
+<text x="398" y="492" fill="#dce6f2" font-family="Arial, sans-serif" font-size="14" font-weight="600">Dockerfile</text>
+<text x="670" y="492" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="end">0.1%</text>
 
-  <path d="M 94.00 195.51 A 96 96 0 0 1 94.00 195.18 L 134.00 195.11 A 56 56 0 0 0 134.00 195.30 Z" fill="#8b949e" stroke="#0d1117" stroke-width="4" />
-      
+<rect x="360" y="510" width="330" height="30" rx="15" fill="#11161f" stroke="#283041"/>
+<circle cx="382" cy="525" r="7" fill="#C1F12E"/>
+<text x="398" y="530" fill="#dce6f2" font-family="Arial, sans-serif" font-size="14" font-weight="600">Batchfile</text>
+<text x="670" y="530" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="end">0.1%</text>
 
-  <path d="M 94.00 195.18 A 96 96 0 0 1 94.00 195.11 L 134.00 195.06 A 56 56 0 0 0 134.00 195.11 Z" fill="#384d54" stroke="#0d1117" stroke-width="4" />
-      
-
-  <path d="M 94.00 195.11 A 96 96 0 0 1 94.00 195.05 L 134.00 195.03 A 56 56 0 0 0 134.00 195.06 Z" fill="#C1F12E" stroke="#0d1117" stroke-width="4" />
-      
-
-  <path d="M 94.00 195.05 A 96 96 0 0 1 94.00 195.00 L 134.00 195.00 A 56 56 0 0 0 134.00 195.03 Z" fill="#8b949e" stroke="#0d1117" stroke-width="4" />
-      
-
-  <circle cx="190" cy="195" r="48" fill="#0f141d" />
-
-  <text x="190" y="189" class="center-main">13</text>
-  <text x="190" y="213" class="center-sub">languages</text>
-
-  <text x="190" y="319" class="label">calculated from total code volume</text>
-
-  
-  <rect x="360" y="92" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
-  <circle cx="382" cy="107" r="7" fill="#3572A5" />
-  <text x="398" y="112" class="language">Python</text>
-  <text x="670" y="112" class="percent">38.0%</text>
-      
-
-  <rect x="360" y="130" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
-  <circle cx="382" cy="145" r="7" fill="#dea584" />
-  <text x="398" y="150" class="language">Rust</text>
-  <text x="670" y="150" class="percent">33.2%</text>
-      
-
-  <rect x="360" y="168" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
-  <circle cx="382" cy="183" r="7" fill="#178600" />
-  <text x="398" y="188" class="language">C#</text>
-  <text x="670" y="188" class="percent">10.4%</text>
-      
-
-  <rect x="360" y="206" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
-  <circle cx="382" cy="221" r="7" fill="#3178c6" />
-  <text x="398" y="226" class="language">TypeScript</text>
-  <text x="670" y="226" class="percent">9.2%</text>
-      
-
-  <rect x="360" y="244" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
-  <circle cx="382" cy="259" r="7" fill="#f1e05a" />
-  <text x="398" y="264" class="language">JavaScript</text>
-  <text x="670" y="264" class="percent">7.1%</text>
-      
-
-  <rect x="360" y="282" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
-  <circle cx="382" cy="297" r="7" fill="#563d7c" />
-  <text x="398" y="302" class="language">CSS</text>
-  <text x="670" y="302" class="percent">0.7%</text>
-      
-
-  <rect x="360" y="320" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
-  <circle cx="382" cy="335" r="7" fill="#e34c26" />
-  <text x="398" y="340" class="language">HTML</text>
-  <text x="670" y="340" class="percent">0.7%</text>
-      
-
-  <rect x="360" y="358" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
-  <circle cx="382" cy="373" r="7" fill="#89e051" />
-  <text x="398" y="378" class="language">Shell</text>
-  <text x="670" y="378" class="percent">0.4%</text>
-      
-
-  <rect x="360" y="396" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
-  <circle cx="382" cy="411" r="7" fill="#012456" />
-  <text x="398" y="416" class="language">PowerShell</text>
-  <text x="670" y="416" class="percent">0.1%</text>
-      
-
-  <rect x="360" y="434" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
-  <circle cx="382" cy="449" r="7" fill="#8b949e" />
-  <text x="398" y="454" class="language">Inno Setup</text>
-  <text x="670" y="454" class="percent">&lt;0.1%</text>
-      
-
-  <rect x="360" y="472" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
-  <circle cx="382" cy="487" r="7" fill="#384d54" />
-  <text x="398" y="492" class="language">Dockerfile</text>
-  <text x="670" y="492" class="percent">&lt;0.1%</text>
-      
-
-  <rect x="360" y="510" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
-  <circle cx="382" cy="525" r="7" fill="#C1F12E" />
-  <text x="398" y="530" class="language">Batchfile</text>
-  <text x="670" y="530" class="percent">&lt;0.1%</text>
-      
-
-  <rect x="360" y="548" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
-  <circle cx="382" cy="563" r="7" fill="#8b949e" />
-  <text x="398" y="568" class="language">Mako</text>
-  <text x="670" y="568" class="percent">&lt;0.1%</text>
-      
+<rect x="360" y="548" width="330" height="30" rx="15" fill="#11161f" stroke="#283041"/>
+<circle cx="382" cy="563" r="7" fill="#8b949e"/>
+<text x="398" y="568" fill="#dce6f2" font-family="Arial, sans-serif" font-size="14" font-weight="600">Mako</text>
+<text x="670" y="568" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="end">0.1%</text>
 </svg>
