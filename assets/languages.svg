@@ -1,6 +1,6 @@
-<svg width="760" height="360" viewBox="0 0 760 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="760" height="632" viewBox="0 0 760 632" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="cardBg" x1="0" y1="0" x2="760" y2="360" gradientUnits="userSpaceOnUse">
+    <linearGradient id="cardBg" x1="0" y1="0" x2="760" y2="632" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#0d1117" />
       <stop offset="100%" stop-color="#101722" />
     </linearGradient>
@@ -42,38 +42,56 @@
     }
   </style>
 
-  <rect x="0.5" y="0.5" width="759" height="359" rx="22" fill="url(#cardBg)" stroke="#30363d" />
+  <rect x="0.5" y="0.5" width="759" height="631" rx="22" fill="url(#cardBg)" stroke="#30363d" />
 
   <text x="28" y="38" class="title">Repository language mix</text>
 
   
-  <path d="M 94.00 195.00 A 96 96 0 0 1 260.05 129.36 L 230.86 156.71 A 56 56 0 0 0 134.00 195.00 Z" fill="#3572A5" stroke="#0d1117" stroke-width="4" />
+  <path d="M 94.00 245.00 A 96 96 0 0 1 259.99 179.30 L 230.83 206.67 A 56 56 0 0 0 134.00 245.00 Z" fill="#3572A5" stroke="#0d1117" stroke-width="4" />
       
 
-  <path d="M 260.05 129.36 A 96 96 0 0 1 212.38 288.36 L 203.05 249.46 A 56 56 0 0 0 230.86 156.71 Z" fill="#dea584" stroke="#0d1117" stroke-width="4" />
+  <path d="M 259.99 179.30 A 96 96 0 0 1 212.53 338.32 L 203.14 299.44 A 56 56 0 0 0 230.83 206.67 Z" fill="#dea584" stroke="#0d1117" stroke-width="4" />
       
 
-  <path d="M 212.38 288.36 A 96 96 0 0 1 150.72 282.60 L 167.09 246.10 A 56 56 0 0 0 203.05 249.46 Z" fill="#178600" stroke="#0d1117" stroke-width="4" />
+  <path d="M 212.53 338.32 A 96 96 0 0 1 150.89 332.67 L 167.18 296.14 A 56 56 0 0 0 203.14 299.44 Z" fill="#178600" stroke="#0d1117" stroke-width="4" />
       
 
-  <path d="M 150.72 282.60 A 96 96 0 0 1 109.26 246.93 L 142.90 225.29 A 56 56 0 0 0 167.09 246.10 Z" fill="#3178c6" stroke="#0d1117" stroke-width="4" />
+  <path d="M 150.89 332.67 A 96 96 0 0 1 109.36 297.09 L 142.96 275.39 A 56 56 0 0 0 167.18 296.14 Z" fill="#3178c6" stroke="#0d1117" stroke-width="4" />
       
 
-  <path d="M 109.26 246.93 A 96 96 0 0 1 94.75 207.00 L 134.44 202.00 A 56 56 0 0 0 142.90 225.29 Z" fill="#f1e05a" stroke="#0d1117" stroke-width="4" />
+  <path d="M 109.36 297.09 A 96 96 0 0 1 94.75 257.00 L 134.44 252.00 A 56 56 0 0 0 142.96 275.39 Z" fill="#f1e05a" stroke="#0d1117" stroke-width="4" />
       
 
-  <path d="M 94.75 207.00 A 96 96 0 0 1 94.32 202.84 L 134.19 199.57 A 56 56 0 0 0 134.44 202.00 Z" fill="#563d7c" stroke="#0d1117" stroke-width="4" />
+  <path d="M 94.75 257.00 A 96 96 0 0 1 94.32 252.84 L 134.19 249.57 A 56 56 0 0 0 134.44 252.00 Z" fill="#563d7c" stroke="#0d1117" stroke-width="4" />
       
 
-  <path d="M 94.32 202.84 A 96 96 0 0 1 94.00 195.00 L 134.00 195.00 A 56 56 0 0 0 134.19 199.57 Z" fill="#8b949e" stroke="#0d1117" stroke-width="4" />
+  <path d="M 94.32 252.84 A 96 96 0 0 1 94.08 248.80 L 134.04 247.22 A 56 56 0 0 0 134.19 249.57 Z" fill="#e34c26" stroke="#0d1117" stroke-width="4" />
       
 
-  <circle cx="190" cy="195" r="48" fill="#0f141d" />
+  <path d="M 94.08 248.80 A 96 96 0 0 1 94.01 246.26 L 134.00 245.73 A 56 56 0 0 0 134.04 247.22 Z" fill="#89e051" stroke="#0d1117" stroke-width="4" />
+      
 
-  <text x="190" y="189" class="center-main">7</text>
-  <text x="190" y="213" class="center-sub">languages</text>
+  <path d="M 94.01 246.26 A 96 96 0 0 1 94.00 245.51 L 134.00 245.30 A 56 56 0 0 0 134.00 245.73 Z" fill="#012456" stroke="#0d1117" stroke-width="4" />
+      
 
-  <text x="190" y="319" class="label">calculated from total code volume</text>
+  <path d="M 94.00 245.51 A 96 96 0 0 1 94.00 245.18 L 134.00 245.11 A 56 56 0 0 0 134.00 245.30 Z" fill="#8b949e" stroke="#0d1117" stroke-width="4" />
+      
+
+  <path d="M 94.00 245.18 A 96 96 0 0 1 94.00 245.11 L 134.00 245.06 A 56 56 0 0 0 134.00 245.11 Z" fill="#384d54" stroke="#0d1117" stroke-width="4" />
+      
+
+  <path d="M 94.00 245.11 A 96 96 0 0 1 94.00 245.05 L 134.00 245.03 A 56 56 0 0 0 134.00 245.06 Z" fill="#C1F12E" stroke="#0d1117" stroke-width="4" />
+      
+
+  <path d="M 94.00 245.05 A 96 96 0 0 1 94.00 245.00 L 134.00 245.00 A 56 56 0 0 0 134.00 245.03 Z" fill="#8b949e" stroke="#0d1117" stroke-width="4" />
+      
+
+  <circle cx="190" cy="245" r="48" fill="#0f141d" />
+
+  <text x="190" y="239" class="center-main">13</text>
+  <text x="190" y="263" class="center-sub">languages</text>
+
+  <text x="190" y="369" class="label">calculated from total code volume</text>
 
   
   <rect x="360" y="92" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
@@ -91,7 +109,7 @@
   <rect x="360" y="168" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
   <circle cx="382" cy="183" r="7" fill="#178600" />
   <text x="398" y="188" class="language">C#</text>
-  <text x="670" y="188" class="percent">10.5%</text>
+  <text x="670" y="188" class="percent">10.4%</text>
       
 
   <rect x="360" y="206" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
@@ -113,8 +131,44 @@
       
 
   <rect x="360" y="320" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
-  <circle cx="382" cy="335" r="7" fill="#8b949e" />
-  <text x="398" y="340" class="language">Other</text>
-  <text x="670" y="340" class="percent">1.3%</text>
+  <circle cx="382" cy="335" r="7" fill="#e34c26" />
+  <text x="398" y="340" class="language">HTML</text>
+  <text x="670" y="340" class="percent">0.7%</text>
+      
+
+  <rect x="360" y="358" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
+  <circle cx="382" cy="373" r="7" fill="#89e051" />
+  <text x="398" y="378" class="language">Shell</text>
+  <text x="670" y="378" class="percent">0.4%</text>
+      
+
+  <rect x="360" y="396" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
+  <circle cx="382" cy="411" r="7" fill="#012456" />
+  <text x="398" y="416" class="language">PowerShell</text>
+  <text x="670" y="416" class="percent">0.1%</text>
+      
+
+  <rect x="360" y="434" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
+  <circle cx="382" cy="449" r="7" fill="#8b949e" />
+  <text x="398" y="454" class="language">Inno Setup</text>
+  <text x="670" y="454" class="percent"><0.1%</text>
+      
+
+  <rect x="360" y="472" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
+  <circle cx="382" cy="487" r="7" fill="#384d54" />
+  <text x="398" y="492" class="language">Dockerfile</text>
+  <text x="670" y="492" class="percent"><0.1%</text>
+      
+
+  <rect x="360" y="510" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
+  <circle cx="382" cy="525" r="7" fill="#C1F12E" />
+  <text x="398" y="530" class="language">Batchfile</text>
+  <text x="670" y="530" class="percent"><0.1%</text>
+      
+
+  <rect x="360" y="548" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
+  <circle cx="382" cy="563" r="7" fill="#8b949e" />
+  <text x="398" y="568" class="language">Mako</text>
+  <text x="670" y="568" class="percent"><0.1%</text>
       
 </svg>
