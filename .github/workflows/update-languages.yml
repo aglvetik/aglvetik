@@ -7,6 +7,10 @@ on:
   push:
     branches:
       - main
+    paths:
+      - "README.md"
+      - "scripts/generate-languages-svg.mjs"
+      - ".github/workflows/update-language-statistics.yml"
 
 permissions:
   contents: write
@@ -14,6 +18,7 @@ permissions:
 jobs:
   update-languages:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: Checkout repository
@@ -33,5 +38,5 @@ jobs:
       - name: Commit updated SVG
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update language statistics"
+          commit_message: "Update language statistics [skip ci]"
           file_pattern: assets/languages.svg
