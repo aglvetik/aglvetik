@@ -23,5 +23,5 @@
 <br>
 
 <p align="center">
-  <img src="./assets/languages.svg?v=4" width="760" alt="Repository language mix">
+  <img src="./assets/languages.svg?v=6" width="760" alt="Repository language mix">
 </p>
