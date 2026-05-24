@@ -89,6 +89,22 @@ function colorForLanguage(language) {
     PHP: "#4F5D95",
     Ruby: "#701516",
     Dockerfile: "#384d54",
+    Vue: "#41b883",
+    Svelte: "#ff3e00",
+    Astro: "#ff5d01",
+    SCSS: "#c6538c",
+    Less: "#1d365d",
+    Kotlin: "#A97BFF",
+    Swift: "#F05138",
+    Dart: "#00B4AB",
+    Lua: "#000080",
+    PowerShell: "#012456",
+    Batchfile: "#C1F12E",
+    Makefile: "#427819",
+    HCL: "#844FBA",
+    YAML: "#cb171e",
+    JSON: "#292929",
+    Markdown: "#083fa1",
     Other: "#8b949e",
   };
 
@@ -96,7 +112,7 @@ function colorForLanguage(language) {
 }
 
 function polarToCartesian(cx, cy, r, angleInDegrees) {
-  const angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
+  const angleInRadians = ((angleInDegrees - 90) * Math.PI) / 180.0;
 
   return {
     x: cx + r * Math.cos(angleInRadians),
@@ -121,6 +137,16 @@ function describeDonutSegment(cx, cy, outerR, innerR, startAngle, endAngle) {
   ].join(" ");
 }
 
+function formatPercent(bytes, totalBytes) {
+  const percent = (bytes / totalBytes) * 100;
+
+  if (percent > 0 && percent < 0.1) {
+    return "<0.1%";
+  }
+
+  return `${percent.toFixed(1)}%`;
+}
+
 function generateSvg(languageTotals) {
   const entries = Object.entries(languageTotals)
     .sort((a, b) => b[1] - a[1])
@@ -132,18 +158,29 @@ function generateSvg(languageTotals) {
     throw new Error("No language data found.");
   }
 
-  const visibleEntries = entries.slice(0, 6);
-  const otherBytes = entries.slice(6).reduce((sum, [, bytes]) => sum + bytes, 0);
+  /*
+    ВАЖНО:
+    Раньше здесь было entries.slice(0, 6),
+    поэтому показывались только 6 главных языков,
+    а HTML/CSS/другие маленькие языки могли попадать в Other.
 
-  if (otherBytes > 0) {
-    visibleEntries.push(["Other", otherBytes]);
-  }
+    Теперь показываем все реальные языки отдельно.
+  */
+  const visibleEntries = entries;
 
   const width = 760;
-  const height = 360;
+
+  const legendStartY = 92;
+  const rowGap = 38;
+  const bottomPadding = 46;
+
+  const height = Math.max(
+    360,
+    legendStartY + visibleEntries.length * rowGap + bottomPadding
+  );
 
   const cx = 190;
-  const cy = 195;
+  const cy = Math.max(195, Math.min(height / 2, 245));
   const outerR = 96;
   const innerR = 56;
 
@@ -157,7 +194,14 @@ function generateSvg(languageTotals) {
       const endAngle = currentAngle + angle;
       currentAngle = endAngle;
 
-      const path = describeDonutSegment(cx, cy, outerR, innerR, startAngle, endAngle);
+      const path = describeDonutSegment(
+        cx,
+        cy,
+        outerR,
+        innerR,
+        startAngle,
+        endAngle
+      );
 
       return `
   <path d="${path}" fill="${colorForLanguage(language)}" stroke="#0d1117" stroke-width="4" />
@@ -167,15 +211,15 @@ function generateSvg(languageTotals) {
 
   const legendRows = visibleEntries
     .map(([language, bytes], index) => {
-      const percent = ((bytes / totalBytes) * 100).toFixed(1);
-      const y = 92 + index * 38;
+      const percent = formatPercent(bytes, totalBytes);
+      const y = legendStartY + index * rowGap;
       const color = colorForLanguage(language);
 
       return `
   <rect x="360" y="${y}" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
   <circle cx="382" cy="${y + 15}" r="7" fill="${color}" />
   <text x="398" y="${y + 20}" class="language">${escapeXml(language)}</text>
-  <text x="670" y="${y + 20}" class="percent">${percent}%</text>
+  <text x="670" y="${y + 20}" class="percent">${percent}</text>
       `;
     })
     .join("\n");
@@ -183,7 +227,7 @@ function generateSvg(languageTotals) {
   return `
 <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="cardBg" x1="0" y1="0" x2="760" y2="360" gradientUnits="userSpaceOnUse">
+    <linearGradient id="cardBg" x1="0" y1="0" x2="${width}" y2="${height}" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#0d1117" />
       <stop offset="100%" stop-color="#101722" />
     </linearGradient>
@@ -225,7 +269,7 @@ function generateSvg(languageTotals) {
     }
   </style>
 
-  <rect x="0.5" y="0.5" width="759" height="359" rx="22" fill="url(#cardBg)" stroke="#30363d" />
+  <rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="22" fill="url(#cardBg)" stroke="#30363d" />
 
   <text x="28" y="38" class="title">Repository language mix</text>
 
@@ -243,9 +287,30 @@ function generateSvg(languageTotals) {
 `.trim();
 }
 
+function printLanguageStats(languageTotals) {
+  const entries = Object.entries(languageTotals)
+    .sort((a, b) => b[1] - a[1])
+    .filter(([, bytes]) => bytes > 0);
+
+  const totalBytes = entries.reduce((sum, [, bytes]) => sum + bytes, 0);
+
+  console.table(
+    entries.map(([language, bytes]) => ({
+      language,
+      bytes,
+      percent: formatPercent(bytes, totalBytes),
+    }))
+  );
+}
+
 async function main() {
   const repos = await getAllRepos();
+
+  console.log(`Found ${repos.length} repositories for ${username}`);
+
   const languageTotals = await getLanguageStats(repos);
+
+  printLanguageStats(languageTotals);
 
   await fs.mkdir("assets", { recursive: true });
 
