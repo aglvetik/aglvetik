@@ -101,17 +101,13 @@ function colorForLanguage(language) {
     Makefile: "#427819",
     PowerShell: "#012456",
     Batchfile: "#C1F12E",
-    YAML: "#cb171e",
-    JSON: "#292929",
-    Markdown: "#083fa1",
-    Other: "#8b949e",
   };
 
   return colors[language] || "#8b949e";
 }
 
 function polarToCartesian(cx, cy, r, angleInDegrees) {
-  const angleInRadians = ((angleInDegrees - 90) * Math.PI) / 180.0;
+  const angleInRadians = ((angleInDegrees - 90) * Math.PI) / 180;
 
   return {
     x: cx + r * Math.cos(angleInRadians),
@@ -119,28 +115,15 @@ function polarToCartesian(cx, cy, r, angleInDegrees) {
   };
 }
 
-function describeFullDonut(cx, cy, outerR, innerR) {
-  const outerTop = polarToCartesian(cx, cy, outerR, 0);
-  const outerBottom = polarToCartesian(cx, cy, outerR, 180);
-  const innerTop = polarToCartesian(cx, cy, innerR, 0);
-  const innerBottom = polarToCartesian(cx, cy, innerR, 180);
-
-  return [
-    `M ${outerTop.x.toFixed(2)} ${outerTop.y.toFixed(2)}`,
-    `A ${outerR} ${outerR} 0 1 1 ${outerBottom.x.toFixed(2)} ${outerBottom.y.toFixed(2)}`,
-    `A ${outerR} ${outerR} 0 1 1 ${outerTop.x.toFixed(2)} ${outerTop.y.toFixed(2)}`,
-    `L ${innerTop.x.toFixed(2)} ${innerTop.y.toFixed(2)}`,
-    `A ${innerR} ${innerR} 0 1 0 ${innerBottom.x.toFixed(2)} ${innerBottom.y.toFixed(2)}`,
-    `A ${innerR} ${innerR} 0 1 0 ${innerTop.x.toFixed(2)} ${innerTop.y.toFixed(2)}`,
-    "Z",
-  ].join(" ");
-}
-
 function describeDonutSegment(cx, cy, outerR, innerR, startAngle, endAngle) {
   const angle = endAngle - startAngle;
 
   if (angle >= 359.99) {
-    return describeFullDonut(cx, cy, outerR, innerR);
+    return [
+      `M ${cx} ${cy - outerR}`,
+      `A ${outerR} ${outerR} 0 1 1 ${cx - 0.01} ${cy - outerR}`,
+      `Z`,
+    ].join(" ");
   }
 
   const startOuter = polarToCartesian(cx, cy, outerR, startAngle);
@@ -163,7 +146,7 @@ function formatPercent(bytes, totalBytes) {
   const percent = (bytes / totalBytes) * 100;
 
   if (percent > 0 && percent < 0.1) {
-    return "<0.1%";
+    return "0.1%";
   }
 
   return `${percent.toFixed(1)}%`;
@@ -186,7 +169,6 @@ function generateSvg(languageTotals) {
   const legendStartY = 92;
   const rowGap = 38;
   const bottomPadding = 46;
-
   const height = Math.max(
     360,
     legendStartY + visibleEntries.length * rowGap + bottomPadding
@@ -205,7 +187,6 @@ function generateSvg(languageTotals) {
       const angle = percent * 360;
       const startAngle = currentAngle;
       const endAngle = currentAngle + angle;
-
       currentAngle = endAngle;
 
       const path = describeDonutSegment(
@@ -217,9 +198,7 @@ function generateSvg(languageTotals) {
         endAngle
       );
 
-      return `
-  <path d="${path}" fill="${colorForLanguage(language)}" stroke="#0d1117" stroke-width="4" />
-      `;
+      return `<path d="${path}" fill="${colorForLanguage(language)}" stroke="#0d1117" stroke-width="4"/>`;
     })
     .join("\n");
 
@@ -230,77 +209,32 @@ function generateSvg(languageTotals) {
       const color = colorForLanguage(language);
 
       return `
-  <rect x="360" y="${y}" width="330" height="30" rx="15" fill="#11161f" stroke="#283041" />
-  <circle cx="382" cy="${y + 15}" r="7" fill="${color}" />
-  <text x="398" y="${y + 20}" class="language">${escapeXml(language)}</text>
-  <text x="670" y="${y + 20}" class="percent">${escapeXml(percent)}</text>
-      `;
+<rect x="360" y="${y}" width="330" height="30" rx="15" fill="#11161f" stroke="#283041"/>
+<circle cx="382" cy="${y + 15}" r="7" fill="${color}"/>
+<text x="398" y="${y + 20}" fill="#dce6f2" font-family="Arial, sans-serif" font-size="14" font-weight="600">${escapeXml(language)}</text>
+<text x="670" y="${y + 20}" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="end">${escapeXml(percent)}</text>`;
     })
     .join("\n");
 
   const languageWord = visibleEntries.length === 1 ? "language" : "languages";
 
-  return `
+  return `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="cardBg" x1="0" y1="0" x2="${width}" y2="${height}" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#0d1117" />
-      <stop offset="100%" stop-color="#101722" />
-    </linearGradient>
-  </defs>
+<rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="22" fill="#0d1117" stroke="#30363d"/>
 
-  <style>
-    .title {
-      fill: #f0f6fc;
-      font: 700 22px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
+<text x="28" y="38" fill="#f0f6fc" font-family="Arial, sans-serif" font-size="22" font-weight="700">Repository language mix</text>
 
-    .label {
-      fill: #8b949e;
-      font: 600 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      text-anchor: middle;
-    }
+${segmentPaths}
 
-    .center-main {
-      fill: #f0f6fc;
-      font: 700 20px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      text-anchor: middle;
-    }
+<circle cx="${cx}" cy="${cy}" r="${innerR - 8}" fill="#0f141d"/>
 
-    .center-sub {
-      fill: #8b949e;
-      font: 500 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      text-anchor: middle;
-    }
+<text x="${cx}" y="${cy - 6}" fill="#f0f6fc" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">${visibleEntries.length}</text>
+<text x="${cx}" y="${cy + 18}" fill="#8b949e" font-family="Arial, sans-serif" font-size="12" font-weight="500" text-anchor="middle">${languageWord}</text>
 
-    .language {
-      fill: #dce6f2;
-      font: 600 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
+<text x="${cx}" y="${cy + outerR + 28}" fill="#8b949e" font-family="Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle">calculated from total code volume</text>
 
-    .percent {
-      fill: #ffffff;
-      font: 700 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      text-anchor: end;
-    }
-  </style>
-
-  <rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="22" fill="url(#cardBg)" stroke="#30363d" />
-
-  <text x="28" y="38" class="title">Repository language mix</text>
-
-  ${segmentPaths}
-
-  <circle cx="${cx}" cy="${cy}" r="${innerR - 8}" fill="#0f141d" />
-
-  <text x="${cx}" y="${cy - 6}" class="center-main">${visibleEntries.length}</text>
-  <text x="${cx}" y="${cy + 18}" class="center-sub">${languageWord}</text>
-
-  <text x="${cx}" y="${cy + outerR + 28}" class="label">calculated from total code volume</text>
-
-  ${legendRows}
-</svg>
-`.trim();
+${legendRows}
+</svg>`;
 }
 
 function printLanguageStats(languageTotals) {
