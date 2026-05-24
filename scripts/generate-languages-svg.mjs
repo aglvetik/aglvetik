@@ -3,6 +3,9 @@ import fs from "node:fs/promises";
 const username = process.env.GITHUB_USERNAME;
 const token = process.env.GITHUB_TOKEN;
 
+const MAX_TOP_LANGUAGES = 7;
+const PINNED_LANGUAGES = ["HTML", "CSS"];
+
 if (!username) {
   throw new Error("GITHUB_USERNAME is required");
 }
@@ -101,6 +104,9 @@ function colorForLanguage(language) {
     Makefile: "#427819",
     PowerShell: "#012456",
     Batchfile: "#C1F12E",
+    "Inno Setup": "#8b949e",
+    Mako: "#7e858f",
+    Other: "#8b949e",
   };
 
   return colors[language] || "#8b949e";
@@ -115,15 +121,22 @@ function polarToCartesian(cx, cy, r, angleInDegrees) {
   };
 }
 
+function describeFullDonut(cx, cy, outerR, innerR) {
+  return [
+    `M ${cx} ${cy - outerR}`,
+    `A ${outerR} ${outerR} 0 1 1 ${cx} ${cy + outerR}`,
+    `A ${outerR} ${outerR} 0 1 1 ${cx} ${cy - outerR}`,
+    `M ${cx} ${cy - innerR}`,
+    `A ${innerR} ${innerR} 0 1 0 ${cx} ${cy + innerR}`,
+    `A ${innerR} ${innerR} 0 1 0 ${cx} ${cy - innerR}`,
+  ].join(" ");
+}
+
 function describeDonutSegment(cx, cy, outerR, innerR, startAngle, endAngle) {
   const angle = endAngle - startAngle;
 
   if (angle >= 359.99) {
-    return [
-      `M ${cx} ${cy - outerR}`,
-      `A ${outerR} ${outerR} 0 1 1 ${cx - 0.01} ${cy - outerR}`,
-      `Z`,
-    ].join(" ");
+    return describeFullDonut(cx, cy, outerR, innerR);
   }
 
   const startOuter = polarToCartesian(cx, cy, outerR, startAngle);
@@ -152,6 +165,37 @@ function formatPercent(bytes, totalBytes) {
   return `${percent.toFixed(1)}%`;
 }
 
+function buildVisibleEntries(entries) {
+  const selected = [];
+  const selectedNames = new Set();
+
+  for (const entry of entries.slice(0, MAX_TOP_LANGUAGES)) {
+    selected.push(entry);
+    selectedNames.add(entry[0]);
+  }
+
+  for (const language of PINNED_LANGUAGES) {
+    const pinnedEntry = entries.find(([name]) => name === language);
+
+    if (pinnedEntry && !selectedNames.has(language)) {
+      selected.push(pinnedEntry);
+      selectedNames.add(language);
+    }
+  }
+
+  selected.sort((a, b) => b[1] - a[1]);
+
+  const otherBytes = entries
+    .filter(([language]) => !selectedNames.has(language))
+    .reduce((sum, [, bytes]) => sum + bytes, 0);
+
+  if (otherBytes > 0) {
+    selected.push(["Other", otherBytes]);
+  }
+
+  return selected;
+}
+
 function generateSvg(languageTotals) {
   const entries = Object.entries(languageTotals)
     .sort((a, b) => b[1] - a[1])
@@ -163,21 +207,27 @@ function generateSvg(languageTotals) {
     throw new Error("No language data found.");
   }
 
-  const visibleEntries = entries;
+  const visibleEntries = buildVisibleEntries(entries);
 
   const width = 760;
-  const legendStartY = 92;
-  const rowGap = 38;
-  const bottomPadding = 46;
+  const rowStartY = 137;
+  const rowGap = 32;
+  const bottomPadding = 48;
+
   const height = Math.max(
-    360,
-    legendStartY + visibleEntries.length * rowGap + bottomPadding
+    370,
+    rowStartY + visibleEntries.length * rowGap + bottomPadding
   );
 
-  const cx = 190;
-  const cy = 195;
-  const outerR = 96;
-  const innerR = 56;
+  const cardX = 16;
+  const cardY = 16;
+  const cardW = width - 32;
+  const cardH = height - 32;
+
+  const cx = 205;
+  const cy = Math.round(height / 2 + 24);
+  const outerR = 94;
+  const innerR = 62;
 
   let currentAngle = -90;
 
@@ -187,6 +237,7 @@ function generateSvg(languageTotals) {
       const angle = percent * 360;
       const startAngle = currentAngle;
       const endAngle = currentAngle + angle;
+
       currentAngle = endAngle;
 
       const path = describeDonutSegment(
@@ -198,42 +249,84 @@ function generateSvg(languageTotals) {
         endAngle
       );
 
-      return `<path d="${path}" fill="${colorForLanguage(language)}" stroke="#0d1117" stroke-width="4"/>`;
+      return `<path d="${path}" fill="${colorForLanguage(language)}" fill-rule="evenodd"/>`;
     })
     .join("\n");
 
   const legendRows = visibleEntries
     .map(([language, bytes], index) => {
       const percent = formatPercent(bytes, totalBytes);
-      const y = legendStartY + index * rowGap;
+      const y = rowStartY + index * rowGap;
       const color = colorForLanguage(language);
+      const barWidth = Math.max(4, Math.round((bytes / totalBytes) * 178));
 
       return `
-<rect x="360" y="${y}" width="330" height="30" rx="15" fill="#11161f" stroke="#283041"/>
-<circle cx="382" cy="${y + 15}" r="7" fill="${color}"/>
-<text x="398" y="${y + 20}" fill="#dce6f2" font-family="Arial, sans-serif" font-size="14" font-weight="600">${escapeXml(language)}</text>
-<text x="670" y="${y + 20}" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="end">${escapeXml(percent)}</text>`;
+<g>
+  <circle cx="413" cy="${y - 4}" r="5.5" fill="${color}"/>
+  <text x="428" y="${y}" fill="#e6edf3" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">${escapeXml(language)}</text>
+  <text x="704" y="${y}" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">${escapeXml(percent)}</text>
+
+  <rect x="428" y="${y + 9}" width="178" height="5" rx="2.5" fill="#21262d"/>
+  <rect x="428" y="${y + 9}" width="${barWidth}" height="5" rx="2.5" fill="${color}"/>
+</g>`;
     })
     .join("\n");
 
-  const languageWord = visibleEntries.length === 1 ? "language" : "languages";
+  const topLanguage = entries[0][0];
+  const topPercent = formatPercent(entries[0][1], totalBytes);
+  const totalReposLabel = `${entries.length} detected`;
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="22" fill="#0d1117" stroke="#30363d"/>
+  <defs>
+    <linearGradient id="premiumBg" x1="0" y1="0" x2="${width}" y2="${height}" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="0.55" stop-color="#0f1723"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
 
-<text x="28" y="38" fill="#f0f6fc" font-family="Arial, sans-serif" font-size="22" font-weight="700">Repository language mix</text>
+    <linearGradient id="softGlow" x1="80" y1="40" x2="640" y2="${height}" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#238636" stop-opacity="0.16"/>
+      <stop offset="0.45" stop-color="#1f6feb" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#8957e5" stop-opacity="0.13"/>
+    </linearGradient>
+  </defs>
 
-${segmentPaths}
+  <rect x="${cardX}" y="${cardY}" width="${cardW}" height="${cardH}" rx="24" fill="url(#premiumBg)" stroke="#30363d"/>
+  <rect x="${cardX}" y="${cardY}" width="${cardW}" height="${cardH}" rx="24" fill="url(#softGlow)"/>
 
-<circle cx="${cx}" cy="${cy}" r="${innerR - 8}" fill="#0f141d"/>
+  <rect x="36" y="36" width="688" height="58" rx="17" fill="#0d1117" fill-opacity="0.72" stroke="#21262d"/>
 
-<text x="${cx}" y="${cy - 6}" fill="#f0f6fc" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">${visibleEntries.length}</text>
-<text x="${cx}" y="${cy + 18}" fill="#8b949e" font-family="Arial, sans-serif" font-size="12" font-weight="500" text-anchor="middle">${languageWord}</text>
+  <text x="58" y="62" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="800">Repository language mix</text>
+  <text x="58" y="80" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="500">GitHub Linguist stats from public owner repositories</text>
 
-<text x="${cx}" y="${cy + outerR + 28}" fill="#8b949e" font-family="Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle">calculated from total code volume</text>
+  <rect x="551" y="49" width="77" height="26" rx="13" fill="#13233a" stroke="#27496d"/>
+  <circle cx="568" cy="62" r="4" fill="#3fb950"/>
+  <text x="580" y="66" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">auto</text>
 
-${legendRows}
+  <rect x="638" y="49" width="66" height="26" rx="13" fill="#161b22" stroke="#30363d"/>
+  <text x="671" y="66" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">${escapeXml(totalReposLabel)}</text>
+
+  <circle cx="${cx}" cy="${cy}" r="${outerR}" fill="none" stroke="#21262d" stroke-width="${outerR - innerR}"/>
+
+  ${segmentPaths}
+
+  <circle cx="${cx}" cy="${cy}" r="${innerR - 5}" fill="#0d1117" stroke="#21262d"/>
+
+  <text x="${cx}" y="${cy - 10}" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="900" text-anchor="middle">${entries.length}</text>
+  <text x="${cx}" y="${cy + 13}" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">languages</text>
+
+  <rect x="${cx - 54}" y="${cy + 28}" width="108" height="24" rx="12" fill="#161b22" stroke="#30363d"/>
+  <text x="${cx}" y="${cy + 44}" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle">${escapeXml(topLanguage)} ${escapeXml(topPercent)}</text>
+
+  <text x="410" y="118" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">LANGUAGE</text>
+  <text x="704" y="118" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="end">SHARE</text>
+
+  ${legendRows}
+
+  <line x1="382" y1="102" x2="382" y2="${height - 44}" stroke="#21262d"/>
+
+  <text x="${cx}" y="${cy + outerR + 34}" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">calculated from total code volume</text>
 </svg>`;
 }
 
