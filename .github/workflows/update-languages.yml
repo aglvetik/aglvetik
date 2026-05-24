@@ -10,7 +10,7 @@ on:
     paths:
       - "README.md"
       - "scripts/generate-languages-svg.mjs"
-      - ".github/workflows/update-language-statistics.yml"
+      - ".github/workflows/update-languages.yml"
 
 permissions:
   contents: write
