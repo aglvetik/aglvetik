@@ -31,12 +31,12 @@
 
   <circle cx="205" cy="244" r="94" fill="none" stroke="#21262d" stroke-width="32"/>
 
-  <path d="M 111.00 244.00 A 94 94 0 0 1 266.57 172.97 L 245.61 197.15 A 62 62 0 0 0 143.00 244.00 Z" fill="#dea584" fill-rule="evenodd"/>
-<path d="M 266.57 172.97 A 94 94 0 0 1 219.44 336.88 L 214.53 305.26 A 62 62 0 0 0 245.61 197.15 Z" fill="#3572A5" fill-rule="evenodd"/>
-<path d="M 219.44 336.88 A 94 94 0 0 1 162.37 327.78 L 176.88 299.26 A 62 62 0 0 0 214.53 305.26 Z" fill="#178600" fill-rule="evenodd"/>
-<path d="M 162.37 327.78 A 94 94 0 0 1 124.87 293.15 L 152.15 276.42 A 62 62 0 0 0 176.88 299.26 Z" fill="#3178c6" fill-rule="evenodd"/>
-<path d="M 124.87 293.15 A 94 94 0 0 1 111.67 255.19 L 143.44 251.38 A 62 62 0 0 0 152.15 276.42 Z" fill="#f1e05a" fill-rule="evenodd"/>
-<path d="M 111.67 255.19 A 94 94 0 0 1 111.28 251.31 L 143.19 248.82 A 62 62 0 0 0 143.44 251.38 Z" fill="#563d7c" fill-rule="evenodd"/>
+  <path d="M 111.00 244.00 A 94 94 0 0 1 266.61 173.00 L 245.64 197.17 A 62 62 0 0 0 143.00 244.00 Z" fill="#dea584" fill-rule="evenodd"/>
+<path d="M 266.61 173.00 A 94 94 0 0 1 219.42 336.89 L 214.51 305.27 A 62 62 0 0 0 245.64 197.17 Z" fill="#3572A5" fill-rule="evenodd"/>
+<path d="M 219.42 336.89 A 94 94 0 0 1 162.36 327.77 L 176.87 299.25 A 62 62 0 0 0 214.51 305.27 Z" fill="#178600" fill-rule="evenodd"/>
+<path d="M 162.36 327.77 A 94 94 0 0 1 124.87 293.15 L 152.15 276.42 A 62 62 0 0 0 176.87 299.25 Z" fill="#3178c6" fill-rule="evenodd"/>
+<path d="M 124.87 293.15 A 94 94 0 0 1 111.67 255.18 L 143.44 251.38 A 62 62 0 0 0 152.15 276.42 Z" fill="#f1e05a" fill-rule="evenodd"/>
+<path d="M 111.67 255.18 A 94 94 0 0 1 111.28 251.31 L 143.19 248.82 A 62 62 0 0 0 143.44 251.38 Z" fill="#563d7c" fill-rule="evenodd"/>
 <path d="M 111.28 251.31 A 94 94 0 0 1 111.07 247.54 L 143.04 246.34 A 62 62 0 0 0 143.19 248.82 Z" fill="#e34c26" fill-rule="evenodd"/>
 <path d="M 111.07 247.54 A 94 94 0 0 1 111.00 244.00 L 143.00 244.00 A 62 62 0 0 0 143.04 246.34 Z" fill="#8b949e" fill-rule="evenodd"/>
 
@@ -64,7 +64,7 @@
   <text x="704" y="169" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">36.2%</text>
 
   <rect x="428" y="178" width="170" height="5" rx="2.5" fill="#21262d"/>
-  <rect x="428" y="178" width="62" height="5" rx="2.5" fill="#3572A5"/>
+  <rect x="428" y="178" width="61" height="5" rx="2.5" fill="#3572A5"/>
 </g>
 
 <g>
@@ -79,7 +79,7 @@
 <g>
   <circle cx="413" cy="229" r="5.5" fill="#3178c6"/>
   <text x="428" y="233" fill="#e6edf3" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">TypeScript</text>
-  <text x="704" y="233" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">8.8%</text>
+  <text x="704" y="233" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">8.7%</text>
 
   <rect x="428" y="242" width="170" height="5" rx="2.5" fill="#21262d"/>
   <rect x="428" y="242" width="15" height="5" rx="2.5" fill="#3178c6"/>
