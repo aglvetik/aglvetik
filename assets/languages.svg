@@ -27,18 +27,18 @@
   <text x="588" y="66" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">auto</text>
 
   <rect x="638" y="49" width="72" height="26" rx="13" fill="#161b22" stroke="#30363d"/>
-  <text x="674" y="66" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">26 repos</text>
+  <text x="674" y="66" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">25 repos</text>
 
   <circle cx="205" cy="244" r="94" fill="none" stroke="#21262d" stroke-width="32"/>
 
-  <path d="M 111.00 244.00 A 94 94 0 0 1 266.61 173.00 L 245.64 197.17 A 62 62 0 0 0 143.00 244.00 Z" fill="#dea584" fill-rule="evenodd"/>
-<path d="M 266.61 173.00 A 94 94 0 0 1 219.42 336.89 L 214.51 305.27 A 62 62 0 0 0 245.64 197.17 Z" fill="#3572A5" fill-rule="evenodd"/>
-<path d="M 219.42 336.89 A 94 94 0 0 1 162.36 327.77 L 176.87 299.25 A 62 62 0 0 0 214.51 305.27 Z" fill="#178600" fill-rule="evenodd"/>
-<path d="M 162.36 327.77 A 94 94 0 0 1 124.87 293.15 L 152.15 276.42 A 62 62 0 0 0 176.87 299.25 Z" fill="#3178c6" fill-rule="evenodd"/>
-<path d="M 124.87 293.15 A 94 94 0 0 1 111.67 255.18 L 143.44 251.38 A 62 62 0 0 0 152.15 276.42 Z" fill="#f1e05a" fill-rule="evenodd"/>
-<path d="M 111.67 255.18 A 94 94 0 0 1 111.28 251.31 L 143.19 248.82 A 62 62 0 0 0 143.44 251.38 Z" fill="#563d7c" fill-rule="evenodd"/>
-<path d="M 111.28 251.31 A 94 94 0 0 1 111.07 247.54 L 143.04 246.34 A 62 62 0 0 0 143.19 248.82 Z" fill="#e34c26" fill-rule="evenodd"/>
-<path d="M 111.07 247.54 A 94 94 0 0 1 111.00 244.00 L 143.00 244.00 A 62 62 0 0 0 143.04 246.34 Z" fill="#8b949e" fill-rule="evenodd"/>
+  <path d="M 111.00 244.00 A 94 94 0 1 1 298.00 257.66 L 266.34 253.01 A 62 62 0 1 0 143.00 244.00 Z" fill="#3572A5" fill-rule="evenodd"/>
+<path d="M 298.00 257.66 A 94 94 0 0 1 251.80 325.52 L 235.86 297.77 A 62 62 0 0 0 266.34 253.01 Z" fill="#178600" fill-rule="evenodd"/>
+<path d="M 251.80 325.52 A 94 94 0 0 1 179.56 334.49 L 188.22 303.69 A 62 62 0 0 0 235.86 297.77 Z" fill="#3178c6" fill-rule="evenodd"/>
+<path d="M 179.56 334.49 A 94 94 0 0 1 131.52 302.63 L 156.54 282.67 A 62 62 0 0 0 188.22 303.69 Z" fill="#f1e05a" fill-rule="evenodd"/>
+<path d="M 131.52 302.63 A 94 94 0 0 1 112.08 258.23 L 143.71 253.38 A 62 62 0 0 0 156.54 282.67 Z" fill="#dea584" fill-rule="evenodd"/>
+<path d="M 112.08 258.23 A 94 94 0 0 1 111.40 252.63 L 143.26 249.69 A 62 62 0 0 0 143.71 253.38 Z" fill="#563d7c" fill-rule="evenodd"/>
+<path d="M 111.40 252.63 A 94 94 0 0 1 111.05 247.19 L 143.04 246.11 A 62 62 0 0 0 143.26 249.69 Z" fill="#e34c26" fill-rule="evenodd"/>
+<path d="M 111.05 247.19 A 94 94 0 0 1 111.00 244.00 L 143.00 244.00 A 62 62 0 0 0 143.04 246.11 Z" fill="#8b949e" fill-rule="evenodd"/>
 
   <circle cx="205" cy="244" r="57" fill="#0d1117" stroke="#21262d"/>
 
@@ -50,54 +50,54 @@
 
   
 <g>
-  <circle cx="413" cy="133" r="5.5" fill="#dea584"/>
-  <text x="428" y="137" fill="#e6edf3" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Rust</text>
-  <text x="704" y="137" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">36.4%</text>
+  <circle cx="413" cy="133" r="5.5" fill="#3572A5"/>
+  <text x="428" y="137" fill="#e6edf3" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Python</text>
+  <text x="704" y="137" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">52.3%</text>
 
   <rect x="428" y="146" width="170" height="5" rx="2.5" fill="#21262d"/>
-  <rect x="428" y="146" width="62" height="5" rx="2.5" fill="#dea584"/>
+  <rect x="428" y="146" width="89" height="5" rx="2.5" fill="#3572A5"/>
 </g>
 
 <g>
-  <circle cx="413" cy="165" r="5.5" fill="#3572A5"/>
-  <text x="428" y="169" fill="#e6edf3" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Python</text>
-  <text x="704" y="169" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">36.2%</text>
+  <circle cx="413" cy="165" r="5.5" fill="#178600"/>
+  <text x="428" y="169" fill="#e6edf3" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">C#</text>
+  <text x="704" y="169" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">14.4%</text>
 
   <rect x="428" y="178" width="170" height="5" rx="2.5" fill="#21262d"/>
-  <rect x="428" y="178" width="61" height="5" rx="2.5" fill="#3572A5"/>
+  <rect x="428" y="178" width="24" height="5" rx="2.5" fill="#178600"/>
 </g>
 
 <g>
-  <circle cx="413" cy="197" r="5.5" fill="#178600"/>
-  <text x="428" y="201" fill="#e6edf3" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">C#</text>
-  <text x="704" y="201" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">9.9%</text>
+  <circle cx="413" cy="197" r="5.5" fill="#3178c6"/>
+  <text x="428" y="201" fill="#e6edf3" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">TypeScript</text>
+  <text x="704" y="201" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">12.7%</text>
 
   <rect x="428" y="210" width="170" height="5" rx="2.5" fill="#21262d"/>
-  <rect x="428" y="210" width="17" height="5" rx="2.5" fill="#178600"/>
+  <rect x="428" y="210" width="22" height="5" rx="2.5" fill="#3178c6"/>
 </g>
 
 <g>
-  <circle cx="413" cy="229" r="5.5" fill="#3178c6"/>
-  <text x="428" y="233" fill="#e6edf3" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">TypeScript</text>
-  <text x="704" y="233" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">8.7%</text>
+  <circle cx="413" cy="229" r="5.5" fill="#f1e05a"/>
+  <text x="428" y="233" fill="#e6edf3" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">JavaScript</text>
+  <text x="704" y="233" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">9.9%</text>
 
   <rect x="428" y="242" width="170" height="5" rx="2.5" fill="#21262d"/>
-  <rect x="428" y="242" width="15" height="5" rx="2.5" fill="#3178c6"/>
+  <rect x="428" y="242" width="17" height="5" rx="2.5" fill="#f1e05a"/>
 </g>
 
 <g>
-  <circle cx="413" cy="261" r="5.5" fill="#f1e05a"/>
-  <text x="428" y="265" fill="#e6edf3" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">JavaScript</text>
-  <text x="704" y="265" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">6.9%</text>
+  <circle cx="413" cy="261" r="5.5" fill="#dea584"/>
+  <text x="428" y="265" fill="#e6edf3" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Rust</text>
+  <text x="704" y="265" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">8.3%</text>
 
   <rect x="428" y="274" width="170" height="5" rx="2.5" fill="#21262d"/>
-  <rect x="428" y="274" width="12" height="5" rx="2.5" fill="#f1e05a"/>
+  <rect x="428" y="274" width="14" height="5" rx="2.5" fill="#dea584"/>
 </g>
 
 <g>
   <circle cx="413" cy="293" r="5.5" fill="#563d7c"/>
   <text x="428" y="297" fill="#e6edf3" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">CSS</text>
-  <text x="704" y="297" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">0.7%</text>
+  <text x="704" y="297" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">1.0%</text>
 
   <rect x="428" y="306" width="170" height="5" rx="2.5" fill="#21262d"/>
   <rect x="428" y="306" width="4" height="5" rx="2.5" fill="#563d7c"/>
@@ -106,7 +106,7 @@
 <g>
   <circle cx="413" cy="325" r="5.5" fill="#e34c26"/>
   <text x="428" y="329" fill="#e6edf3" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">HTML</text>
-  <text x="704" y="329" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">0.6%</text>
+  <text x="704" y="329" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">0.9%</text>
 
   <rect x="428" y="338" width="170" height="5" rx="2.5" fill="#21262d"/>
   <rect x="428" y="338" width="4" height="5" rx="2.5" fill="#e34c26"/>
@@ -115,7 +115,7 @@
 <g>
   <circle cx="413" cy="357" r="5.5" fill="#8b949e"/>
   <text x="428" y="361" fill="#e6edf3" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Other</text>
-  <text x="704" y="361" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">0.6%</text>
+  <text x="704" y="361" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="end">0.5%</text>
 
   <rect x="428" y="370" width="170" height="5" rx="2.5" fill="#21262d"/>
   <rect x="428" y="370" width="4" height="5" rx="2.5" fill="#8b949e"/>
@@ -123,6 +123,6 @@
 
   <line x1="382" y1="102" x2="382" y2="391" stroke="#21262d"/>
 
-  <text x="205" y="362" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">top language · Rust · 36.4%</text>
+  <text x="205" y="362" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">top language · Python · 52.3%</text>
   <text x="205" y="380" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">calculated from total code volume</text>
 </svg>
