@@ -27,7 +27,7 @@
   <text x="588" y="66" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">auto</text>
 
   <rect x="638" y="49" width="72" height="26" rx="13" fill="#161b22" stroke="#30363d"/>
-  <text x="674" y="66" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">26 repos</text>
+  <text x="674" y="66" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">25 repos</text>
 
   <circle cx="205" cy="244" r="94" fill="none" stroke="#21262d" stroke-width="32"/>
 
