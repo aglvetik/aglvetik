@@ -1,18 +1,3 @@
-<div align="center">
-
-<table>
-  <tr>
-    <td align="center">
-      <b>Personal / experimental GitHub account</b>
-      <br>
-      This profile is used for side projects, experiments and fun builds.
-      <br>
-      It is not my main client-facing GitHub profile.
-    </td>
-  </tr>
-</table>
-
-</div>
 
 <br>
 
